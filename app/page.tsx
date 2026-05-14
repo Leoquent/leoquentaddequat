@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState, FormEvent } from "react";
+import { useEffect, useRef, useState } from "react";
+import QuizModal from "@/components/QuizModal";
 import Head from "next/head";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -51,55 +52,47 @@ const solutionsData = [
 const industriesData = [
     {
         id: "real-estate", name: "Immobilien",
+        intro: "Schnellere Abläufe in Verwaltung, Vermarktung und Betreuung. Wir bauen Systeme, die Unterlagen prüfen, Fristen überwachen und Anfragen vorqualifizieren – für ein Team, das agiert statt nur zu verwalten.",
         cases: [
-            { title: "Immobilienbewertung", desc: "KI-Algorithmen analysieren Marktdaten in Echtzeit, um Werte präzise vorherzusagen." },
-            { title: "Marketing-Optimierung", desc: "Automatisierte Tools optimieren Inserate und sprechen Zielgruppen exakt an." }
+            { title: "Intelligentes Routing", desc: "Mieteranfragen werden semantisch analysiert, nach Dringlichkeit sortiert und sofort dem richtigen Betreuer zugewiesen." },
+            { title: "Dokumenten-Extraktion", desc: "Verträge, Exposés und Übergabeprotokolle werden automatisch ausgelesen. Kern-Metriken fließen direkt in Ihr System." }
         ]
     },
     {
         id: "healthcare", name: "Gesundheit",
+        intro: "Weniger Verwaltungsaufwand, mehr Zeit für Patienten. Unsere lokalen, vom Internet getrennten KI-Modelle unterstützen die Dokumentation, während die fachliche Entscheidung zu 100% bei Ihnen bleibt.",
         cases: [
-            { title: "Datenbasierte Diagnostik", desc: "Hochmoderne Analysen zur Unterstützung kritischer medizinischer Entscheidungen." },
-            { title: "Vernetzte Plattformen", desc: "Sichere Systeme zur Datenerfassung, die Diagnosen autonom unterstützen." }
-        ]
-    },
-    {
-        id: "education", name: "Bildung",
-        cases: [
-            { title: "Personalisiertes Lernen", desc: "KI analysiert Daten, um Lehrpläne dynamisch an individuelle Bedürfnisse anzupassen." },
-            { title: "Automatisierte Bewertung", desc: "Intelligente Systeme übernehmen die Korrektur von Routineaufgaben und Prüfungen." }
+            { title: "Automatisierte Dokumentation", desc: "Nach dem Gespräch wird automatisch ein strukturierter Befund- oder Dokumentationsentwurf erstellt." },
+            { title: "Daten-Konsolidierung", desc: "Formulare, Laborwerte und Freitextnotizen werden aus unterschiedlichen Quellen übersichtlich zusammengeführt." }
         ]
     },
     {
         id: "construction", name: "Handwerk",
+        intro: "Weniger Bürokratie, mehr Zeit für Baustelle und Kunden. Wir entwickeln Agenten, die das Chaos aus Anfragen ordnen, Angebote vorbereiten und Termine koordinieren.",
         cases: [
-            { title: "Autonome Administration", desc: "Vom Baustellenprotokoll direkt zu präzisen Angeboten und Rechnungen – für Handwerk und Bau." },
-            { title: "Einsatzplanung", desc: "KI-gestützte Disposition von Teams basierend auf Auftragslage, Wetter und Verfügbarkeiten." }
+            { title: "Omnichannel-Postfach", desc: "E-Mails, Anrufe und WhatsApp werden gebündelt. Der Agent erstellt daraus priorisierte Aufgaben oder Angebotsentwürfe." },
+            { title: "Dynamische Disposition", desc: "Einsätze werden algorithmisch nach Region, Material und Dringlichkeit geplant – und bei Ausfällen sofort neu berechnet." }
         ]
     },
     {
         id: "ecommerce", name: "Handel",
+        intro: "Bessere Bestände, präzisere Planung, reduzierte Kapitalbindung. Wir implementieren Modelle, die Nachfrageschwankungen antizipieren und das Sortiment datengetrieben steuern.",
         cases: [
-            { title: "Bestandsmanagement", desc: "Intelligente Prognose-Modelle steuern den Einkauf autonom – egal ob stationär oder E-Commerce." },
-            { title: "Hyperpersonalisierung", desc: "KI analysiert Kundenverhalten in Millisekunden und empfiehlt hochkonvertierende Produkte." }
+            { title: "Predictive Purchasing", desc: "Das System erkennt frühzeitig drohende Engpässe und schlägt Nachbestellungen anhand von Saisonalität und Verkaufszahlen vor." },
+            { title: "Performance Analytics", desc: "Teams sehen in Echtzeit, welche Sortimente gut laufen, wo sich Bestände stauen und wo nachgesteuert werden muss." }
         ]
     },
     {
         id: "logistics", name: "Logistik",
+        intro: "Mehr Überblick im Tagesgeschäft, weniger Ausfälle. Wir vernetzen Ihre Flotte mit intelligenten Warnsystemen für Routenplanung und vorausschauende Wartung.",
         cases: [
-            { title: "Echtzeit-Routing", desc: "KI-Agenten berechnen dynamisch die effizientesten Routen für ganze Flotten." },
-            { title: "Predictive Maintenance", desc: "Systeme überwachen Sensordaten, um Wartungen einzuplanen, bevor es zum Stillstand kommt." }
-        ]
-    },
-    {
-        id: "agriculture", name: "Agrar",
-        cases: [
-            { title: "Ertragsanalyse", desc: "Computer Vision überwacht Pflanzengesundheit und optimiert den Ertrag autonom." },
-            { title: "Ressourcensteuerung", desc: "Algorithmen steuern Bewässerung und Düngung präzise nach tagesaktuellen Daten." }
+            { title: "Predictive Maintenance", desc: "Fahrzeuge und Maschinen melden Anomalien, bevor ein teurer Stillstand entsteht. Wartungen werden proaktiv eingeplant." },
+            { title: "Echtzeit-Routing", desc: "Touren werden bei Verzögerungen, Staus oder neuen Prioritäten sofort und dynamisch neu berechnet." }
         ]
     },
     {
         id: "marketing", name: "Social",
+        intro: "Höherer ROAS, weniger manuelle Fleißarbeit. Wir bauen Agenten, die Werbemittel autonom erstellen, testen und Budgets in Echtzeit optimieren.",
         cases: [
             { title: "Content-Generierung", desc: "Agenten erstellen und skalieren Werbemittel autonom basierend auf Performance-Metriken." },
             { title: "Kampagnen-Steuerung", desc: "Intelligente Bots schichten Budgets in Echtzeit auf die profitabelste Zielgruppe um." }
@@ -114,7 +107,10 @@ export default function Page() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [openIndustry, setOpenIndustry] = useState<string | null>(null);
     const [openSolution, setOpenSolution] = useState<string | null>(null);
+    const [hoveredIndustry, setHoveredIndustry] = useState<string | null>(null);
+    const [lockedIndustry, setLockedIndustry] = useState<string | null>(null);
     const [openMember, setOpenMember] = useState<string | null>(null);
+    const [isQuizOpen, setIsQuizOpen] = useState(false);
 
     const typewriterRef = useRef<HTMLSpanElement>(null);
     const sqGeoCoreRef = useRef<HTMLDivElement>(null);
@@ -238,27 +234,62 @@ export default function Page() {
                     scrub: 1,
                 }
             });
-            if (solHeader) solTl.from(solHeader, { opacity: 0, y: 50, duration: 1 });
-            if (solCards.length > 0) solTl.from(solCards, { opacity: 0, scale: 0.95, y: 50, duration: 2, stagger: 0.2 }, "-=0.5");
+            if (solHeader) solTl.fromTo(solHeader, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            if (solCards.length > 0) solTl.fromTo(solCards, { opacity: 0, scale: 0.95, y: 50 }, { opacity: 1, scale: 1, y: 0, duration: 2, stagger: 0.2 }, "-=0.5");
 
-            // 4. PROZESS
-            const prozHeader = document.querySelector('#prozess > div > div:first-child') as HTMLElement;
-            const prozSteps = gsap.utils.toArray('#prozess .grid > div') as HTMLElement[];
+            // 4. PROZESS (Pinned Grid Reveal)
+            let mm = gsap.matchMedia();
             
-            const prozTl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '#prozess',
-                    start: "top 75%",
-                    end: "center center",
-                    scrub: 1,
+            mm.add("(min-width: 768px)", () => {
+                const prozessSteps = gsap.utils.toArray('.prozess-step') as HTMLElement[];
+                const prozessWrapper = document.querySelector('#prozess');
+                
+                if (prozessSteps.length > 0 && prozessWrapper) {
+                    const tlDesktop = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: prozessWrapper,
+                            start: "top 60%", // Start animating when it's 60% down the screen
+                        }
+                    });
+                    
+                    prozessSteps.forEach((step, i) => {
+                        tlDesktop.fromTo(step, 
+                            { opacity: 0, y: 50 }, 
+                            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+                            i === 0 ? 0 : "-=0.4"
+                        );
+                    });
                 }
             });
-            if (prozHeader) prozTl.from(prozHeader, { opacity: 0, y: 50, duration: 1 });
-            if (prozSteps.length > 0) prozTl.from(prozSteps, { opacity: 0, y: 50, duration: 2, stagger: 0.2 }, "-=0.5");
+
+            mm.add("(max-width: 767px)", () => {
+                const prozessSteps = gsap.utils.toArray('.prozess-step') as HTMLElement[];
+                const prozessWrapper = document.querySelector('#prozess');
+                
+                if (prozessSteps.length > 0 && prozessWrapper) {
+                    const tlMobile = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: prozessWrapper,
+                            start: "top 20%",
+                            end: "+=1200",
+                            scrub: 1,
+                            pin: true,
+                            anticipatePin: 1
+                        }
+                    });
+                    
+                    prozessSteps.forEach((step, i) => {
+                        tlMobile.fromTo(step, 
+                            { y: i === 0 ? 0 : window.innerHeight, opacity: i === 0 ? 1 : 0 }, 
+                            { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+                        );
+                    });
+                }
+            });
 
             // 5. BRANCHEN
             const branchenHeader = document.querySelector('#branchen > div > div:first-child') as HTMLElement;
-            const branchenStrips = gsap.utils.toArray('#branchen .hidden.md\\:flex > div') as HTMLElement[];
+            const branchenStrips = gsap.utils.toArray('#branchen .branchen-accordion-item') as HTMLElement[];
             
             const branchenTl = gsap.timeline({
                 scrollTrigger: {
@@ -268,8 +299,8 @@ export default function Page() {
                     scrub: 1,
                 }
             });
-            if (branchenHeader) branchenTl.from(branchenHeader, { opacity: 0, y: 50, duration: 1 });
-            if (branchenStrips.length > 0) branchenTl.from(branchenStrips, { opacity: 0, y: 50, stagger: 0.15, duration: 2, ease: "power2.out" }, "-=0.5");
+            if (branchenHeader) branchenTl.fromTo(branchenHeader, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            if (branchenStrips.length > 0) branchenTl.fromTo(branchenStrips, { opacity: 0, y: 30 }, { opacity: 1, y: 0, stagger: 0.1, duration: 2, ease: "power2.out" }, "-=0.5");
 
             // 6. WARUM WIR
             const wwHeader = document.querySelector('#warum-wir > div > div:first-child') as HTMLElement;
@@ -283,8 +314,8 @@ export default function Page() {
                     scrub: 1,
                 }
             });
-            if (wwHeader) wwTl.from(wwHeader, { opacity: 0, y: 50, duration: 1 });
-            if (wwCards.length > 0) wwTl.from(wwCards, { opacity: 0, y: 50, rotationY: 5, transformOrigin: "left center", stagger: 0.1, ease: "power2.out" }, "-=0.5");
+            if (wwHeader) wwTl.fromTo(wwHeader, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            if (wwCards.length > 0) wwTl.fromTo(wwCards, { opacity: 0, y: 50, rotationY: 5, transformOrigin: "left center" }, { opacity: 1, y: 0, rotationY: 0, stagger: 0.1, ease: "power2.out" }, "-=0.5");
 
             // 7. CTA
             const ctaReveal = document.querySelector('#cta .reveal') as HTMLElement;
@@ -402,9 +433,9 @@ export default function Page() {
         return () => clearTimeout(timeoutId);
     }, []);
 
-    const handleFormSubmit = (e: FormEvent) => {
-        e.preventDefault();
-        alert("Terminal Command Sent: Analyse Requested");
+    const openQuiz = () => {
+        setIsQuizOpen(true);
+        closeMobileMenu();
     };
 
     return (
@@ -436,10 +467,10 @@ export default function Page() {
 
                     <div className="flex items-center gap-4 lg:gap-6 shrink-0">
                         <div className="hidden lg:block">
-                            <a href="#cta" className={`font-mono text-[10px] sm:text-sm border px-3 py-1.5 sm:px-4 sm:py-2 uppercase transition-colors duration-500 ease-in-out ${scrolledPastHero ? 'bg-lime text-vanta border-lime btn-glitch' : 'border-gridline hover:border-lime hover:text-lime bg-vanta text-white'}`}>
+                            <button onClick={openQuiz} className={`font-mono text-[10px] sm:text-sm border px-3 py-1.5 sm:px-4 sm:py-2 uppercase transition-colors duration-500 ease-in-out cursor-pointer ${scrolledPastHero ? 'bg-lime text-vanta border-lime btn-glitch' : 'border-gridline hover:border-lime hover:text-lime bg-vanta text-white'}`}>
                                 <span className="sm:hidden">ANALYSIEREN</span>
                                 <span className="hidden sm:inline">Potenzial analysieren</span>
-                            </a>
+                            </button>
                         </div>
 
                         {/* Hamburger Button */}
@@ -475,14 +506,13 @@ export default function Page() {
                                 {link.name}
                             </a>
                         ))}
-                        <a 
-                            href="#cta" 
-                            onClick={closeMobileMenu}
-                            className="mobile-menu-link mt-4 inline-block bg-lime text-vanta font-mono font-bold uppercase py-4 px-8 border border-lime mobile-menu-link"
+                        <button 
+                            onClick={openQuiz}
+                            className="mobile-menu-link mt-4 inline-block bg-lime text-vanta font-mono font-bold uppercase py-4 px-8 border border-lime mobile-menu-link cursor-pointer"
                             style={{ transitionDelay: '500ms' }}
                         >
                             Potenzial Analysieren
-                        </a>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -511,9 +541,9 @@ export default function Page() {
                     </p>
 
                     <div className="flex items-center gap-6 hero-element">
-                        <a href="#cta" className="btn-glitch inline-block bg-lime text-vanta font-mono font-bold uppercase py-4 px-8 border border-lime transition-all duration-75">
+                        <button onClick={openQuiz} className="btn-glitch inline-block bg-lime text-vanta font-mono font-bold uppercase py-4 px-8 border border-lime transition-all duration-75 cursor-pointer">
                             Potenzial Analysieren
-                        </a>
+                        </button>
                         <span className="font-mono text-xs text-mute uppercase hidden sm:block">Status: <br /><span className="text-lime animate-pulse">unverbindlich</span></span>
                     </div>
                 </div>
@@ -625,7 +655,7 @@ export default function Page() {
                             {solutionsData.map((sol, idx) => (
                                 <div 
                                     key={sol.id} 
-                                    className="group relative bg-vanta p-8 lg:p-10 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col overflow-hidden hover:bg-lime h-auto min-h-[300px]"
+                                    className="group relative bg-vanta p-8 lg:p-10 transition-colors duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col overflow-hidden hover:bg-lime h-auto min-h-[300px]"
                                 >
                                 
                                     <h3 className="text-xl md:text-2xl uppercase font-bold mb-4 text-white group-hover:text-vanta transition-colors duration-500 relative z-10">{sol.title}</h3>
@@ -688,40 +718,40 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center">
+                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden">
                     <div className="w-full max-w-[1440px]">
-                        <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b border-x border-gridline flex flex-col md:flex-row justify-between items-start md:items-end gap-8 reveal">
-                        <div>
-                            <p className="font-mono text-xs uppercase mb-6 tracking-widest">
-                                <span className="brutalist-marker text-vanta">Prozess</span>
-                            </p>
-                            <h2 className="section-headline">Unser Weg zu<br />Ihrer Lösung.</h2>
+                        <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b border-x border-gridline flex flex-col md:flex-row justify-between items-start md:items-end gap-8 relative z-20 bg-white">
+                            <div>
+                                <p className="font-mono text-xs uppercase mb-6 tracking-widest">
+                                    <span className="brutalist-marker text-vanta">Prozess</span>
+                                </p>
+                                <h2 className="section-headline">Unser Weg zu<br />Ihrer Lösung.</h2>
+                            </div>
+                            <p className="max-w-md text-mute text-sm leading-relaxed font-light">Transparente Meilensteine von der Analyse bis zum Betrieb. Keine Blackbox.</p>
                         </div>
-                        <p className="max-w-md text-mute text-sm leading-relaxed font-light">Transparente Meilensteine von der Analyse bis zum Betrieb. Keine Blackbox.</p>
-                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 border-x border-gridline">
-                        <div className="p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors reveal border-b md:border-b-0 md:border-r border-gridline" style={{ transitionDelay: '0ms' }}>
-                            <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">01</div>
-                            <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Analyse</h3>
-                            <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir identifizieren Ihre Flaschenhälse und ungenutzte Potenziale in einer tiefen, kostenlosen Potenzialanalyse.</p>
+                        <div className="grid grid-cols-1 md:grid-cols-4 border-x border-gridline overflow-hidden md:auto-rows-auto relative">
+                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-10">
+                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">01</div>
+                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Analyse</h3>
+                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir identifizieren Ihre Flaschenhälse und ungenutzte Potenziale in einer tiefen, kostenlosen Potenzialanalyse.</p>
+                            </div>
+                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-20">
+                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">02</div>
+                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Architektur</h3>
+                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir entwerfen die maßgeschneiderte Blaupause für Ihr System – ausgelegt für minimale Latenz und höchste Sicherheit.</p>
+                            </div>
+                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-30">
+                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">03</div>
+                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Entwicklung</h3>
+                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir programmieren, testen und iterieren Ihre autonome Lösung in enger Abstimmung mit Ihnen.</p>
+                            </div>
+                            <div className="prozess-step p-6 md:p-10 group hover:bg-lime group-hover:text-vanta transition-colors bg-white md:bg-white [grid-area:1/1] md:[grid-area:auto] z-40">
+                                <div className="font-mono text-lime mb-6 text-2xl group-hover:text-vanta">04</div>
+                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-vanta transition-colors">Betrieb</h3>
+                                <p className="text-mute text-sm group-hover:text-vanta/80 transition-colors">Integration, dediziertes Hosting, ständige Wartung & updates. Sie erhalten ein schlüsselfertiges System. Dauerhaft.</p>
+                            </div>
                         </div>
-                        <div className="p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors reveal border-b md:border-b-0 md:border-r border-gridline" style={{ transitionDelay: '100ms' }}>
-                            <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">02</div>
-                            <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Architektur</h3>
-                            <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir entwerfen die maßgeschneiderte Blaupause für Ihr System – ausgelegt für minimale Latenz und höchste Sicherheit.</p>
-                        </div>
-                        <div className="p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors reveal border-b md:border-b-0 md:border-r border-gridline" style={{ transitionDelay: '200ms' }}>
-                            <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">03</div>
-                            <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Entwicklung</h3>
-                            <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir programmieren, testen und iterieren Ihre autonome Lösung in enger Abstimmung mit Ihnen.</p>
-                        </div>
-                        <div className="p-6 md:p-10 group hover:bg-lime group-hover:text-vanta transition-colors reveal" style={{ transitionDelay: '300ms' }}>
-                            <div className="font-mono text-lime mb-6 text-2xl group-hover:text-vanta">04</div>
-                            <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-vanta transition-colors">Betrieb</h3>
-                            <p className="text-mute text-sm group-hover:text-vanta/80 transition-colors">Integration, dediziertes Hosting, ständige Wartung & updates. Sie erhalten ein schlüsselfertiges System. Dauerhaft.</p>
-                        </div>
-                    </div>
                     </div>
                 </section>
 
@@ -739,43 +769,77 @@ export default function Page() {
                         </p>
                     </div>
 
-                    {/* Desktop: Vertical Film Strips */}
-                    <div className="hidden md:flex w-full border-x border-gridline" style={{ height: '370px' }}>
-                        {industriesData.map((ind) => (
-                            <div
-                                key={ind.id}
-                                className="group relative overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex-[1] hover:flex-[4] hover:bg-lime"
-                            >
-                                {/* Vertical name — top-aligned, stays at left edge on hover */}
-                                <span
-                                    className="absolute top-5 lg:top-6 left-1/2 -translate-x-1/2 group-hover:left-3 group-hover:lg:left-4 group-hover:translate-x-0 uppercase font-black text-white group-hover:text-vanta transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] whitespace-nowrap pointer-events-none"
-                                    style={{
-                                        writingMode: 'vertical-rl',
-                                        transform: 'rotate(180deg)',
-                                        fontSize: 'clamp(1.8rem, 4.8vh, 2.6rem)',
-                                        letterSpacing: '0.06em',
-                                        lineHeight: 0.9
-                                    }}
+                    {/* Desktop: Split View (Master-Detail) */}
+                    {(() => {
+                        const activeId = hoveredIndustry || lockedIndustry;
+                        const activeIndustry = industriesData.find(ind => ind.id === activeId);
+                        return (
+                    <div className="hidden md:flex w-full border-x border-t border-gridline bg-vanta relative z-10">
+                        {/* Master List (Left Column) */}
+                        <div className="w-1/3 lg:w-1/4 flex flex-col shrink-0 border-r border-gridline">
+                            {industriesData.map((ind) => {
+                                const isActive = ind.id === activeId;
+                                return (
+                                <div 
+                                    key={ind.id} 
+                                    className={`flex-1 flex items-center px-6 lg:px-8 border-b border-gridline last:border-b-0 transition-colors duration-300 cursor-pointer branchen-accordion-item ${
+                                        isActive ? 'bg-lime' : 'hover:bg-lime/10'
+                                    }`}
+                                    onMouseEnter={() => setHoveredIndustry(ind.id)}
+                                    onMouseLeave={() => setHoveredIndustry(null)}
+                                    onClick={() => setLockedIndustry(lockedIndustry === ind.id ? null : ind.id)}
                                 >
-                                    {ind.name}
-                                </span>
+                                    <h3 className={`text-sm lg:text-base uppercase font-bold transition-colors ${
+                                        isActive ? 'text-vanta' : 'text-white/50 hover:text-white/80'
+                                    }`}>
+                                        {ind.name}
+                                    </h3>
+                                </div>
+                                );
+                            })}
+                        </div>
 
-                                {/* Expanded content — Masked gracefully by the moving vertical word */}
-                                <div
-                                    className="absolute top-5 lg:top-6 bottom-0 right-0 overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] left-[65%] group-hover:left-[clamp(3rem,7vh,4.5rem)] pointer-events-none"
-                                >
-                                    <div className="absolute top-0 right-3 lg:right-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:delay-100 space-y-4 w-[180px] md:w-[220px] lg:w-[280px] xl:w-[340px] pb-4">
-                                        {ind.cases.map((c, i) => (
-                                            <div key={i} className="relative pl-3 border-l-2 border-vanta/30">
-                                                <h4 className="text-[10px] lg:text-[11px] uppercase font-bold text-vanta/80 mb-0.5 tracking-wider">{c.title}</h4>
-                                                <p className="text-vanta/50 text-[10px] lg:text-[11px] leading-relaxed">{c.desc}</p>
-                                            </div>
-                                        ))}
+                        {/* Detail View (Right Column) */}
+                        <div className="flex-1 flex items-center justify-center min-h-[450px] relative overflow-hidden">
+                            {!activeIndustry ? (
+                                <div className="opacity-20 flex flex-col items-center">
+                                    <div className="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center mb-6">
+                                        <div className="w-2 h-2 bg-lime rounded-full animate-pulse"></div>
+                                    </div>
+                                    <div className="font-mono text-xs uppercase tracking-widest text-white/80">
+                                        [ Branche wählen ]
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ) : (
+                                <div className="w-full h-full flex flex-col justify-center p-8 lg:p-16 animate-fadeIn" key={activeIndustry.id}>
+                                    <div className="font-mono text-[10px] uppercase text-lime mb-4 tracking-widest">
+                                        // {activeIndustry.name} Profile
+                                    </div>
+                                    <h3 className="text-3xl lg:text-4xl uppercase font-black text-white mb-8 tracking-tight">
+                                        {activeIndustry.name}
+                                    </h3>
+                                    
+                                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+                                        <div className="flex-1 lg:max-w-[320px]">
+                                            <p className="text-white/80 text-sm leading-relaxed font-light border-l border-lime/50 pl-4">
+                                                {activeIndustry.intro}
+                                            </p>
+                                        </div>
+                                        <div className="flex-1 flex flex-col gap-6">
+                                            {activeIndustry.cases.map((c, i) => (
+                                                <div key={i} className="relative">
+                                                    <h4 className="text-[11px] lg:text-xs uppercase font-bold text-lime mb-1 tracking-wider">{c.title}</h4>
+                                                    <p className="text-white/60 text-[11px] lg:text-xs leading-relaxed">{c.desc}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
+                        );
+                    })()}
 
                     {/* Mobile: Stacked Rows */}
                     <div className="md:hidden border-x border-gridline">
@@ -788,13 +852,18 @@ export default function Page() {
                                 <h3 className={`text-lg uppercase font-bold transition-colors ${openIndustry === ind.id ? 'text-vanta' : 'text-mute'}`}>{ind.name}</h3>
                                 <div className={`grid transition-all duration-500 ${openIndustry === ind.id ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
                                     <div className="overflow-hidden">
-                                        <div className="space-y-4 pt-4">
-                                            {ind.cases.map((c, i) => (
-                                                <div key={i}>
-                                                    <h4 className="text-sm uppercase font-bold text-vanta/90 mb-1">{c.title}</h4>
-                                                    <p className="text-vanta/60 text-sm">{c.desc}</p>
-                                                </div>
-                                            ))}
+                                        <div className="flex flex-col gap-4 pt-4">
+                                            {ind.intro && (
+                                                <p className="text-vanta/80 text-sm leading-relaxed border-b border-vanta/10 pb-4">{ind.intro}</p>
+                                            )}
+                                            <div className="space-y-4">
+                                                {ind.cases.map((c, i) => (
+                                                    <div key={i}>
+                                                        <h4 className="text-sm uppercase font-bold text-vanta/90 mb-1">{c.title}</h4>
+                                                        <p className="text-vanta/60 text-sm">{c.desc}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -979,12 +1048,9 @@ export default function Page() {
                         <h2 className="text-5xl md:text-7xl uppercase font-bold mb-6">Bereit für echte<br /><span className="brutalist-marker">Freiräume?</span></h2>
                         <p className="text-mute mb-12">Der erste Schritt ist menschlich: Eine unverbindliche Potenzialanalyse. Wir zeigen Ihnen, wo Sie Zeit bluten. Der zweite Schritt: Automatisierung.</p>
 
-                        <form className="flex flex-col sm:flex-row w-full group relative" onSubmit={handleFormSubmit}>
-                            <input type="email" placeholder="ihre@email.com" required className="w-full bg-transparent border-b-2 border-gridline py-4 px-2 font-mono text-white focus:outline-none focus:border-lime transition-colors peer rounded-none" />
-                            <button type="submit" className="mt-4 sm:mt-0 sm:ml-4 bg-lime text-vanta font-mono font-bold uppercase px-8 py-4 whitespace-nowrap hover:bg-white hover:text-vanta transition-colors duration-0">
-                                Jetzt befreien
-                            </button>
-                        </form>
+                        <button onClick={openQuiz} className="bg-lime text-vanta font-mono font-bold uppercase px-10 py-5 hover:bg-white hover:text-vanta transition-colors duration-300 btn-glitch border border-lime cursor-pointer text-lg">
+                            Jetzt befreien
+                        </button>
                     </div>
                 </section>
 
@@ -998,6 +1064,9 @@ export default function Page() {
                     </div>
                 </footer>
             </div>
+
+            {/* Quiz Modal */}
+            <QuizModal isOpen={isQuizOpen} onClose={() => setIsQuizOpen(false)} />
         </div>
     );
 }
