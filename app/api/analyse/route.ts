@@ -174,6 +174,23 @@ export async function POST(req: NextRequest) {
 </body>
 </html>`;
 
+  // Send lead to NeutronCRM (non-blocking — email still goes out even if CRM fails)
+  const crmWebhookUrl = process.env.NEUTRON_CRM_WEBHOOK_URL;
+  const crmWebhookSecret = process.env.NEUTRON_CRM_WEBHOOK_SECRET;
+  if (crmWebhookUrl && crmWebhookSecret) {
+    fetch(crmWebhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${crmWebhookSecret}`,
+      },
+      body: JSON.stringify({
+        vorname, nachname, email, unternehmen, telefon,
+        branche, groesse, probleme, interesse, dringlichkeit,
+      }),
+    }).catch((err) => console.error("[NeutronCRM webhook] failed:", err?.message));
+  }
+
   try {
     await Promise.all([
       // Notification to the team
