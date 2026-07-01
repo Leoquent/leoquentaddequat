@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import QuizModal from "@/components/QuizModal";
-import Head from "next/head";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -146,6 +145,14 @@ export default function Page() {
         });
     };
 
+    // Keyboard activation for div-based toggles (a11y: Enter/Space)
+    const onKeyToggle = (e: React.KeyboardEvent, fn: () => void) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            fn();
+        }
+    };
+
     // --- GSAP ORCHESTRATOR ---
     useGSAP(() => {
         let mm = gsap.matchMedia();
@@ -237,8 +244,7 @@ export default function Page() {
             if (solHeader) solTl.fromTo(solHeader, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
             if (solCards.length > 0) solTl.fromTo(solCards, { opacity: 0, scale: 0.95, y: 50 }, { opacity: 1, scale: 1, y: 0, duration: 2, stagger: 0.2 }, "-=0.5");
 
-            // 4. PROZESS (Pinned Grid Reveal)
-            let mm = gsap.matchMedia();
+            // 4. PROZESS (Pinned Grid Reveal) — reuse outer matchMedia so it is reverted on cleanup
             
             mm.add("(min-width: 768px)", () => {
                 const prozessSteps = gsap.utils.toArray('.prozess-step') as HTMLElement[];
@@ -374,6 +380,19 @@ export default function Page() {
 
     // --- TYPEWRITER ---
     useEffect(() => {
+        // Respect reduced-motion: show the first phrase statically, no typing loop
+        const prefersReduced = typeof window !== 'undefined'
+            && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced) {
+            if (typewriterRef.current) {
+                typewriterRef.current.innerHTML = painPoints[0]
+                    .split('|')
+                    .map((w) => `<span>${w}</span>`)
+                    .join('<span class="typewriter-space"> </span><br class="typewriter-break" />');
+            }
+            return;
+        }
+
         let currentPainIndex = 0;
         let currentCharIndex = 0;
         let isDeletingPhase = false;
@@ -678,9 +697,13 @@ export default function Page() {
                         {/* Mobile: Accordion Menu */}
                         <div className="md:hidden grid grid-cols-1 reveal border-x border-gridline">
                             {solutionsData.map((sol, idx) => (
-                                <div 
-                                    key={`mobile-${sol.id}`} 
+                                <div
+                                    key={`mobile-${sol.id}`}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-expanded={openSolution === sol.id}
                                     onClick={() => setOpenSolution(openSolution === sol.id ? null : sol.id)}
+                                    onKeyDown={(e) => onKeyToggle(e, () => setOpenSolution(openSolution === sol.id ? null : sol.id))}
                                     className={`group relative p-6 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col overflow-hidden cursor-pointer border-b border-gridline last:border-b-0 ${openSolution === sol.id ? 'bg-lime' : 'bg-vanta'}`}
                                 >
                                 
@@ -780,14 +803,18 @@ export default function Page() {
                             {industriesData.map((ind) => {
                                 const isActive = ind.id === activeId;
                                 return (
-                                <div 
-                                    key={ind.id} 
+                                <div
+                                    key={ind.id}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-pressed={isActive}
                                     className={`flex-1 flex items-center px-6 lg:px-8 border-b border-gridline last:border-b-0 transition-colors duration-300 cursor-pointer branchen-accordion-item ${
                                         isActive ? 'bg-lime' : 'hover:bg-lime/10'
                                     }`}
                                     onMouseEnter={() => setHoveredIndustry(ind.id)}
                                     onMouseLeave={() => setHoveredIndustry(null)}
                                     onClick={() => setLockedIndustry(lockedIndustry === ind.id ? null : ind.id)}
+                                    onKeyDown={(e) => onKeyToggle(e, () => setLockedIndustry(lockedIndustry === ind.id ? null : ind.id))}
                                 >
                                     <h3 className={`text-sm lg:text-base uppercase font-bold transition-colors ${
                                         isActive ? 'text-vanta' : 'text-white/50 hover:text-white/80'
@@ -813,7 +840,7 @@ export default function Page() {
                             ) : (
                                 <div className="w-full h-full flex flex-col justify-center p-8 lg:p-16 animate-fadeIn" key={activeIndustry.id}>
                                     <div className="font-mono text-[10px] uppercase text-lime mb-4 tracking-widest">
-                                        // {activeIndustry.name} Profile
+                                        {"//"} {activeIndustry.name} Profile
                                     </div>
                                     <h3 className="text-3xl lg:text-4xl uppercase font-black text-white mb-8 tracking-tight">
                                         {activeIndustry.name}
@@ -844,9 +871,13 @@ export default function Page() {
                     {/* Mobile: Stacked Rows */}
                     <div className="md:hidden border-x border-gridline">
                         {industriesData.map((ind) => (
-                            <div 
-                                key={ind.id} 
+                            <div
+                                key={ind.id}
+                                role="button"
+                                tabIndex={0}
+                                aria-expanded={openIndustry === ind.id}
                                 onClick={() => setOpenIndustry(openIndustry === ind.id ? null : ind.id)}
+                                onKeyDown={(e) => onKeyToggle(e, () => setOpenIndustry(openIndustry === ind.id ? null : ind.id))}
                                 className={`group border-b border-gridline last:border-b-0 px-6 py-5 transition-all duration-300 cursor-pointer ${openIndustry === ind.id ? 'bg-lime' : ''}`}
                             >
                                 <h3 className={`text-lg uppercase font-bold transition-colors ${openIndustry === ind.id ? 'text-vanta' : 'text-mute'}`}>{ind.name}</h3>
@@ -925,9 +956,14 @@ export default function Page() {
                         </div>
 
                         {/* Card: Leonid */}
-                        <div 
+                        <div
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={openMember === 'leonid'}
+                            aria-label="Profil von Leonid ein- oder ausklappen"
                             className="lg:col-span-4 relative group overflow-hidden bg-[#0a0a0a] border-b lg:border-b-0 lg:border-r border-gridline min-h-[550px] lg:min-h-[650px] flex flex-col justify-end cursor-pointer lg:cursor-default"
                             onClick={() => setOpenMember(openMember === 'leonid' ? null : 'leonid')}
+                            onKeyDown={(e) => onKeyToggle(e, () => setOpenMember(openMember === 'leonid' ? null : 'leonid'))}
                         >
                             {/* Background Image */}
                             <div 
@@ -936,7 +972,7 @@ export default function Page() {
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105' 
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
-                                style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_v4.png')` }}
+                                style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_v4.webp')` }}
                             />
                             
                             {/* Overlay Gradient */}
@@ -981,9 +1017,14 @@ export default function Page() {
                         </div>
 
                         {/* Card: Admir */}
-                        <div 
+                        <div
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={openMember === 'admir'}
+                            aria-label="Profil von Admir ein- oder ausklappen"
                             className="lg:col-span-4 relative group overflow-hidden bg-[#0a0a0a] min-h-[550px] lg:min-h-[650px] flex flex-col justify-end cursor-pointer lg:cursor-default"
                             onClick={() => setOpenMember(openMember === 'admir' ? null : 'admir')}
+                            onKeyDown={(e) => onKeyToggle(e, () => setOpenMember(openMember === 'admir' ? null : 'admir'))}
                         >
                             {/* Background Image */}
                             <div 
@@ -992,7 +1033,7 @@ export default function Page() {
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105' 
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
-                                style={{ backgroundImage: `url('${basePath}/FOTOS/admir_v2.png')` }}
+                                style={{ backgroundImage: `url('${basePath}/FOTOS/admir_v2.webp')` }}
                             />
                             
                             {/* Overlay Gradient */}
@@ -1058,8 +1099,8 @@ export default function Page() {
                     <div className="w-full max-w-[1440px] px-6 py-6 md:px-8 lg:px-10 flex flex-col md:flex-row justify-between items-center">
                         <p>&copy; {new Date().getFullYear()} leoquent &amp; addequat. All systems nominal.</p>
                         <div className="flex gap-6 mt-4 md:mt-0">
-                            <a href="#" className="hover:text-lime">Impressum</a>
-                            <a href="#" className="hover:text-lime">Datenschutz</a>
+                            <a href={`${basePath}/impressum/`} className="hover:text-lime">Impressum</a>
+                            <a href={`${basePath}/datenschutz/`} className="hover:text-lime">Datenschutz</a>
                         </div>
                     </div>
                 </footer>

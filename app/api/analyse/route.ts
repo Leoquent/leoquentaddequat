@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
     <div class="value">${DRINGLICHKEIT_LABELS[dringlichkeit] ?? dringlichkeit}</div>
   </div>
 
-  <a href="mailto:${email}?subject=Ihre Potenzialanalyse – Leoquent %26 Addequat" class="cta">
+  <a href="mailto:${email}?subject=Ihre Potenzialanalyse – leoquent %26 addequat" class="cta">
     Jetzt antworten →
   </a>
 
@@ -214,11 +214,11 @@ export async function POST(req: NextRequest) {
       }),
       // Confirmation to the lead
       transporter.sendMail({
-        from: `"Leoquent & Addequat" <${process.env.GMAIL_USER}>`,
+        from: `"leoquent & addequat" <${process.env.GMAIL_USER}>`,
         to: email,
-        subject: `Ihre Potenzialanalyse ist reserviert – Leoquent & Addequat`,
+        subject: `Ihre Potenzialanalyse ist reserviert – leoquent & addequat`,
         html: confirmationHtml,
-        text: `Hallo ${vorname},\n\nvielen Dank für Ihre Anfrage. Buchen Sie jetzt Ihren Termin:\nhttps://calendly.com/ofxffm/30min\n\nLeoquent & Addequat`,
+        text: `Hallo ${vorname},\n\nvielen Dank für Ihre Anfrage. Buchen Sie jetzt Ihren Termin:\nhttps://calendly.com/ofxffm/30min\n\nleoquent & addequat`,
       }),
     ]);
 

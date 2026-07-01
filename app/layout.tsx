@@ -17,9 +17,43 @@ const playfair = Playfair_Display({
   variable: '--font-serif',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lunda-ki.de';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const ogImage = `${siteUrl}${basePath}/og-image.png`;
+
 export const metadata: Metadata = {
-  title: 'Leoquent & Addiquat | Die AGENTur für den Mittelstand',
-  description: 'Wir befreien Sie von administrativen Lasten. Mit autonomen KI-Mitarbeitern, die genau so arbeiten, wie Sie denken.',
+  metadataBase: new URL(siteUrl),
+  title: 'leoquent & addequat | Die AGENTur für den Mittelstand',
+  description:
+    'Wir befreien Sie von administrativen Lasten. Mit autonomen KI-Mitarbeitern, die genau so arbeiten, wie Sie denken.',
+  applicationName: 'leoquent & addequat',
+  alternates: {
+    canonical: `${siteUrl}${basePath}/`,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'de_DE',
+    siteName: 'leoquent & addequat',
+    title: 'leoquent & addequat | Die AGENTur für den Mittelstand',
+    description:
+      'KI-Systeme, die Ihre Arbeit machen. Nicht umgekehrt. Autonome KI-Lösungen für den Mittelstand — DSGVO-konform, gehostet in Deutschland.',
+    url: `${siteUrl}${basePath}/`,
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: 'leoquent & addequat — Die AGENTur für den Mittelstand',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'leoquent & addequat | Die AGENTur für den Mittelstand',
+    description: 'KI-Systeme, die Ihre Arbeit machen. Nicht umgekehrt.',
+    images: [ogImage],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

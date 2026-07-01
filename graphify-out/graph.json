@@ -1,0 +1,5454 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": ".eslintrc.json",
+      "file_type": "code",
+      "source_file": ".eslintrc.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "eslintrc",
+      "community": 31,
+      "norm_label": ".eslintrc.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": ".eslintrc.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "eslintrc_extends",
+      "community": 31,
+      "norm_label": "extends"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_analyse_route",
+      "community": 17,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "BRANCH_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_branch_labels",
+      "community": 17,
+      "norm_label": "branch_labels"
+    },
+    {
+      "label": "GROESSE_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_groesse_labels",
+      "community": 17,
+      "norm_label": "groesse_labels"
+    },
+    {
+      "label": "INTERESSE_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_interesse_labels",
+      "community": 17,
+      "norm_label": "interesse_labels"
+    },
+    {
+      "label": "DRINGLICHKEIT_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_dringlichkeit_labels",
+      "community": 17,
+      "norm_label": "dringlichkeit_labels"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_post",
+      "community": 17,
+      "norm_label": "post()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_datenschutz_page",
+      "community": 22,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_datenschutz_page_metadata",
+      "community": 22,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "DatenschutzPage()",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_datenschutz_page_datenschutzpage",
+      "community": 22,
+      "norm_label": "datenschutzpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/demo-video/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_demo_video_page",
+      "community": 20,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "DemoVideoPage()",
+      "file_type": "code",
+      "source_file": "app/demo-video/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "app_demo_video_page_demovideopage",
+      "community": 20,
+      "norm_label": "demovideopage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_impressum_page",
+      "community": 23,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_impressum_page_metadata",
+      "community": 23,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "ImpressumPage()",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "app_impressum_page_impressumpage",
+      "community": 23,
+      "norm_label": "impressumpage()"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_layout",
+      "community": 18,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "inter",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_layout_inter",
+      "community": 18,
+      "norm_label": "inter"
+    },
+    {
+      "label": "syne",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_layout_syne",
+      "community": 18,
+      "norm_label": "syne"
+    },
+    {
+      "label": "playfair",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_layout_playfair",
+      "community": 18,
+      "norm_label": "playfair"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "app_layout_metadata",
+      "community": 18,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "app_layout_rootlayout",
+      "community": 18,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_page",
+      "community": 11,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "painPoints",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "app_page_painpoints",
+      "community": 11,
+      "norm_label": "painpoints"
+    },
+    {
+      "label": "solutionsData",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "app_page_solutionsdata",
+      "community": 11,
+      "norm_label": "solutionsdata"
+    },
+    {
+      "label": "industriesData",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "app_page_industriesdata",
+      "community": 11,
+      "norm_label": "industriesdata"
+    },
+    {
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "app_page_page",
+      "community": 11,
+      "norm_label": "page()"
+    },
+    {
+      "label": "robots.ts",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_robots",
+      "community": 28,
+      "norm_label": "robots.ts"
+    },
+    {
+      "label": "robots()",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_robots_robots",
+      "community": 28,
+      "norm_label": "robots()"
+    },
+    {
+      "label": "sitemap.ts",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_sitemap",
+      "community": 29,
+      "norm_label": "sitemap.ts"
+    },
+    {
+      "label": "sitemap()",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_sitemap_sitemap",
+      "community": 29,
+      "norm_label": "sitemap()"
+    },
+    {
+      "label": "QuizModal.tsx",
+      "file_type": "code",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_quizmodal",
+      "community": 11,
+      "norm_label": "quizmodal.tsx"
+    },
+    {
+      "label": "STEPS",
+      "file_type": "code",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_quizmodal_steps",
+      "community": 11,
+      "norm_label": "steps"
+    },
+    {
+      "label": "QuizAnswers",
+      "file_type": "code",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "components_quizmodal_quizanswers",
+      "community": 11,
+      "norm_label": "quizanswers"
+    },
+    {
+      "label": "QuizModalProps",
+      "file_type": "code",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "components_quizmodal_quizmodalprops",
+      "community": 11,
+      "norm_label": "quizmodalprops"
+    },
+    {
+      "label": "QuizModal()",
+      "file_type": "code",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "components_quizmodal_quizmodal",
+      "community": 11,
+      "norm_label": "quizmodal()"
+    },
+    {
+      "label": "DemoVideo.tsx",
+      "file_type": "code",
+      "source_file": "components/remotion/DemoVideo.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_remotion_demovideo",
+      "community": 20,
+      "norm_label": "demovideo.tsx"
+    },
+    {
+      "label": "DemoVideo()",
+      "file_type": "code",
+      "source_file": "components/remotion/DemoVideo.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_remotion_demovideo_demovideo",
+      "community": 20,
+      "norm_label": "demovideo()"
+    },
+    {
+      "label": "text-reveal-animation.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/text-reveal-animation.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_ui_text_reveal_animation",
+      "community": 30,
+      "norm_label": "text-reveal-animation.tsx"
+    },
+    {
+      "label": "TextReveal()",
+      "file_type": "code",
+      "source_file": "components/ui/text-reveal-animation.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "components_ui_text_reveal_animation_textreveal",
+      "community": 30,
+      "norm_label": "textreveal()"
+    },
+    {
+      "label": "typewriter.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/typewriter.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_ui_typewriter",
+      "community": 24,
+      "norm_label": "typewriter.tsx"
+    },
+    {
+      "label": "TypewriterProps",
+      "file_type": "code",
+      "source_file": "components/ui/typewriter.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "components_ui_typewriter_typewriterprops",
+      "community": 24,
+      "norm_label": "typewriterprops"
+    },
+    {
+      "label": "Typewriter()",
+      "file_type": "code",
+      "source_file": "components/ui/typewriter.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "components_ui_typewriter_typewriter",
+      "community": 24,
+      "norm_label": "typewriter()"
+    },
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "eslint_config",
+      "community": 25,
+      "norm_label": "eslint.config.mjs"
+    },
+    {
+      "label": "__filename",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "eslint_config_filename",
+      "community": 25,
+      "norm_label": "__filename"
+    },
+    {
+      "label": "__dirname",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "eslint_config_dirname",
+      "community": 25,
+      "norm_label": "__dirname"
+    },
+    {
+      "label": "use-mobile.ts",
+      "file_type": "code",
+      "source_file": "hooks/use-mobile.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hooks_use_mobile",
+      "community": 32,
+      "norm_label": "use-mobile.ts"
+    },
+    {
+      "label": "useIsMobile()",
+      "file_type": "code",
+      "source_file": "hooks/use-mobile.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "hooks_use_mobile_useismobile",
+      "community": 32,
+      "norm_label": "useismobile()"
+    },
+    {
+      "label": "use-scroll-direction.ts",
+      "file_type": "code",
+      "source_file": "hooks/use-scroll-direction.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hooks_use_scroll_direction",
+      "community": 33,
+      "norm_label": "use-scroll-direction.ts"
+    },
+    {
+      "label": "useScrollDirection()",
+      "file_type": "code",
+      "source_file": "hooks/use-scroll-direction.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "hooks_use_scroll_direction_usescrolldirection",
+      "community": 33,
+      "norm_label": "usescrolldirection()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "lib/utils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_utils",
+      "community": 34,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "lib/utils.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "lib_utils_cn",
+      "community": 34,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "next_env_d",
+      "community": 38,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "next_config",
+      "community": 35,
+      "norm_label": "next.config.ts"
+    },
+    {
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "next_config_nextconfig",
+      "community": 35,
+      "norm_label": "nextconfig"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 7,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 7,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 7,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 7,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 7,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 7,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 7,
+      "norm_label": "build"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_scripts_start",
+      "community": 7,
+      "norm_label": "start"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_scripts_lint",
+      "community": 7,
+      "norm_label": "lint"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_scripts_clean",
+      "community": 7,
+      "norm_label": "clean"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_dependencies",
+      "community": 4,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@gsap/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_dependencies_gsap_react",
+      "community": 4,
+      "norm_label": "@gsap/react"
+    },
+    {
+      "label": "@hookform/resolvers",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_dependencies_hookform_resolvers",
+      "community": 4,
+      "norm_label": "@hookform/resolvers"
+    },
+    {
+      "label": "@remotion/cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_dependencies_remotion_cli",
+      "community": 4,
+      "norm_label": "@remotion/cli"
+    },
+    {
+      "label": "@remotion/player",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_dependencies_remotion_player",
+      "community": 4,
+      "norm_label": "@remotion/player"
+    },
+    {
+      "label": "autoprefixer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_dependencies_autoprefixer",
+      "community": 4,
+      "norm_label": "autoprefixer"
+    },
+    {
+      "label": "class-variance-authority",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "package_dependencies_class_variance_authority",
+      "community": 4,
+      "norm_label": "class-variance-authority"
+    },
+    {
+      "label": "clsx",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_dependencies_clsx",
+      "community": 4,
+      "norm_label": "clsx"
+    },
+    {
+      "label": "gsap",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "package_dependencies_gsap",
+      "community": 4,
+      "norm_label": "gsap"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "package_dependencies_lucide_react",
+      "community": 4,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "package_dependencies_next",
+      "community": 4,
+      "norm_label": "next"
+    },
+    {
+      "label": "nodemailer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "package_dependencies_nodemailer",
+      "community": 4,
+      "norm_label": "nodemailer"
+    },
+    {
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "package_dependencies_postcss",
+      "community": 4,
+      "norm_label": "postcss"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "package_dependencies_react",
+      "community": 4,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "package_dependencies_react_dom",
+      "community": 4,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "remotion",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "package_dependencies_remotion",
+      "community": 4,
+      "norm_label": "remotion"
+    },
+    {
+      "label": "tailwind-merge",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "package_dependencies_tailwind_merge",
+      "community": 4,
+      "norm_label": "tailwind-merge"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 7,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "package_devdependencies_tailwindcss_postcss",
+      "community": 7,
+      "norm_label": "@tailwindcss/postcss"
+    },
+    {
+      "label": "@tailwindcss/typography",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "package_devdependencies_tailwindcss_typography",
+      "community": 7,
+      "norm_label": "@tailwindcss/typography"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_node",
+      "community": 7,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "@types/nodemailer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_nodemailer",
+      "community": 7,
+      "norm_label": "@types/nodemailer"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_react",
+      "community": 7,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_react_dom",
+      "community": 7,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "package_devdependencies_eslint",
+      "community": 7,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint-config-next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "package_devdependencies_eslint_config_next",
+      "community": 7,
+      "norm_label": "eslint-config-next"
+    },
+    {
+      "label": "firebase-tools",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "package_devdependencies_firebase_tools",
+      "community": 7,
+      "norm_label": "firebase-tools"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "package_devdependencies_tailwindcss",
+      "community": 7,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "tw-animate-css",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "package_devdependencies_tw_animate_css",
+      "community": 7,
+      "norm_label": "tw-animate-css"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "package_devdependencies_typescript",
+      "community": 7,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "postcss_config",
+      "community": 36,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "postcss_config_config",
+      "community": 36,
+      "norm_label": "config"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tsconfig",
+      "community": 1,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions",
+      "community": 1,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_target",
+      "community": 1,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_lib",
+      "community": 1,
+      "norm_label": "lib"
+    },
+    {
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_allowjs",
+      "community": 1,
+      "norm_label": "allowjs"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_skiplibcheck",
+      "community": 1,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_strict",
+      "community": 1,
+      "norm_label": "strict"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_noemit",
+      "community": 1,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "esModuleInterop",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_esmoduleinterop",
+      "community": 1,
+      "norm_label": "esmoduleinterop"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_module",
+      "community": 1,
+      "norm_label": "module"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_moduleresolution",
+      "community": 1,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "resolveJsonModule",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_resolvejsonmodule",
+      "community": 1,
+      "norm_label": "resolvejsonmodule"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_isolatedmodules",
+      "community": 1,
+      "norm_label": "isolatedmodules"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_jsx",
+      "community": 1,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "incremental",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_incremental",
+      "community": 1,
+      "norm_label": "incremental"
+    },
+    {
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_plugins",
+      "community": 1,
+      "norm_label": "plugins"
+    },
+    {
+      "label": "baseUrl",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_baseurl",
+      "community": 1,
+      "norm_label": "baseurl"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_paths",
+      "community": 1,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tsconfig_paths",
+      "community": 1,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tsconfig_include",
+      "community": 1,
+      "norm_label": "include"
+    },
+    {
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "tsconfig_exclude",
+      "community": 1,
+      "norm_label": "exclude"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill",
+      "community": 10,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Design Thinking",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_design_thinking",
+      "community": 10,
+      "norm_label": "design thinking"
+    },
+    {
+      "label": "Frontend Aesthetics Guidelines",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_frontend_aesthetics_guidelines",
+      "community": 10,
+      "norm_label": "frontend aesthetics guidelines"
+    },
+    {
+      "label": "Project-Specific Design System (Leoquent & Addiquat)",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "community": 10,
+      "norm_label": "project-specific design system (leoquent & addiquat)"
+    },
+    {
+      "label": "Brand Identity",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_brand_identity",
+      "community": 10,
+      "norm_label": "brand identity"
+    },
+    {
+      "label": "Established Color Palette",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_established_color_palette",
+      "community": 10,
+      "norm_label": "established color palette"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_typography",
+      "community": 10,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Motion & Animation",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_motion_animation",
+      "community": 10,
+      "norm_label": "motion & animation"
+    },
+    {
+      "label": "Component Patterns",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_component_patterns",
+      "community": 10,
+      "norm_label": "component patterns"
+    },
+    {
+      "label": "Tech Stack",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "agent_skills_frontend_design_skill_tech_stack",
+      "community": 10,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "INIT.md",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init",
+      "community": 5,
+      "norm_label": "init.md"
+    },
+    {
+      "label": "Output Directory",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_output_directory",
+      "community": 5,
+      "norm_label": "output directory"
+    },
+    {
+      "label": "Analysis Steps",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_analysis_steps",
+      "community": 5,
+      "norm_label": "analysis steps"
+    },
+    {
+      "label": "1. Detect Framework & Component Library",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_1_detect_framework_component_library",
+      "community": 5,
+      "norm_label": "1. detect framework & component library"
+    },
+    {
+      "label": "2. Write `components.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_2_write_components_md",
+      "community": 5,
+      "norm_label": "2. write `components.md`"
+    },
+    {
+      "label": "3. Write `layouts.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_3_write_layouts_md",
+      "community": 5,
+      "norm_label": "3. write `layouts.md`"
+    },
+    {
+      "label": "4. Write `routes.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_4_write_routes_md",
+      "community": 5,
+      "norm_label": "4. write `routes.md`"
+    },
+    {
+      "label": "5. Write `theme.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_5_write_theme_md",
+      "community": 5,
+      "norm_label": "5. write `theme.md`"
+    },
+    {
+      "label": "6. Write `pages.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_6_write_pages_md",
+      "community": 5,
+      "norm_label": "6. write `pages.md`"
+    },
+    {
+      "label": "7. Write `extractable-components.md`",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_7_write_extractable_components_md",
+      "community": 5,
+      "norm_label": "7. write `extractable-components.md`"
+    },
+    {
+      "label": "Layout Components (appear on most pages)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_layout_components_appear_on_most_pages",
+      "community": 5,
+      "norm_label": "layout components (appear on most pages)"
+    },
+    {
+      "label": "Basic Components (used across pages)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_basic_components_used_across_pages",
+      "community": 5,
+      "norm_label": "basic components (used across pages)"
+    },
+    {
+      "label": "Format Guidelines",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_format_guidelines",
+      "community": 5,
+      "norm_label": "format guidelines"
+    },
+    {
+      "label": "Key Principle: INCLUDE ACTUAL CODE",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_init_key_principle_include_actual_code",
+      "community": 5,
+      "norm_label": "key principle: include actual code"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill",
+      "community": 15,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Core scenarios (what this skill handles)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill_core_scenarios_what_this_skill_handles",
+      "community": 15,
+      "norm_label": "core scenarios (what this skill handles)"
+    },
+    {
+      "label": "Init: Repo Analysis",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill_init_repo_analysis",
+      "community": 15,
+      "norm_label": "init: repo analysis"
+    },
+    {
+      "label": "Mandatory Init Files",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill_mandatory_init_files",
+      "community": 15,
+      "norm_label": "mandatory init files"
+    },
+    {
+      "label": "Superdesign CLI (MUST run before any command)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill_superdesign_cli_must_run_before_any_command",
+      "community": 15,
+      "norm_label": "superdesign cli (must run before any command)"
+    },
+    {
+      "label": "How it works",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_skill_how_it_works",
+      "community": 15,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "SUPERDESIGN.md",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign",
+      "community": 2,
+      "norm_label": "superdesign.md"
+    },
+    {
+      "label": "SOP: EXISTING UI",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_sop_existing_ui",
+      "community": 2,
+      "norm_label": "sop: existing ui"
+    },
+    {
+      "label": "SOP: BRAND NEW PROJECT",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_sop_brand_new_project",
+      "community": 2,
+      "norm_label": "sop: brand new project"
+    },
+    {
+      "label": "DESIGN SYSTEM SETUP",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_design_system_setup",
+      "community": 2,
+      "norm_label": "design system setup"
+    },
+    {
+      "label": "PROMPT RULE",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L233",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_prompt_rule",
+      "community": 2,
+      "norm_label": "prompt rule"
+    },
+    {
+      "label": "EXECUTE FLOW RULE",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L259",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_execute_flow_rule",
+      "community": 2,
+      "norm_label": "execute flow rule"
+    },
+    {
+      "label": "TOOL USE RULE",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L265",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_tool_use_rule",
+      "community": 2,
+      "norm_label": "tool use rule"
+    },
+    {
+      "label": "ALWAYS-ON RULES",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L310",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_always_on_rules",
+      "community": 2,
+      "norm_label": "always-on rules"
+    },
+    {
+      "label": "CONTEXT FILE LINE RANGES",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_context_file_line_ranges",
+      "community": 2,
+      "norm_label": "context file line ranges"
+    },
+    {
+      "label": "PETITE-VUE TEMPLATE SPEC (for component extraction)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L366",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "community": 2,
+      "norm_label": "petite-vue template spec (for component extraction)"
+    },
+    {
+      "label": "What to HARDCODE in the template (NOT props):",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L370",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_what_to_hardcode_in_the_template_not_props",
+      "community": 2,
+      "norm_label": "what to hardcode in the template (not props):"
+    },
+    {
+      "label": "What to EXTRACT as props (ONLY these categories):",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L378",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_what_to_extract_as_props_only_these_categories",
+      "community": 2,
+      "norm_label": "what to extract as props (only these categories):"
+    },
+    {
+      "label": "Allowed Petite-Vue syntax:",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L384",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_allowed_petite_vue_syntax",
+      "community": 2,
+      "norm_label": "allowed petite-vue syntax:"
+    },
+    {
+      "label": "NOT allowed:",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L391",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_not_allowed",
+      "community": 2,
+      "norm_label": "not allowed:"
+    },
+    {
+      "label": "Every prop MUST have a non-empty `defaultValue`.",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L397",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_every_prop_must_have_a_non_empty_defaultvalue",
+      "community": 2,
+      "norm_label": "every prop must have a non-empty `defaultvalue`."
+    },
+    {
+      "label": "Output requirements:",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L399",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_output_requirements",
+      "community": 2,
+      "norm_label": "output requirements:"
+    },
+    {
+      "label": "Example conversion:",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L405",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_example_conversion",
+      "community": 2,
+      "norm_label": "example conversion:"
+    },
+    {
+      "label": "COMMAND CONTRACT (DO NOT HALLUCINATE FLAGS)",
+      "file_type": "document",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L440",
+      "_origin": "ast",
+      "id": "agent_skills_superdesign_superdesign_command_contract_do_not_hallucinate_flags",
+      "community": 2,
+      "norm_label": "command contract (do not hallucinate flags)"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_superdesign_skill",
+      "community": 21,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Core scenarios (what this skill handles)",
+      "file_type": "document",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "claude_skills_superdesign_skill_core_scenarios_what_this_skill_handles",
+      "community": 21,
+      "norm_label": "core scenarios (what this skill handles)"
+    },
+    {
+      "label": "How it works",
+      "file_type": "document",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "claude_skills_superdesign_skill_how_it_works",
+      "community": 21,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Superdesign CLI",
+      "file_type": "document",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "claude_skills_superdesign_skill_superdesign_cli",
+      "community": 21,
+      "norm_label": "superdesign cli"
+    },
+    {
+      "label": "AI_HANDOVER_PROTOCOL.md",
+      "file_type": "document",
+      "source_file": "AI_HANDOVER_PROTOCOL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_handover_protocol",
+      "community": 27,
+      "norm_label": "ai_handover_protocol.md"
+    },
+    {
+      "label": "AI Handover Protocol: Neuausrichtung Content & Design-Start",
+      "file_type": "document",
+      "source_file": "AI_HANDOVER_PROTOCOL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_handover_protocol_ai_handover_protocol_neuausrichtung_content_design_start",
+      "community": 27,
+      "norm_label": "ai handover protocol: neuausrichtung content & design-start"
+    },
+    {
+      "label": "AI_Style_And_Vibe_Prompt.md",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt",
+      "community": 16,
+      "norm_label": "ai_style_and_vibe_prompt.md"
+    },
+    {
+      "label": "THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "community": 16,
+      "norm_label": "the l&a (leoquent & addiquat) brand, vibe & messages"
+    },
+    {
+      "label": "1. DER VIBE & STYLE (Visual Identity)",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt_1_der_vibe_style_visual_identity",
+      "community": 16,
+      "norm_label": "1. der vibe & style (visual identity)"
+    },
+    {
+      "label": "2. DAS NARRATIV & UNSERE BOTSCHAFTEN (Verbal Identity)",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt_2_das_narrativ_unsere_botschaften_verbal_identity",
+      "community": 16,
+      "norm_label": "2. das narrativ & unsere botschaften (verbal identity)"
+    },
+    {
+      "label": "3. DIE AUFTEILUNG (Das Fundament)",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt_3_die_aufteilung_das_fundament",
+      "community": 16,
+      "norm_label": "3. die aufteilung (das fundament)"
+    },
+    {
+      "label": "4. MEN\u00dcF\u00dcHRUNG & SEITENSTRUKTUR (Grobe Idee)",
+      "file_type": "document",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "ai_style_and_vibe_prompt_4_men\u00fcf\u00fchrung_seitenstruktur_grobe_idee",
+      "community": 16,
+      "norm_label": "4. menufuhrung & seitenstruktur (grobe idee)"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 14,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_claude_md",
+      "community": 14,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Commands",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_commands",
+      "community": 14,
+      "norm_label": "commands"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "claude_architecture",
+      "community": 14,
+      "norm_label": "architecture"
+    },
+    {
+      "label": "Design System",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "claude_design_system",
+      "community": 14,
+      "norm_label": "design system"
+    },
+    {
+      "label": "Content Sources of Truth",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "claude_content_sources_of_truth",
+      "community": 14,
+      "norm_label": "content sources of truth"
+    },
+    {
+      "label": "Lead Funnel (Overlay)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "claude_lead_funnel_overlay",
+      "community": 14,
+      "norm_label": "lead funnel (overlay)"
+    },
+    {
+      "label": "Git & Branch Strategy",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "claude_git_branch_strategy",
+      "community": 14,
+      "norm_label": "git & branch strategy"
+    },
+    {
+      "label": "EMAIL_HANDOVER.md",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_handover",
+      "community": 12,
+      "norm_label": "email_handover.md"
+    },
+    {
+      "label": "E-Mail-Anbindung Handover & Dokumentation",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_handover_e_mail_anbindung_handover_dokumentation",
+      "community": 12,
+      "norm_label": "e-mail-anbindung handover & dokumentation"
+    },
+    {
+      "label": "Option A: Web3Forms (Empfohlen, einfachste L\u00f6sung)",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "email_handover_option_a_web3forms_empfohlen_einfachste_l\u00f6sung",
+      "community": 12,
+      "norm_label": "option a: web3forms (empfohlen, einfachste losung)"
+    },
+    {
+      "label": "To-dos f\u00fcr den Kollegen / die KI:",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki",
+      "community": 12,
+      "norm_label": "to-dos fur den kollegen / die ki:"
+    },
+    {
+      "label": "Option B: Eigener PHP-Mailer (Keine Drittanbieter, eigene Domain)",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "email_handover_option_b_eigener_php_mailer_keine_drittanbieter_eigene_domain",
+      "community": 12,
+      "norm_label": "option b: eigener php-mailer (keine drittanbieter, eigene domain)"
+    },
+    {
+      "label": "To-dos f\u00fcr den Kollegen / die KI:",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_28",
+      "community": 12,
+      "norm_label": "to-dos fur den kollegen / die ki:"
+    },
+    {
+      "label": "1. PHP-Datei erstellen",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "email_handover_1_php_datei_erstellen",
+      "community": 12,
+      "norm_label": "1. php-datei erstellen"
+    },
+    {
+      "label": "2. Formular in `components/QuizModal.tsx` anpassen",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "email_handover_2_formular_in_components_quizmodal_tsx_anpassen",
+      "community": 12,
+      "norm_label": "2. formular in `components/quizmodal.tsx` anpassen"
+    },
+    {
+      "label": "Option C: Eigener Node.js-Server (z. B. VPS, Vercel)",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "email_handover_option_c_eigener_node_js_server_z_b_vps_vercel",
+      "community": 12,
+      "norm_label": "option c: eigener node.js-server (z. b. vps, vercel)"
+    },
+    {
+      "label": "To-dos f\u00fcr den Kollegen / die KI:",
+      "file_type": "document",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_138",
+      "community": 12,
+      "norm_label": "to-dos fur den kollegen / die ki:"
+    },
+    {
+      "label": "HANDOVER_CODING_AI.md",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "handover_coding_ai",
+      "community": 8,
+      "norm_label": "handover_coding_ai.md"
+    },
+    {
+      "label": "Handover f\u00fcr die Coding-KI \u2014 leoquent & addequat",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "community": 8,
+      "norm_label": "handover fur die coding-ki \u2014 leoquent & addequat"
+    },
+    {
+      "label": "1. Auftrag an dich (Coding-KI)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "handover_coding_ai_1_auftrag_an_dich_coding_ki",
+      "community": 8,
+      "norm_label": "1. auftrag an dich (coding-ki)"
+    },
+    {
+      "label": "2. Was ge\u00e4ndert/neu ist (Dateikarte)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "handover_coding_ai_2_was_ge\u00e4ndert_neu_ist_dateikarte",
+      "community": 8,
+      "norm_label": "2. was geandert/neu ist (dateikarte)"
+    },
+    {
+      "label": "3. Env-Variablen (in `.env.local` und in der Deploy-Umgebung setzen)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "handover_coding_ai_3_env_variablen_in_env_local_und_in_der_deploy_umgebung_setzen",
+      "community": 8,
+      "norm_label": "3. env-variablen (in `.env.local` und in der deploy-umgebung setzen)"
+    },
+    {
+      "label": "4. \u26a0\ufe0f BUILD-BLOCKER: `output: 'export'` + `/api/analyse`",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "handover_coding_ai_4_build_blocker_output_export_api_analyse",
+      "community": 8,
+      "norm_label": "4. \u26a0\ufe0f build-blocker: `output: 'export'` + `/api/analyse`"
+    },
+    {
+      "label": "Weg A \u2014 Statisch bleiben (GitHub Pages) \u2014 EMPFOHLEN, schnellster Launch",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "handover_coding_ai_weg_a_statisch_bleiben_github_pages_empfohlen_schnellster_launch",
+      "community": 8,
+      "norm_label": "weg a \u2014 statisch bleiben (github pages) \u2014 empfohlen, schnellster launch"
+    },
+    {
+      "label": "Weg B \u2014 Eigener Mailserver (Strato) \u2192 braucht Node-Host (z. B. Vercel)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "handover_coding_ai_weg_b_eigener_mailserver_strato_braucht_node_host_z_b_vercel",
+      "community": 8,
+      "norm_label": "weg b \u2014 eigener mailserver (strato) \u2192 braucht node-host (z. b. vercel)"
+    },
+    {
+      "label": "5. Strato-Mailserver konfigurieren (nur Weg B)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "handover_coding_ai_5_strato_mailserver_konfigurieren_nur_weg_b",
+      "community": 8,
+      "norm_label": "5. strato-mailserver konfigurieren (nur weg b)"
+    },
+    {
+      "label": "6. Bekannte Umgebungs-Constraints",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "handover_coding_ai_6_bekannte_umgebungs_constraints",
+      "community": 8,
+      "norm_label": "6. bekannte umgebungs-constraints"
+    },
+    {
+      "label": "7. Restliche manuelle To-dos (Menschen, nicht Code)",
+      "file_type": "document",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "handover_coding_ai_7_restliche_manuelle_to_dos_menschen_nicht_code",
+      "community": 8,
+      "norm_label": "7. restliche manuelle to-dos (menschen, nicht code)"
+    },
+    {
+      "label": "LAUNCH_CHECKLIST.md",
+      "file_type": "document",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "launch_checklist",
+      "community": 19,
+      "norm_label": "launch_checklist.md"
+    },
+    {
+      "label": "Launch-Checkliste \u2014 leoquent & addequat",
+      "file_type": "document",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "launch_checklist_launch_checkliste_leoquent_addequat",
+      "community": 19,
+      "norm_label": "launch-checkliste \u2014 leoquent & addequat"
+    },
+    {
+      "label": "\u2705 Erledigt (im Code umgesetzt)",
+      "file_type": "document",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "launch_checklist_erledigt_im_code_umgesetzt",
+      "community": 19,
+      "norm_label": "\u2705 erledigt (im code umgesetzt)"
+    },
+    {
+      "label": "\u26a0\ufe0f Von dir noch manuell zu erledigen (vor dem Launch)",
+      "file_type": "document",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "launch_checklist_von_dir_noch_manuell_zu_erledigen_vor_dem_launch",
+      "community": 19,
+      "norm_label": "\u26a0\ufe0f von dir noch manuell zu erledigen (vor dem launch)"
+    },
+    {
+      "label": "\u2139\ufe0f Hinweise",
+      "file_type": "document",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "launch_checklist_i_hinweise",
+      "community": 19,
+      "norm_label": "i\ufe0f hinweise"
+    },
+    {
+      "label": "LinkedIn_Launch_Playbook.md",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook",
+      "community": 3,
+      "norm_label": "linkedin_launch_playbook.md"
+    },
+    {
+      "label": "LinkedIn Launch-Playbook \u2014 Leoquent & Addiquat",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "community": 3,
+      "norm_label": "linkedin launch-playbook \u2014 leoquent & addiquat"
+    },
+    {
+      "label": "1. Kanal-Strategie: Profil vs. Unternehmensseite",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_1_kanal_strategie_profil_vs_unternehmensseite",
+      "community": 3,
+      "norm_label": "1. kanal-strategie: profil vs. unternehmensseite"
+    },
+    {
+      "label": "2. Positionierung & Kern-Narrativ",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_2_positionierung_kern_narrativ",
+      "community": 3,
+      "norm_label": "2. positionierung & kern-narrativ"
+    },
+    {
+      "label": "3. Format-Playbook (was 2026 funktioniert)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_3_format_playbook_was_2026_funktioniert",
+      "community": 3,
+      "norm_label": "3. format-playbook (was 2026 funktioniert)"
+    },
+    {
+      "label": "4. DER LAUNCH-POST",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_4_der_launch_post",
+      "community": 3,
+      "norm_label": "4. der launch-post"
+    },
+    {
+      "label": "Variante A \u2014 Leo, pers\u00f6nlich, Gr\u00fcnder-Story *(empfohlen)*",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_variante_a_leo_pers\u00f6nlich_gr\u00fcnder_story_empfohlen",
+      "community": 3,
+      "norm_label": "variante a \u2014 leo, personlich, grunder-story *(empfohlen)*"
+    },
+    {
+      "label": "Variante B \u2014 POV / Manifest (k\u00fcrzer, kantiger)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_variante_b_pov_manifest_k\u00fcrzer_kantiger",
+      "community": 3,
+      "norm_label": "variante b \u2014 pov / manifest (kurzer, kantiger)"
+    },
+    {
+      "label": "Variante C \u2014 Unternehmensseite (offizieller Absender)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_variante_c_unternehmensseite_offizieller_absender",
+      "community": 3,
+      "norm_label": "variante c \u2014 unternehmensseite (offizieller absender)"
+    },
+    {
+      "label": "5. Die ersten Folge-Posts (Woche 1\u20132)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "community": 3,
+      "norm_label": "5. die ersten folge-posts (woche 1\u20132)"
+    },
+    {
+      "label": "Post 2 \u2014 Dokument-Carousel *(Saves-Maschine, h\u00f6chste Reichweite)*",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_post_2_dokument_carousel_saves_maschine_h\u00f6chste_reichweite",
+      "community": 3,
+      "norm_label": "post 2 \u2014 dokument-carousel *(saves-maschine, hochste reichweite)*"
+    },
+    {
+      "label": "Post 3 \u2014 Pain-Story *(Vertrauen + Diskussion)*",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_post_3_pain_story_vertrauen_diskussion",
+      "community": 3,
+      "norm_label": "post 3 \u2014 pain-story *(vertrauen + diskussion)*"
+    },
+    {
+      "label": "Post 4 \u2014 Anti-Agentur-Haltung *(Differenzierung, verkauft)*",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L189",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_post_4_anti_agentur_haltung_differenzierung_verkauft",
+      "community": 3,
+      "norm_label": "post 4 \u2014 anti-agentur-haltung *(differenzierung, verkauft)*"
+    },
+    {
+      "label": "Post 5 \u2014 Behind-the-Scenes / Gr\u00fcnder-Duo *(Nahbarkeit, Seiten-Follower)*",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_post_5_behind_the_scenes_gr\u00fcnder_duo_nahbarkeit_seiten_follower",
+      "community": 3,
+      "norm_label": "post 5 \u2014 behind-the-scenes / grunder-duo *(nahbarkeit, seiten-follower)*"
+    },
+    {
+      "label": "6. Reichweite \u00dcBER das eigene Netzwerk hinaus",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L201",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_6_reichweite_\u00fcber_das_eigene_netzwerk_hinaus",
+      "community": 3,
+      "norm_label": "6. reichweite uber das eigene netzwerk hinaus"
+    },
+    {
+      "label": "7. Lead-Mechanik (damit Reichweite \u2192 Kunden wird)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L214",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_7_lead_mechanik_damit_reichweite_kunden_wird",
+      "community": 3,
+      "norm_label": "7. lead-mechanik (damit reichweite \u2192 kunden wird)"
+    },
+    {
+      "label": "8. Wochen-Rhythmus (4 Wochen auf einen Blick)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_8_wochen_rhythmus_4_wochen_auf_einen_blick",
+      "community": 3,
+      "norm_label": "8. wochen-rhythmus (4 wochen auf einen blick)"
+    },
+    {
+      "label": "Quellen (Recherche-Basis)",
+      "file_type": "document",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L236",
+      "_origin": "ast",
+      "id": "linkedin_launch_playbook_quellen_recherche_basis",
+      "community": 3,
+      "norm_label": "quellen (recherche-basis)"
+    },
+    {
+      "label": "New_Website_Copy.md",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "new_website_copy",
+      "community": 0,
+      "norm_label": "new_website_copy.md"
+    },
+    {
+      "label": "Leoquent & Addiquat \u2013 Website Copy V2 (Neuausrichtung)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "community": 0,
+      "norm_label": "leoquent & addiquat \u2013 website copy v2 (neuausrichtung)"
+    },
+    {
+      "label": "1. HERO SECTION (Der Einstieg)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "new_website_copy_1_hero_section_der_einstieg",
+      "community": 0,
+      "norm_label": "1. hero section (der einstieg)"
+    },
+    {
+      "label": "TECH-TICKER (Das Laufband)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "new_website_copy_tech_ticker_das_laufband",
+      "community": 0,
+      "norm_label": "tech-ticker (das laufband)"
+    },
+    {
+      "label": "2. THE ENEMY (Das Problem / Der Status Quo)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "new_website_copy_2_the_enemy_das_problem_der_status_quo",
+      "community": 0,
+      "norm_label": "2. the enemy (das problem / der status quo)"
+    },
+    {
+      "label": "3. SOLUTIONS (Was wir anbieten)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "new_website_copy_3_solutions_was_wir_anbieten",
+      "community": 0,
+      "norm_label": "3. solutions (was wir anbieten)"
+    },
+    {
+      "label": "(01) KI-STRATEGIE",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "new_website_copy_01_ki_strategie",
+      "community": 0,
+      "norm_label": "(01) ki-strategie"
+    },
+    {
+      "label": "(02) AUTONOME AGENTEN",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "new_website_copy_02_autonome_agenten",
+      "community": 0,
+      "norm_label": "(02) autonome agenten"
+    },
+    {
+      "label": "(03) CUSTOM DEVELOPMENT",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "new_website_copy_03_custom_development",
+      "community": 0,
+      "norm_label": "(03) custom development"
+    },
+    {
+      "label": "(04) SYSTEM-INTEGRATION",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "new_website_copy_04_system_integration",
+      "community": 0,
+      "norm_label": "(04) system-integration"
+    },
+    {
+      "label": "4. THE PROCESS (Unser Weg zur L\u00f6sung)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "community": 0,
+      "norm_label": "4. the process (unser weg zur losung)"
+    },
+    {
+      "label": "1. Analyse",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "new_website_copy_1_analyse",
+      "community": 0,
+      "norm_label": "1. analyse"
+    },
+    {
+      "label": "2. Architektur",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "new_website_copy_2_architektur",
+      "community": 0,
+      "norm_label": "2. architektur"
+    },
+    {
+      "label": "3. Entwicklung",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "new_website_copy_3_entwicklung",
+      "community": 0,
+      "norm_label": "3. entwicklung"
+    },
+    {
+      "label": "4. Betrieb",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "new_website_copy_4_betrieb",
+      "community": 0,
+      "norm_label": "4. betrieb"
+    },
+    {
+      "label": "5. BRANCHEN & USE CASES (Was m\u00f6glich ist)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "community": 0,
+      "norm_label": "5. branchen & use cases (was moglich ist)"
+    },
+    {
+      "label": "\ud83c\udfe2 Immobilien (Real Estate)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "new_website_copy_immobilien_real_estate",
+      "community": 0,
+      "norm_label": "\ud83c\udfe2 immobilien (real estate)"
+    },
+    {
+      "label": "\u2695\ufe0f Gesundheitswesen (Healthcare)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "new_website_copy_gesundheitswesen_healthcare",
+      "community": 0,
+      "norm_label": "\u2695\ufe0f gesundheitswesen (healthcare)"
+    },
+    {
+      "label": "\ud83c\udf93 Bildung (Education)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "new_website_copy_bildung_education",
+      "community": 0,
+      "norm_label": "\ud83c\udf93 bildung (education)"
+    },
+    {
+      "label": "\ud83d\udd28 Handwerk & Konstruktion",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "new_website_copy_handwerk_konstruktion",
+      "community": 0,
+      "norm_label": "\ud83d\udd28 handwerk & konstruktion"
+    },
+    {
+      "label": "\ud83d\udce6 Handel & E-Commerce",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "new_website_copy_handel_e_commerce",
+      "community": 0,
+      "norm_label": "\ud83d\udce6 handel & e-commerce"
+    },
+    {
+      "label": "\ud83d\ude9a Logistik & Supply Chain",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "new_website_copy_logistik_supply_chain",
+      "community": 0,
+      "norm_label": "\ud83d\ude9a logistik & supply chain"
+    },
+    {
+      "label": "\ud83c\udf3e Landwirtschaft (Agriculture)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "new_website_copy_landwirtschaft_agriculture",
+      "community": 0,
+      "norm_label": "\ud83c\udf3e landwirtschaft (agriculture)"
+    },
+    {
+      "label": "\ud83d\udcf1 Social Media & Marketing",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "new_website_copy_social_media_marketing",
+      "community": 0,
+      "norm_label": "\ud83d\udcf1 social media & marketing"
+    },
+    {
+      "label": "6. WHY US (Die Addiquat-Maxime)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "community": 0,
+      "norm_label": "6. why us (die addiquat-maxime)"
+    },
+    {
+      "label": "4 Unverhandelbare Prinzipien:",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "new_website_copy_4_unverhandelbare_prinzipien",
+      "community": 0,
+      "norm_label": "4 unverhandelbare prinzipien:"
+    },
+    {
+      "label": "6.1 ABOUT US (Die L&A Symbiose)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "new_website_copy_6_1_about_us_die_l_a_symbiose",
+      "community": 0,
+      "norm_label": "6.1 about us (die l&a symbiose)"
+    },
+    {
+      "label": "Leonid \u2013 The Architect of Intent",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "new_website_copy_leonid_the_architect_of_intent",
+      "community": 0,
+      "norm_label": "leonid \u2013 the architect of intent"
+    },
+    {
+      "label": "Admir \u2013 The Guardian of Execution",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "new_website_copy_admir_the_guardian_of_execution",
+      "community": 0,
+      "norm_label": "admir \u2013 the guardian of execution"
+    },
+    {
+      "label": "7. FINAL CTA (Der Abschluss)",
+      "file_type": "document",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "new_website_copy_7_final_cta_der_abschluss",
+      "community": 0,
+      "norm_label": "7. final cta (der abschluss)"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 26,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Run and deploy your AI Studio app",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "readme_run_and_deploy_your_ai_studio_app",
+      "community": 26,
+      "norm_label": "run and deploy your ai studio app"
+    },
+    {
+      "label": "Deployment & E-Mail-Anbindung",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_deployment_e_mail_anbindung",
+      "community": 26,
+      "norm_label": "deployment & e-mail-anbindung"
+    },
+    {
+      "label": "Run Locally",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "readme_run_locally",
+      "community": 26,
+      "norm_label": "run locally"
+    },
+    {
+      "label": "TODO.md",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "todo",
+      "community": 37,
+      "norm_label": "todo.md"
+    },
+    {
+      "label": "Leoquent & Addiquat: Landingpage Restrukturierung (Cross-Agent Todo)",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "todo_leoquent_addiquat_landingpage_restrukturierung_cross_agent_todo",
+      "community": 37,
+      "norm_label": "leoquent & addiquat: landingpage restrukturierung (cross-agent todo)"
+    },
+    {
+      "label": "Website_Content_For_AI.md",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "website_content_for_ai",
+      "community": 9,
+      "norm_label": "website_content_for_ai.md"
+    },
+    {
+      "label": "Website-Inhalte & Struktur f\u00fcr KI-Generierung",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "community": 9,
+      "norm_label": "website-inhalte & struktur fur ki-generierung"
+    },
+    {
+      "label": "0. Globale Elemente",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "website_content_for_ai_0_globale_elemente",
+      "community": 9,
+      "norm_label": "0. globale elemente"
+    },
+    {
+      "label": "1. Hero Sektion (Startbereich)",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "website_content_for_ai_1_hero_sektion_startbereich",
+      "community": 9,
+      "norm_label": "1. hero sektion (startbereich)"
+    },
+    {
+      "label": "2. Status Quo Sektion",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "website_content_for_ai_2_status_quo_sektion",
+      "community": 9,
+      "norm_label": "2. status quo sektion"
+    },
+    {
+      "label": "3. Solutions Sektion (L\u00f6sungen)",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "website_content_for_ai_3_solutions_sektion_l\u00f6sungen",
+      "community": 9,
+      "norm_label": "3. solutions sektion (losungen)"
+    },
+    {
+      "label": "4. Prozess Sektion",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "website_content_for_ai_4_prozess_sektion",
+      "community": 9,
+      "norm_label": "4. prozess sektion"
+    },
+    {
+      "label": "5. Branchen / Zukunftssicherheit",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "website_content_for_ai_5_branchen_zukunftssicherheit",
+      "community": 9,
+      "norm_label": "5. branchen / zukunftssicherheit"
+    },
+    {
+      "label": "6. Warum Wir Sektion",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "website_content_for_ai_6_warum_wir_sektion",
+      "community": 9,
+      "norm_label": "6. warum wir sektion"
+    },
+    {
+      "label": "7. \u00dcber uns",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "website_content_for_ai_7_\u00fcber_uns",
+      "community": 9,
+      "norm_label": "7. uber uns"
+    },
+    {
+      "label": "8. Finaler Call-to-Action (CTA Sektion)",
+      "file_type": "document",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "website_content_for_ai_8_finaler_call_to_action_cta_sektion",
+      "community": 9,
+      "norm_label": "8. finaler call-to-action (cta sektion)"
+    },
+    {
+      "label": "HANDOVER.md",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handover_handover",
+      "community": 6,
+      "norm_label": "handover.md"
+    },
+    {
+      "label": "AI HANDOVER PROTOCOL (IMPORTANT)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handover_handover_ai_handover_protocol_important",
+      "community": 6,
+      "norm_label": "ai handover protocol (important)"
+    },
+    {
+      "label": "1. CORE DESIGN PRINCIPLES (MANDATORY)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "docs_handover_handover_1_core_design_principles_mandatory",
+      "community": 6,
+      "norm_label": "1. core design principles (mandatory)"
+    },
+    {
+      "label": "2. NEW SECTIONS TO IMPLEMENT",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "docs_handover_handover_2_new_sections_to_implement",
+      "community": 6,
+      "norm_label": "2. new sections to implement"
+    },
+    {
+      "label": "A. Scrolling Ticker (Post-Hero)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "docs_handover_handover_a_scrolling_ticker_post_hero",
+      "community": 6,
+      "norm_label": "a. scrolling ticker (post-hero)"
+    },
+    {
+      "label": "B. Core Capabilities (Reference: Image 1)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "docs_handover_handover_b_core_capabilities_reference_image_1",
+      "community": 6,
+      "norm_label": "b. core capabilities (reference: image 1)"
+    },
+    {
+      "label": "C. Custom Agent Network (Reference: Image 3)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "docs_handover_handover_c_custom_agent_network_reference_image_3",
+      "community": 6,
+      "norm_label": "c. custom agent network (reference: image 3)"
+    },
+    {
+      "label": "D. Process Steps (Reference: Image 2)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "docs_handover_handover_d_process_steps_reference_image_2",
+      "community": 6,
+      "norm_label": "d. process steps (reference: image 2)"
+    },
+    {
+      "label": "E. The Addiquat Advantage (Reference: Image 4)",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "docs_handover_handover_e_the_addiquat_advantage_reference_image_4",
+      "community": 6,
+      "norm_label": "e. the addiquat advantage (reference: image 4)"
+    },
+    {
+      "label": "3. CURRENT STATE & TASKS",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "docs_handover_handover_3_current_state_tasks",
+      "community": 6,
+      "norm_label": "3. current state & tasks"
+    },
+    {
+      "label": "Refined Tasks:",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "docs_handover_handover_refined_tasks",
+      "community": 6,
+      "norm_label": "refined tasks:"
+    },
+    {
+      "label": "Already Fixed:",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "docs_handover_handover_already_fixed",
+      "community": 6,
+      "norm_label": "already fixed:"
+    },
+    {
+      "label": "4. DESIGN ASSETS",
+      "file_type": "document",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "docs_handover_handover_4_design_assets",
+      "community": 6,
+      "norm_label": "4. design assets"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".eslintrc.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "eslintrc",
+      "target": "eslintrc_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_branch_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_dringlichkeit_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_groesse_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_interesse_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_datenschutz_page",
+      "target": "app_datenschutz_page_datenschutzpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_datenschutz_page",
+      "target": "app_datenschutz_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/demo-video/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_demo_video_page",
+      "target": "app_demo_video_page_demovideopage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/demo-video/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_demo_video_page",
+      "target": "components_remotion_demovideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/demo-video/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_demo_video_page",
+      "target": "components_remotion_demovideo_demovideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_impressum_page",
+      "target": "app_impressum_page_impressumpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_impressum_page",
+      "target": "app_impressum_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_inter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_playfair",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_syne",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_industriesdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_painpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_solutionsdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "components_quizmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_robots",
+      "target": "app_robots_robots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_sitemap",
+      "target": "app_sitemap_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "components_quizmodal",
+      "target": "components_quizmodal_quizanswers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "components_quizmodal",
+      "target": "components_quizmodal_quizmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "components_quizmodal",
+      "target": "components_quizmodal_quizmodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/QuizModal.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_quizmodal",
+      "target": "components_quizmodal_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/remotion/DemoVideo.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_remotion_demovideo",
+      "target": "components_remotion_demovideo_demovideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/text-reveal-animation.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_ui_text_reveal_animation",
+      "target": "components_ui_text_reveal_animation_textreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/typewriter.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "components_ui_typewriter",
+      "target": "components_ui_typewriter_typewriter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/typewriter.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_ui_typewriter",
+      "target": "components_ui_typewriter_typewriterprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "eslint_config",
+      "target": "eslint_config_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "eslint_config",
+      "target": "eslint_config_filename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-mobile.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "hooks_use_mobile",
+      "target": "hooks_use_mobile_useismobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-scroll-direction.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "hooks_use_scroll_direction",
+      "target": "hooks_use_scroll_direction_usescrolldirection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "lib_utils",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "next_config",
+      "target": "next_config_nextconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_autoprefixer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_class_variance_authority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_clsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_gsap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_gsap_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_hookform_resolvers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_nodemailer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_remotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_remotion_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_remotion_player",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tailwind_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_config_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_firebase_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tw_animate_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_nodemailer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "postcss_config",
+      "target": "postcss_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_exclude",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_allowjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_baseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_esmoduleinterop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_incremental",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_plugins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_resolvejsonmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions_paths",
+      "target": "tsconfig_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill",
+      "target": "agent_skills_frontend_design_skill_design_thinking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill",
+      "target": "agent_skills_frontend_design_skill_frontend_aesthetics_guidelines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill",
+      "target": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_brand_identity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_component_patterns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_established_color_palette",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_motion_animation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/frontend-design/SKILL.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "agent_skills_frontend_design_skill_project_specific_design_system_leoquent_addiquat",
+      "target": "agent_skills_frontend_design_skill_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init",
+      "target": "agent_skills_superdesign_init_analysis_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init",
+      "target": "agent_skills_superdesign_init_format_guidelines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init",
+      "target": "agent_skills_superdesign_init_key_principle_include_actual_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init",
+      "target": "agent_skills_superdesign_init_output_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_1_detect_framework_component_library",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_2_write_components_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_3_write_layouts_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_4_write_routes_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_5_write_theme_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_6_write_pages_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_analysis_steps",
+      "target": "agent_skills_superdesign_init_7_write_extractable_components_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_7_write_extractable_components_md",
+      "target": "agent_skills_superdesign_init_basic_components_used_across_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/INIT.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_init_7_write_extractable_components_md",
+      "target": "agent_skills_superdesign_init_layout_components_appear_on_most_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_skill",
+      "target": "agent_skills_superdesign_skill_core_scenarios_what_this_skill_handles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_skill",
+      "target": "agent_skills_superdesign_skill_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_skill",
+      "target": "agent_skills_superdesign_skill_init_repo_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_skill",
+      "target": "agent_skills_superdesign_skill_mandatory_init_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_skill",
+      "target": "agent_skills_superdesign_skill_superdesign_cli_must_run_before_any_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L310",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_always_on_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L440",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_command_contract_do_not_hallucinate_flags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_context_file_line_ranges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_design_system_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_execute_flow_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_prompt_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_sop_brand_new_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_sop_existing_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign",
+      "target": "agent_skills_superdesign_superdesign_tool_use_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L384",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_allowed_petite_vue_syntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L397",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_every_prop_must_have_a_non_empty_defaultvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L405",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_example_conversion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L391",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_not_allowed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L399",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_output_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L378",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_what_to_extract_as_props_only_these_categories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agent/skills/superdesign/SUPERDESIGN.md",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "agent_skills_superdesign_superdesign_petite_vue_template_spec_for_component_extraction",
+      "target": "agent_skills_superdesign_superdesign_what_to_hardcode_in_the_template_not_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "claude_skills_superdesign_skill",
+      "target": "claude_skills_superdesign_skill_core_scenarios_what_this_skill_handles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_skills_superdesign_skill",
+      "target": "claude_skills_superdesign_skill_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/superdesign/SKILL.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "claude_skills_superdesign_skill",
+      "target": "claude_skills_superdesign_skill_superdesign_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_HANDOVER_PROTOCOL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ai_handover_protocol",
+      "target": "ai_handover_protocol_ai_handover_protocol_neuausrichtung_content_design_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ai_style_and_vibe_prompt",
+      "target": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "target": "ai_style_and_vibe_prompt_1_der_vibe_style_visual_identity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "target": "ai_style_and_vibe_prompt_2_das_narrativ_unsere_botschaften_verbal_identity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "target": "ai_style_and_vibe_prompt_3_die_aufteilung_das_fundament",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_Style_And_Vibe_Prompt.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "ai_style_and_vibe_prompt_the_l_a_leoquent_addiquat_brand_vibe_messages",
+      "target": "ai_style_and_vibe_prompt_4_men\u00fcf\u00fchrung_seitenstruktur_grobe_idee",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_claude_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_content_sources_of_truth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_design_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_git_branch_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_lead_funnel_overlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "email_handover",
+      "target": "email_handover_e_mail_anbindung_handover_dokumentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "email_handover_e_mail_anbindung_handover_dokumentation",
+      "target": "email_handover_option_a_web3forms_empfohlen_einfachste_l\u00f6sung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "email_handover_e_mail_anbindung_handover_dokumentation",
+      "target": "email_handover_option_b_eigener_php_mailer_keine_drittanbieter_eigene_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "email_handover_e_mail_anbindung_handover_dokumentation",
+      "target": "email_handover_option_c_eigener_node_js_server_z_b_vps_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "email_handover_option_a_web3forms_empfohlen_einfachste_l\u00f6sung",
+      "target": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "email_handover_option_b_eigener_php_mailer_keine_drittanbieter_eigene_domain",
+      "target": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_28",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_28",
+      "target": "email_handover_1_php_datei_erstellen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_28",
+      "target": "email_handover_2_formular_in_components_quizmodal_tsx_anpassen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "EMAIL_HANDOVER.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "email_handover_option_c_eigener_node_js_server_z_b_vps_vercel",
+      "target": "email_handover_to_dos_f\u00fcr_den_kollegen_die_ki_138",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "handover_coding_ai",
+      "target": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_1_auftrag_an_dich_coding_ki",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_2_was_ge\u00e4ndert_neu_ist_dateikarte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_3_env_variablen_in_env_local_und_in_der_deploy_umgebung_setzen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_4_build_blocker_output_export_api_analyse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_5_strato_mailserver_konfigurieren_nur_weg_b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_6_bekannte_umgebungs_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "handover_coding_ai_handover_f\u00fcr_die_coding_ki_leoquent_addequat",
+      "target": "handover_coding_ai_7_restliche_manuelle_to_dos_menschen_nicht_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "handover_coding_ai_4_build_blocker_output_export_api_analyse",
+      "target": "handover_coding_ai_weg_a_statisch_bleiben_github_pages_empfohlen_schnellster_launch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HANDOVER_CODING_AI.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "handover_coding_ai_4_build_blocker_output_export_api_analyse",
+      "target": "handover_coding_ai_weg_b_eigener_mailserver_strato_braucht_node_host_z_b_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "launch_checklist",
+      "target": "launch_checklist_launch_checkliste_leoquent_addequat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "launch_checklist_launch_checkliste_leoquent_addequat",
+      "target": "launch_checklist_erledigt_im_code_umgesetzt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "launch_checklist_launch_checkliste_leoquent_addequat",
+      "target": "launch_checklist_i_hinweise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LAUNCH_CHECKLIST.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "launch_checklist_launch_checkliste_leoquent_addequat",
+      "target": "launch_checklist_von_dir_noch_manuell_zu_erledigen_vor_dem_launch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook",
+      "target": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_1_kanal_strategie_profil_vs_unternehmensseite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_2_positionierung_kern_narrativ",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_3_format_playbook_was_2026_funktioniert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_4_der_launch_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_6_reichweite_\u00fcber_das_eigene_netzwerk_hinaus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_7_lead_mechanik_damit_reichweite_kunden_wird",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_8_wochen_rhythmus_4_wochen_auf_einen_blick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_quellen_recherche_basis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_4_der_launch_post",
+      "target": "linkedin_launch_playbook_variante_a_leo_pers\u00f6nlich_gr\u00fcnder_story_empfohlen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_4_der_launch_post",
+      "target": "linkedin_launch_playbook_variante_b_pov_manifest_k\u00fcrzer_kantiger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_4_der_launch_post",
+      "target": "linkedin_launch_playbook_variante_c_unternehmensseite_offizieller_absender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "target": "linkedin_launch_playbook_post_2_dokument_carousel_saves_maschine_h\u00f6chste_reichweite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "target": "linkedin_launch_playbook_post_3_pain_story_vertrauen_diskussion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "target": "linkedin_launch_playbook_post_4_anti_agentur_haltung_differenzierung_verkauft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LinkedIn_Launch_Playbook.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
+      "target": "linkedin_launch_playbook_post_5_behind_the_scenes_gr\u00fcnder_duo_nahbarkeit_seiten_follower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "new_website_copy",
+      "target": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_1_hero_section_der_einstieg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_2_the_enemy_das_problem_der_status_quo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_3_solutions_was_wir_anbieten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_6_1_about_us_die_l_a_symbiose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_7_final_cta_der_abschluss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_tech_ticker_das_laufband",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "new_website_copy_3_solutions_was_wir_anbieten",
+      "target": "new_website_copy_01_ki_strategie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "new_website_copy_3_solutions_was_wir_anbieten",
+      "target": "new_website_copy_02_autonome_agenten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "new_website_copy_3_solutions_was_wir_anbieten",
+      "target": "new_website_copy_03_custom_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "new_website_copy_3_solutions_was_wir_anbieten",
+      "target": "new_website_copy_04_system_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "target": "new_website_copy_1_analyse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "target": "new_website_copy_2_architektur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "target": "new_website_copy_3_entwicklung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
+      "target": "new_website_copy_4_betrieb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_bildung_education",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_gesundheitswesen_healthcare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_handel_e_commerce",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_handwerk_konstruktion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_immobilien_real_estate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_landwirtschaft_agriculture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_logistik_supply_chain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
+      "target": "new_website_copy_social_media_marketing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "target": "new_website_copy_4_unverhandelbare_prinzipien",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "new_website_copy_6_1_about_us_die_l_a_symbiose",
+      "target": "new_website_copy_admir_the_guardian_of_execution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "New_Website_Copy.md",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "new_website_copy_6_1_about_us_die_l_a_symbiose",
+      "target": "new_website_copy_leonid_the_architect_of_intent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_run_and_deploy_your_ai_studio_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "readme_run_and_deploy_your_ai_studio_app",
+      "target": "readme_deployment_e_mail_anbindung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "readme_run_and_deploy_your_ai_studio_app",
+      "target": "readme_run_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "todo",
+      "target": "todo_leoquent_addiquat_landingpage_restrukturierung_cross_agent_todo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "website_content_for_ai",
+      "target": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_0_globale_elemente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_1_hero_sektion_startbereich",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_2_status_quo_sektion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_3_solutions_sektion_l\u00f6sungen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_4_prozess_sektion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_5_branchen_zukunftssicherheit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_6_warum_wir_sektion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_7_\u00fcber_uns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Website_Content_For_AI.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "website_content_for_ai_website_inhalte_struktur_f\u00fcr_ki_generierung",
+      "target": "website_content_for_ai_8_finaler_call_to_action_cta_sektion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_handover_handover",
+      "target": "docs_handover_handover_ai_handover_protocol_important",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_handover_handover_ai_handover_protocol_important",
+      "target": "docs_handover_handover_1_core_design_principles_mandatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_handover_handover_ai_handover_protocol_important",
+      "target": "docs_handover_handover_2_new_sections_to_implement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "docs_handover_handover_ai_handover_protocol_important",
+      "target": "docs_handover_handover_3_current_state_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "docs_handover_handover_ai_handover_protocol_important",
+      "target": "docs_handover_handover_4_design_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "docs_handover_handover_2_new_sections_to_implement",
+      "target": "docs_handover_handover_a_scrolling_ticker_post_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "docs_handover_handover_2_new_sections_to_implement",
+      "target": "docs_handover_handover_b_core_capabilities_reference_image_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_handover_handover_2_new_sections_to_implement",
+      "target": "docs_handover_handover_c_custom_agent_network_reference_image_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "docs_handover_handover_2_new_sections_to_implement",
+      "target": "docs_handover_handover_d_process_steps_reference_image_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_handover_handover_2_new_sections_to_implement",
+      "target": "docs_handover_handover_e_the_addiquat_advantage_reference_image_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "docs_handover_handover_3_current_state_tasks",
+      "target": "docs_handover_handover_already_fixed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/handover/HANDOVER.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "docs_handover_handover_3_current_state_tasks",
+      "target": "docs_handover_handover_refined_tasks",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a8749106e517f54f4759ba1a5361e534d9f61496"
+}

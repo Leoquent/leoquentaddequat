@@ -121,6 +121,7 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
         phone: "",
         website: "",
     });
+    const [submitState, setSubmitState] = useState<"idle" | "sending" | "success" | "error">("idle");
 
     // Reset when modal opens
     useEffect(() => {
@@ -132,6 +133,7 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
                 teamSize: "", timeline: "", maturity: "",
                 name: "", email: "", phone: "", website: "",
             });
+            setSubmitState("idle");
         }
     }, [isOpen]);
 
@@ -211,10 +213,47 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
         setAnswers((prev) => ({ ...prev, [field]: value }));
     };
 
-    const handleSubmit = () => {
-        // Currently no-op as per plan. Future: CRM / Calendly integration.
-        console.log("Quiz submitted:", answers);
-        onClose();
+    const handleSubmit = async () => {
+        setSubmitState("sending");
+        setIsAnimating(true);
+
+        const goal = answers.goal === "__other__" ? answers.goalOther : answers.goal;
+        const painpoint = answers.painpoint === "__other__" ? answers.painpointOther : answers.painpoint;
+
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
+                body: JSON.stringify({
+                    access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+                    subject: `Neue Potenzialanalyse-Anfrage – ${answers.name || "Website-Lead"}`,
+                    from_name: "leoquent & addequat Website",
+                    replyto: answers.email,
+                    Name: answers.name,
+                    "E-Mail": answers.email,
+                    Telefon: answers.phone,
+                    Website: answers.website || "—",
+                    Ziel: goal || "—",
+                    Flaschenhals: painpoint || "—",
+                    "Teamgröße": answers.teamSize || "—",
+                    Zeitrahmen: answers.timeline || "—",
+                    "KI-Reife": answers.maturity || "—",
+                    botcheck: "",
+                }),
+            });
+            const json = await res.json();
+            if (res.ok && json.success) {
+                setSubmitState("success");
+            } else {
+                console.error("Web3Forms error", json);
+                setSubmitState("error");
+            }
+        } catch (err) {
+            console.error("Failed to submit lead", err);
+            setSubmitState("error");
+        } finally {
+            setIsAnimating(false);
+        }
     };
 
     // ─── PROGRESS ────────────────────────────────────────────
@@ -222,6 +261,34 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
     const progress = ((currentStep + 1) / STEPS.length) * 100;
 
     if (!isOpen) return null;
+
+    // ─── SUCCESS SCREEN ──────────────────────────────────────
+    if (submitState === "success") {
+        return (
+            <div className="fixed inset-0 z-[9998] flex items-center justify-center" role="dialog" aria-modal="true" aria-label="Anfrage gesendet">
+                <div className="absolute inset-0 bg-vanta/90 backdrop-blur-md quiz-backdrop-enter" onClick={onClose} />
+                <div className="relative z-10 w-full max-w-lg mx-4 sm:mx-6 quiz-modal-enter bg-[#0a0a0a] border border-gridline">
+                    <button onClick={onClose} className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center text-white/50 hover:text-lime transition-colors" aria-label="Schließen">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="square" strokeWidth={2} d="M6 6l12 12M6 18L18 6" /></svg>
+                    </button>
+                    <div className="h-1 bg-lime w-full" />
+                    <div className="px-6 py-10 sm:px-10 sm:py-14 text-center">
+                        <div className="font-mono text-[10px] uppercase tracking-widest text-lime/70 mb-4">Anfrage erhalten</div>
+                        <h2 className="text-2xl sm:text-3xl uppercase font-bold text-white mb-3 tracking-tight">Danke, wir melden uns.</h2>
+                        <p className="text-sm text-mute font-light mb-8 leading-relaxed">
+                            Ihre Angaben sind bei uns eingegangen. Der schnellste nächste Schritt: Buchen Sie direkt einen unverbindlichen 30-Minuten-Slot für Ihre Potenzialanalyse.
+                        </p>
+                        <a href="https://calendly.com/ofxffm/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-lime text-vanta font-mono font-bold uppercase px-8 py-4 border border-lime btn-glitch text-sm">
+                            Jetzt Termin buchen →
+                        </a>
+                        <button onClick={onClose} className="block mx-auto mt-6 font-mono text-xs uppercase tracking-widest text-mute hover:text-white transition-colors">
+                            Schließen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     const step = STEPS[currentStep];
 
@@ -498,17 +565,24 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
                             </svg>
                         </button>
                     ) : (
-                        <button
-                            onClick={handleSubmit}
-                            disabled={!isStepValid()}
-                            className={`font-mono text-sm uppercase tracking-wider px-6 py-3 border transition-all duration-300 ${
-                                isStepValid()
-                                    ? "bg-lime text-vanta border-lime hover:bg-white hover:text-vanta hover:border-white btn-glitch"
-                                    : "bg-transparent text-mute/40 border-gridline/50 cursor-not-allowed"
-                            }`}
-                        >
-                            Jetzt Termin vereinbaren
-                        </button>
+                        <div className="flex flex-col items-end gap-2">
+                            {submitState === "error" && (
+                                <span className="font-mono text-[10px] uppercase tracking-wider text-red-400">
+                                    Senden fehlgeschlagen. Bitte erneut versuchen.
+                                </span>
+                            )}
+                            <button
+                                onClick={handleSubmit}
+                                disabled={!isStepValid() || submitState === "sending"}
+                                className={`font-mono text-sm uppercase tracking-wider px-6 py-3 border transition-all duration-300 ${
+                                    isStepValid() && submitState !== "sending"
+                                        ? "bg-lime text-vanta border-lime hover:bg-white hover:text-vanta hover:border-white btn-glitch"
+                                        : "bg-transparent text-mute/40 border-gridline/50 cursor-not-allowed"
+                                }`}
+                            >
+                                {submitState === "sending" ? "Wird gesendet…" : "Jetzt Termin vereinbaren"}
+                            </button>
+                        </div>
                     )}
                 </div>
             </div>
