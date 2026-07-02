@@ -44,7 +44,7 @@ Stack: **Next.js 15 (App Router), React 19, Tailwind v4, GSAP**. Marketing-Site 
 NEXT_PUBLIC_WEB3FORMS_KEY="<access key von web3forms.com für info@lunda-ki.de>"
 NEXT_PUBLIC_SITE_URL="https://lunda-ki.de"
 # Nur wenn basePath genutzt wird (GitHub Project Pages):
-NEXT_PUBLIC_BASE_PATH="/leoquentaddiquat"
+NEXT_PUBLIC_BASE_PATH="/leoquentaddequat"
 ```
 Ohne `NEXT_PUBLIC_WEB3FORMS_KEY` baut die Seite zwar, aber das Formular sendet nicht.
 
@@ -56,9 +56,9 @@ Ohne `NEXT_PUBLIC_WEB3FORMS_KEY` baut die Seite zwar, aber das Formular sendet n
 
 ### Weg A — Statisch bleiben (GitHub Pages) — EMPFOHLEN, schnellster Launch
 1. **`app/api/analyse/route.ts` löschen** (Ordner `app/api/` mit entfernen). Leads laufen über Web3Forms an info@lunda-ki.de.
-2. `NEXT_PUBLIC_WEB3FORMS_KEY` + `NEXT_PUBLIC_SITE_URL` setzen; wenn GitHub Project Pages: `NEXT_PUBLIC_BASE_PATH=/leoquentaddiquat` (muss zum `basePath` in `next.config.ts` passen).
+2. `NEXT_PUBLIC_WEB3FORMS_KEY` + `NEXT_PUBLIC_SITE_URL` setzen; wenn GitHub Project Pages: `NEXT_PUBLIC_BASE_PATH=/leoquentaddequat` (muss zum `basePath` in `next.config.ts` passen).
 3. `next build` → sollte sauber durchlaufen.
-> Bei eigener Domain lunda-ki.de: `basePath`/`assetPrefix` `/leoquentaddiquat` in `next.config.ts` **entfernen** (sonst liegen alle Assets fälschlich unter `/leoquentaddiquat/`).
+> Bei eigener Domain lunda-ki.de: `basePath`/`assetPrefix` `/leoquentaddequat` in `next.config.ts` **entfernen** (sonst liegen alle Assets fälschlich unter `/leoquentaddequat/`).
 
 ### Weg B — Eigener Mailserver (Strato) → braucht Node-Host (z. B. Vercel)
 Wenn ihr **selbst über euren Strato-Server senden** wollt (gebrandeter Absender, Autoresponder):

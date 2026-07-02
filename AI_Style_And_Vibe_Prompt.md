@@ -11,7 +11,7 @@ Unsere visuelle Identität ist nicht die eines typischen, verstaubten B2B-IT-Sys
 - **Ästhetik:** Cinematic, Editorial, Premium. Wir mixen das klare Layout von High-End-Magazinen ("New York Times", "Vogue") mit modernstem Tech-Appeal.
 - **Farben:** Tiefes Schwarz, cleanes Weiß, tiefes Grau und als starker, disruptiver Kontrast: **Acid Lime Green (`#CDFF00` / `#9eff20`)**. Acid Lime signalisiert Systemaktivität, Intelligenz und Innovation.
 - **Typografie:** Klarer technologischer Anker (Sans-Serif wie *Inter* oder *Google Sans Plex*), kombiniert mit minimalistischen Monogrammen oder gelegentlichen Serifen-Schriften für den "Porsche-Heritage"-Touch (Seriosität, Vertrauen).
-- **Formensprache & Space:** Massiv viel **Whitespace**. Das Design muss atmen und signalisiert Exklusivität und Klarheit inmitten des digitalen Chaos. Als zentrales Design-Element dienen abgerundete Waben (Rounded Hexagons) – organisch, weich (cinematic), aber gleichzeitig von höchster struktureller Präzision.
+- **Formensprache & Space:** Massiv viel **Whitespace**. Das Design muss atmen und signalisiert Exklusivität und Klarheit inmitten des digitalen Chaos. Klare, geometrische Formen – organisch, weich (cinematic), aber gleichzeitig von höchster struktureller Präzision.
 - **Motion:** Elegante, nicht aufdringliche Animationen. Filmischer Aufbau von Sektionen, sanfte Übergänge, die den Flow des Nutzers nicht blockieren, sondern leiten.
 
 ## 2. DAS NARRATIV & UNSERE BOTSCHAFTEN (Verbal Identity)
@@ -49,7 +49,7 @@ Die Struktur der Website sollte den Weg des Kunden widerspiegeln: Vom Schmerz de
 **Möglicher Flow einer One-Pager / Landingpage-Struktur:**
 - **Hero:** Punchige Headline ("Liberation through AI"), Acid Lime Marker auf dem Kernthema.
 - **Problem/Manifesto:** Eine cineastische Sektion ("Der Sonntag am Schreibtisch"), textlastig, starke Kontraste.
-- **Solution (Agentic Network):** Visuelle Darstellung eurer autonomen Agenten (z.B. flüssige Animationen, leuchtende Waben), die wie digitale Mitarbeiter wirken.
+- **Solution (Agentic Network):** Visuelle Darstellung eurer autonomen Agenten (z.B. flüssige Animationen, vernetzte Nodes), die wie digitale Mitarbeiter wirken.
 - **The Team / Approach:** Die Leonid/Admir Aufteilung als "Bridging the Gap" zwischen Mensch und Technik.
 - **Call to Action:** Clean, mutig, simpel. "Wir programmieren die Software so, wie Ihr Kopf arbeitet – Lassen Sie uns sprechen."
 

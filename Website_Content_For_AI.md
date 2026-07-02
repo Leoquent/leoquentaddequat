@@ -1,6 +1,6 @@
 # Website-Inhalte & Struktur für KI-Generierung
 
-Diese Datei enthält den gesamten inhaltlichen Aufbau der Website "Leoquent & Addiquat - Die AGENTur für den Mittelstand", strukturiert nach den einzelnen Sektionen. Sie dient als perfekte Datengrundlage für eine KI, um eine neue Website mit komplett neuem Design, aber demselben Inhalt und einer klaren UX/UI-Struktur zu erstellen.
+Diese Datei enthält den gesamten inhaltlichen Aufbau der Website "leoquent & addequat - Die AGENTur für den Mittelstand", strukturiert nach den einzelnen Sektionen. Sie dient als perfekte Datengrundlage für eine KI, um eine neue Website mit komplett neuem Design, aber demselben Inhalt und einer klaren UX/UI-Struktur zu erstellen.
 
 ---
 
@@ -12,7 +12,7 @@ Diese Datei enthält den gesamten inhaltlichen Aufbau der Website "Leoquent & Ad
 - **Call-to-Action (Button):** Potenzial analysieren (Mobile: ANALYSIEREN)
 
 **Footer**
-- **Copyright Text:** © [JAHRESZAHL] LeoquentAddequat.
+- **Copyright Text:** © [JAHRESZAHL] leoquent & addequat.
 - **Rechtliche Links:** Impressum, Datenschutz
 
 ---

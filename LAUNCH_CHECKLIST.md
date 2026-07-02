@@ -28,8 +28,8 @@ Ein vollständiger `next build` konnte in der Offline-Umgebung nicht laufen (SWC
 2. **Impressum ausfüllen** (`app/impressum/page.tsx`): echte Namen, **ladungsfähige Anschrift** (bei Homeoffice i. d. R. die Privatadresse — ein Postfach reicht rechtlich nicht), optional Telefon. USt-IdNr sobald erteilt ergänzen. Zur Rechtsform siehe Antwort im Chat.
 3. **Datenschutz prüfen** (`app/datenschutz/page.tsx`): an die real genutzten Dienste anpassen (Hosting-Name eintragen) und idealerweise mit Generator (eRecht24) oder Anwalt gegenprüfen.
 4. **Hosting/Domain-Entscheidung** — betrifft `basePath` & Preview-URLs:
-   - **Eigene Domain lunda-ki.de** (empfohlen): in `next.config.ts` den `basePath`/`assetPrefix` `/leoquentaddiquat` **entfernen** und `NEXT_PUBLIC_SITE_URL=https://lunda-ki.de` setzen.
-   - **GitHub Project Pages** (username.github.io/leoquentaddiquat): `basePath` behalten, aber `NEXT_PUBLIC_SITE_URL` auf die github.io-URL setzen.
+    - **Eigene Domain lunda-ki.de** (empfohlen): in `next.config.ts` den `basePath`/`assetPrefix` `/leoquentaddequat` **entfernen** und `NEXT_PUBLIC_SITE_URL=https://lunda-ki.de` setzen.
+    - **GitHub Project Pages** (username.github.io/leoquentaddequat): `basePath` behalten, aber `NEXT_PUBLIC_SITE_URL` auf die github.io-URL setzen.
    - In beiden Fällen `NEXT_PUBLIC_SITE_URL` in der GitHub-Actions-Build-Env ergänzen (aktuell fehlt sie), damit OG-Bild, Canonical & Sitemap absolute, korrekte URLs bekommen.
 5. **Lokalen Build testen:** `./node_modules/.bin/next build` — bestätigt, dass Export inkl. robots/sitemap/Icons sauber durchläuft.
 

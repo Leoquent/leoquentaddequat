@@ -1,4 +1,4 @@
-# Leoquent & Addiquat: Landingpage Restrukturierung (Cross-Agent Todo)
+# leoquent & addequat: Landingpage Restrukturierung (Cross-Agent Todo)
 
 Diese Todo-Liste spiegelt den aktuellen `implementation_plan.md` wider und ist im Root-Verzeichnis abgelegt, damit auch externe Agenten (Cursor, GitHub Copilot etc.) darauf zugreifen können.
 
@@ -10,18 +10,18 @@ Diese Todo-Liste spiegelt den aktuellen `implementation_plan.md` wider und ist i
 
 - [x] **2. Neues Component: Das Manifest (`Manifesto.tsx`)**
   - [x] Erstelle neue Datei für das "Elevator Pitch"-Manifest ("Die AGENTur für den Mittelstand").
-  - [x] Füge einen SVG-Platzhalter ein: "Einzelnes, sanft pulsierendes Hexagon".
+  - [x] Füge einen SVG-Platzhalter ein: "Einzelnes, sanft pulsierendes Shape".
   - [x] Anker-ID `#manifest` hinzufügen.
 
 - [x] **3. Neues Component: Die autonomen Agenten (`AutonomousAgents.tsx`)**
   - [x] Erstelle neues Sticky-Stack Component ("Scrolling Archive").
   - [x] Skizziere 3 Beispiel-Agenten (Angebots-Agent, Dokumenten-Agent, Termin-Agent) als Scrolling-Cards.
-  - [x] Füge einen SVG-Platzhalter ein: "Ineinandergreifende, sich aufbauende Waben".
+  - [x] Füge einen SVG-Platzhalter ein: "Ineinandergreifende, sich aufbauende Shapes".
   - [x] Anker-ID `#agenten` hinzufügen.
 
 - [x] **4. Neues Component: Die Symbiose / Über uns (`SymbiosisTeam.tsx`)**
   - [x] Erstelle neues Team-Component für Leonid & Admir (Architect of Intent vs. Guardian of Execution).
-  - [x] Füge einen SVG-Platzhalter ein: "Zwei Hexagone, die sich in der Mitte treffen".
+  - [x] Füge einen SVG-Platzhalter ein: "Zwei Shapes, die sich in der Mitte treffen".
   - [x] Anker-ID `#symbiose` hinzufügen.
 
 - [x] **5. Page Struktur updaten (`page.tsx`)**

@@ -1,4 +1,4 @@
-# Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)
+# leoquent & addequat – Website Copy V2 (Neuausrichtung)
 
 Dieses Dokument dient als zentrale "Single Source of Truth" für die neue inhaltliche und strukturelle Ausrichtung der Website. Alle Ergebnisse unserer gemeinsamen Erarbeitung werden hier iterativ festgehalten.
 
@@ -125,7 +125,7 @@ Integration, dediziertes Hosting, ständige Wartung & Updates. Sie erhalten ein 
 
 ---
 
-## 6. WHY US (Die Addiquat-Maxime)
+## 6. WHY US (Die addequat-Maxime)
 **Status:** ✅ Finalisiert
 
 - **Tag:** [Warum wir]

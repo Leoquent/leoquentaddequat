@@ -1,10 +1,10 @@
-# LinkedIn Launch-Playbook — Leoquent & Addiquat
+# LinkedIn Launch-Playbook — leoquent & addequat
 
 **Ziel:** Launch der „AGENTur" sichtbar machen, als Experten positionieren, **Kunden aus dem Mittelstand gewinnen** — und über das eigene Netzwerk hinaus Reichweite aufbauen.
 **Stimme:** Autoritär, direkt, kein Agentur-Sprech (wie auf der Website: „Software soll arbeiten. Nicht Sie.").
 **Stand:** Recherche-Basis = LinkedIn-Algorithmus & B2B-Best-Practices 2026 (Quellen am Ende).
 
-> ⚠️ **Vor dem ersten Post festlegen:** Schreibweise der Marke. Website/Logo schreibt teils **„addequat"**, Titel/Repo **„Addiquat"**. Auf LinkedIn *eine* Variante konsequent nutzen — sonst findet dich niemand wieder. Dieses Dokument nutzt **Leoquent & Addiquat**.
+> ⚠️ **Vor dem ersten Post festlegen:** Schreibweise der Marke. Website/Logo schreibt teils **„addequat"**, Titel/Repo **„Addiquat"**. Auf LinkedIn *eine* Variante konsequent nutzen — sonst findet dich niemand wieder. Dieses Dokument nutzt **leoquent & addequat**.
 
 ---
 
@@ -17,7 +17,7 @@
 **Stattdessen — der Hybrid, der funktioniert:**
 
 1. **Unternehmensseite = Aushängeschild + Zuhause.** Sie ist Pflicht für Glaubwürdigkeit, den „Folgen"-Button, das saubere Link-Vorschaubild (Open Graph) und als offizieller Absender. Sie postet ihre *eigene* Version des Launches (nicht bloß Wiederholung).
-2. **Reichweite läuft NATIV über dein Profil (Leo).** Der Launch-Post kommt als eigenständiger Post aus deinem Profil — **kein Repost**. Darin taggst du die Unternehmensseite und schreibst eine klare Zeile: *„Wir bauen das als **Leoquent & Addiquat** — folgt der Seite hier 👉 [Tag]."*
+2. **Reichweite läuft NATIV über dein Profil (Leo).** Der Launch-Post kommt als eigenständiger Post aus deinem Profil — **kein Repost**. Darin taggst du die Unternehmensseite und schreibst eine klare Zeile: *„Wir bauen das als **leoquent & addequat** — folgt der Seite hier 👉 [Tag]."*
 3. **Admir postet seine eigene native Version.** Zwei Profile = doppelte Reichweite in zwei Netzwerken. Ihr kommentiert gegenseitig (siehe §6).
 4. **Seite-Follower gezielt aufbauen** (statt auf Reposts zu hoffen):
    - Unternehmensseite in eurem **Profil unter „Erfahrung"** eintragen → LinkedIn schlägt euren Kontakten automatisch vor, ihr zu folgen.
@@ -119,13 +119,13 @@ Soft CTA (eine Frage ODER „kommentiere X")
 > → Ich baue Strategie und Logik — damit die KI *dein Geschäft* versteht.
 > → Admir baut das Fundament — sicher, stabil, kompromisslos.
 >
-> **Heute geht Leoquent & Addiquat live.**
+> **Heute geht leoquent & addequat live.**
 >
 > Wenn du im Mittelstand Verantwortung trägst und das Gefühl kennst, dass deine Software *dich* arbeiten lässt statt für dich — das hier ist für dich.
 >
 > Wo blutest du gerade am meisten Zeit? Schreib's in die Kommentare. Ich antworte auf jeden.
 
-**1. Kommentar (direkt selbst posten):** „Wir zeigen dir in einer kostenlosen Potenzialanalyse ehrlich, wo du Zeit und Geld verlierst 👉 [Link]. Folgt auch **Leoquent & Addiquat** hier für die nächsten Schritte 👉 [Seiten-Tag]."
+**1. Kommentar (direkt selbst posten):** „Wir zeigen dir in einer kostenlosen Potenzialanalyse ehrlich, wo du Zeit und Geld verlierst 👉 [Link]. Folgt auch **leoquent & addequat** hier für die nächsten Schritte 👉 [Seiten-Tag]."
 **Hashtags:** #Mittelstand #KünstlicheIntelligenz #Automatisierung #KMU #Digitalisierung
 
 ---
@@ -139,7 +139,7 @@ Soft CTA (eine Frage ODER „kommentiere X")
 >
 > Deshalb gibt es uns jetzt.
 >
-> **Leoquent & Addiquat — keine Agentur, eine AGENTur.**
+> **leoquent & addequat — keine Agentur, eine AGENTur.**
 >
 > Wir konzipieren und programmieren autonome KI-Systeme, die sich *deiner* Geschäftslogik unterwerfen. Die Routine übernehmen. Fehlerfrei, rund um die Uhr, DSGVO-konform.
 >
@@ -162,7 +162,7 @@ Soft CTA (eine Frage ODER „kommentiere X")
 >
 > Der Mittelstand verdient keine weitere Software, die ihn ausbremst. Er verdient Systeme, die für ihn arbeiten.
 >
-> **Leoquent & Addiquat** ist die AGENTur für den Mittelstand: Wir bauen autonome KI-Mitarbeiter und maßgeschneiderte Software, die Routine übernehmen — sicher, DSGVO-konform, gehostet in Deutschland.
+> **leoquent & addequat** ist die AGENTur für den Mittelstand: Wir bauen autonome KI-Mitarbeiter und maßgeschneiderte Software, die Routine übernehmen — sicher, DSGVO-konform, gehostet in Deutschland.
 >
 > Gegründet von Leonid (Strategie & Logik) und Admir (Technik & Sicherheit). Zwei Spezialisten, ein Fundament.
 >
