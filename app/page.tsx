@@ -117,11 +117,22 @@ export default function Page() {
 
     // --- SCROLL NAV ---
     useEffect(() => {
-        const handleScroll = () => {
-            setNavScrolled(window.scrollY > 50);
-            setScrolledPastHero(window.scrollY > window.innerHeight - 100);
+        let ticking = false;
+        const update = () => {
+            ticking = false;
+            const y = window.scrollY;
+            setNavScrolled(y > 50);
+            setScrolledPastHero(y > window.innerHeight - 100);
         };
-        window.addEventListener("scroll", handleScroll);
+        const handleScroll = () => {
+            if (!ticking) {
+                ticking = true;
+                requestAnimationFrame(update);
+            }
+        };
+        // Passive + rAF-coalesced: at most one state sync per frame, never blocks scrolling
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        update(); // sync once on mount (e.g. reload mid-page)
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
@@ -163,20 +174,25 @@ export default function Page() {
         // Set transform-origin to center for each word so 3D rotation looks natural
         words.forEach(w => { w.style.transformOrigin = '50% 50%'; });
 
-        // --- HERO PARALLAX: subtle upward drift as user scrolls (All screens) ---
-        const heroSection = document.getElementById('hero-sticky-section');
-        if (heroSection) {
-            gsap.to(heroSection, {
-                y: -120,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: "#content-wrapper",
-                    start: "top bottom",
-                    end: "top -20%",
-                    scrub: true,
-                }
-            });
-        }
+        // --- HERO PARALLAX: subtle upward drift as user scrolls (DESKTOP ONLY).
+        //     Scrubbing a position:fixed, full-screen (100svh) element every scroll frame is a
+        //     major jank source on mobile, where the URL bar also resizes the viewport mid-scroll.
+        //     On mobile the hero simply stays put and content scrolls over it -- smooth by default. ---
+        mm.add("(min-width: 1024px)", () => {
+            const heroSection = document.getElementById('hero-sticky-section');
+            if (heroSection) {
+                gsap.to(heroSection, {
+                    y: -120,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#content-wrapper",
+                        start: "top bottom",
+                        end: "top -20%",
+                        scrub: true,
+                    }
+                });
+            }
+        });
 
         // --- DESKTOP ONLY ANIMATIONS (Animations play only if user has no reduced motion preference) ---
         mm.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
@@ -461,8 +477,8 @@ export default function Page() {
         <div className="bg-vanta text-bone font-sans antialiased relative w-full" style={{ overflowX: 'clip' }}>
             <div className="noise-bg"></div>
 
-            <nav id="main-nav" className={`fixed top-0 w-full z-50 border-b transition-all duration-300 flex justify-center ${navScrolled ? 'shadow-2xl' : ''} ${scrolledPastHero ? 'bg-vanta text-white border-gridline' : 'bg-white text-vanta border-black/5'} ${isMobileMenuOpen ? 'bg-vanta text-white border-gridline' : ''}`}>
-                <div className={`w-full max-w-[1440px] flex justify-between items-center px-6 md:px-8 lg:px-10 transition-all duration-300 ${navScrolled ? 'py-3' : 'py-6'}`}>
+            <nav id="main-nav" className={`fixed top-0 w-full z-50 border-b transition-colors duration-300 flex justify-center ${navScrolled ? 'shadow-2xl' : ''} ${scrolledPastHero ? 'bg-vanta text-white border-gridline' : 'bg-white text-vanta border-black/5'} ${isMobileMenuOpen ? 'bg-vanta text-white border-gridline' : ''}`}>
+                <div className={`w-full max-w-[1440px] flex justify-between items-center px-6 md:px-8 lg:px-10 py-4 lg:transition-[padding] lg:duration-300 ${navScrolled ? 'lg:py-3' : 'lg:py-6'}`}>
                     <a href="#" onClick={(e) => { scrollToTop(e); closeMobileMenu(); }} className="flex items-center gap-2 sm:gap-3 font-sans font-normal text-base sm:text-lg tracking-tighter shrink-0 hover:opacity-80 transition-opacity cursor-pointer z-50">
                         <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 transition-colors duration-300 ${(scrolledPastHero || isMobileMenuOpen) ? 'bg-lime' : 'bg-vanta'}`}
                             style={{
@@ -544,14 +560,13 @@ export default function Page() {
                     </div>
 
                     <h1 className="hero-headline text-vanta uppercase mb-6 md:mb-8" style={{ transformStyle: 'preserve-3d' }}>
-                        <span className="hero-word inline-block">KI-Systeme,</span>{" "}
+                        <span className="hero-word inline-block">KI-Systeme,</span>
+                        <br />
                         <span className="hero-word inline-block">die</span>{" "}
-                        <span className="hero-word inline-block">Ihre</span>{" "}
-                        <span className="hero-word inline-block">Arbeit</span>{" "}
-                        <span className="hero-word inline-block">machen.</span>
-                        <br className="hero-break hidden xl:block" />
-                        <span className="hero-word inline-block brutalist-marker">Nicht</span>{" "}
-                        <span className="hero-word inline-block brutalist-marker">umgekehrt.</span>
+                        <span className="hero-word inline-block">Ihre</span>
+                        <br />
+                        <span className="hero-word inline-block brutalist-marker">Arbeit</span>{" "}
+                        <span className="hero-word inline-block brutalist-marker">machen.</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-mute leading-relaxed mb-8 md:mb-10 hero-element">

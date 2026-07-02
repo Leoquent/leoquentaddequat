@@ -62,7 +62,7 @@ All website copy is in **German**. The brand voice is authoritative and direct �
 
 ## Lead Funnel (Overlay)
 
-The funnel lives in `components/AnalyseFunnel.tsx` and renders as a slide-up overlay on the homepage — no separate route. It is triggered by all "Potenzial analysieren" buttons and the bottom CTA email form.
+The funnel lives in `components/QuizModal.tsx` and renders as a slide-up overlay on the homepage — no separate route. It is triggered by all "Potenzial analysieren" buttons and the bottom CTA email form.
 
 The questionnaire collects: Branche → Größe → Schmerzen (pain points, max 3) → Interesse → Dringlichkeit → Kontaktdaten.
 
@@ -77,7 +77,7 @@ GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx   # Google App Password (needs 2FA enable
 GMAIL_NOTIFY_TO=your@gmail.com
 ```
 
-The Calendly URL is hardcoded at the top of `components/AnalyseFunnel.tsx` as `CALENDAR_URL`.
+The Calendly URL is hardcoded at the top of `components/QuizModal.tsx` as `CALENDAR_URL`.
 
 ## Git & Branch Strategy
 
