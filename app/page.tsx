@@ -300,11 +300,14 @@ export default function Page() {
                         }
                     });
                     
+                    // Ensure cards 02-04 are initially hidden and pushed down
                     prozessSteps.forEach((step, i) => {
-                        tlMobile.fromTo(step, 
-                            { y: i === 0 ? 0 : window.innerHeight, opacity: i === 0 ? 1 : 0 }, 
-                            { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
-                        );
+                        if (i > 0) gsap.set(step, { y: window.innerHeight, opacity: 0 });
+                    });
+                    
+                    prozessSteps.forEach((step, i) => {
+                        if (i === 0) return;
+                        tlMobile.to(step, { y: 0, opacity: 1, duration: 1, ease: "power2.out" });
                     });
                 }
             });
