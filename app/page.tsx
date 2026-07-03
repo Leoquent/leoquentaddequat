@@ -1202,14 +1202,14 @@ export default function Page() {
 
                         <div className="grid grid-cols-1 lg:grid-cols-12 bg-vanta text-white lg:min-h-[600px]">
                             {/* Intro Column */}
-                            <div className="lg:col-span-4 px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b lg:border-b-0 lg:border-r border-gridline flex flex-col gap-8 lg:gap-0 justify-between reveal">
+                            <div className="lg:col-span-4 px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b lg:border-b-0 lg:border-r border-gridline flex flex-col gap-6 lg:gap-0 justify-between reveal">
                                 <div>
                                 <p className="font-mono text-xs uppercase mb-4">
                                     <span className="brutalist-marker text-vanta">Über uns</span>
                                 </p>
                                 <h2 className="text-3xl lg:text-4xl uppercase font-bold mb-0 lg:mb-6 leading-tight">
                                     Strategische Kreativität <br className="lg:hidden" />
-                                    trifft <br className="hidden lg:inline" />
+                                    trifft <br />
                                     <span className="text-lime/90">unzerstörbares</span> <br className="lg:hidden" />
                                     Tech-Fundament.
                                 </h2>
@@ -1229,8 +1229,8 @@ export default function Page() {
                         >
                             {/* Background Image */}
                             <div 
-                                className={`absolute inset-0 bg-no-repeat bg-[length:130%] bg-[center_20%] lg:bg-[length:115%] lg:bg-[center_10%] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
-                                    openMember === 'leonid' 
+                                className={`absolute inset-0 bg-no-repeat bg-[length:122%] bg-[center_100%] lg:bg-[length:115%] lg:bg-[center_10%] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
+                                    openMember === 'leonid'
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105' 
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
@@ -1290,8 +1290,8 @@ export default function Page() {
                         >
                             {/* Background Image */}
                             <div 
-                                className={`absolute inset-0 bg-no-repeat bg-[length:130%] bg-[center_12%] lg:bg-cover lg:bg-top transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
-                                    openMember === 'admir' 
+                                className={`absolute inset-0 bg-no-repeat bg-[length:122%] bg-[center_100%] lg:bg-cover lg:bg-top transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
+                                    openMember === 'admir'
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105' 
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
