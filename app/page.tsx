@@ -1234,7 +1234,7 @@ export default function Page() {
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105'
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
-                                style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_cropped.webp')` }}
+                                style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_cropped_2.webp')` }}
                             />
                             
                             {/* Overlay Gradient */}
