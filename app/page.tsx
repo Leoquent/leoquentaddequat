@@ -871,11 +871,11 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible h-[calc(100dvh-64px)] md:h-auto">
+                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible h-[calc(100dvh-64px)] md:h-auto shadow-[0_20px_0_0_#050505] md:shadow-none">
                     <div className="w-full max-w-[1440px] h-full md:h-auto">
                         
                         {/* Mobile view container */}
-                        <div className="md:hidden px-6 py-6 border-x border-gridline bg-white flex flex-col justify-between h-full w-full gap-4">
+                        <div className="md:hidden px-6 pt-6 border-x border-gridline bg-white flex flex-col justify-between h-full w-full gap-3">
                             <div className="flex flex-col gap-2">
                                 <p className="font-mono text-xs uppercase tracking-widest">
                                     <span className="brutalist-marker text-vanta">Prozess</span>
@@ -906,7 +906,7 @@ export default function Page() {
                             </div>
 
                             {/* Mobile sequential cards under each other */}
-                            <div className="flex flex-col flex-1 w-[calc(100%+3rem)] -mx-6 mb-2">
+                            <div className="flex flex-col flex-1 w-[calc(100%+3rem)] -mx-6">
                                 {prozessData.map((s, i) => (
                                     <div
                                         key={s.n}
@@ -921,8 +921,8 @@ export default function Page() {
                                 ))}
                             </div>
 
-                            {/* Mobile CTA Button */}
-                            <div className="mt-auto">
+                            {/* Mobile CTA Button — 5th tile */}
+                            <div className="mt-auto w-[calc(100%+3rem)] -mx-6 border-t border-gridline px-6 py-5 bg-white">
                                 <button 
                                     onClick={openQuiz}
                                     className="w-full btn-glitch bg-lime text-vanta font-mono font-bold uppercase py-3 px-5 border border-lime text-xs text-center cursor-pointer"
