@@ -184,30 +184,10 @@
       "norm_label": "inter"
     },
     {
-      "label": "syne",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "app_layout_syne",
-      "community": 18,
-      "norm_label": "syne"
-    },
-    {
-      "label": "playfair",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "app_layout_playfair",
-      "community": 18,
-      "norm_label": "playfair"
-    },
-    {
       "label": "metadata",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L24",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "app_layout_metadata",
       "community": 18,
@@ -217,7 +197,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L59",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
       "community": 18,
@@ -264,10 +244,20 @@
       "norm_label": "industriesdata"
     },
     {
-      "label": "Page()",
+      "label": "prozessData",
       "file_type": "code",
       "source_file": "app/page.tsx",
       "source_location": "L102",
+      "_origin": "ast",
+      "id": "app_page_prozessdata",
+      "community": 11,
+      "norm_label": "prozessdata"
+    },
+    {
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "app_page_page",
       "community": 11,
@@ -2134,14 +2124,14 @@
       "norm_label": "linkedin_launch_playbook.md"
     },
     {
-      "label": "LinkedIn Launch-Playbook \u2014 Leoquent & Addiquat",
+      "label": "LinkedIn Launch-Playbook \u2014 leoquent & addequat",
       "file_type": "document",
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "id": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "community": 3,
-      "norm_label": "linkedin launch-playbook \u2014 leoquent & addiquat"
+      "norm_label": "linkedin launch-playbook \u2014 leoquent & addequat"
     },
     {
       "label": "1. Kanal-Strategie: Profil vs. Unternehmensseite",
@@ -2314,14 +2304,14 @@
       "norm_label": "new_website_copy.md"
     },
     {
-      "label": "Leoquent & Addiquat \u2013 Website Copy V2 (Neuausrichtung)",
+      "label": "leoquent & addequat \u2013 Website Copy V2 (Neuausrichtung)",
       "file_type": "document",
       "source_file": "New_Website_Copy.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "id": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "community": 0,
-      "norm_label": "leoquent & addiquat \u2013 website copy v2 (neuausrichtung)"
+      "norm_label": "leoquent & addequat \u2013 website copy v2 (neuausrichtung)"
     },
     {
       "label": "1. HERO SECTION (Der Einstieg)",
@@ -2460,7 +2450,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
-      "community": 0,
+      "community": 13,
       "norm_label": "5. branchen & use cases (was moglich ist)"
     },
     {
@@ -2470,7 +2460,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "new_website_copy_immobilien_real_estate",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83c\udfe2 immobilien (real estate)"
     },
     {
@@ -2480,7 +2470,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "new_website_copy_gesundheitswesen_healthcare",
-      "community": 0,
+      "community": 13,
       "norm_label": "\u2695\ufe0f gesundheitswesen (healthcare)"
     },
     {
@@ -2490,7 +2480,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "new_website_copy_bildung_education",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83c\udf93 bildung (education)"
     },
     {
@@ -2500,7 +2490,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "new_website_copy_handwerk_konstruktion",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83d\udd28 handwerk & konstruktion"
     },
     {
@@ -2510,7 +2500,7 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "new_website_copy_handel_e_commerce",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83d\udce6 handel & e-commerce"
     },
     {
@@ -2520,7 +2510,7 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "new_website_copy_logistik_supply_chain",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83d\ude9a logistik & supply chain"
     },
     {
@@ -2530,7 +2520,7 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "new_website_copy_landwirtschaft_agriculture",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83c\udf3e landwirtschaft (agriculture)"
     },
     {
@@ -2540,18 +2530,18 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "new_website_copy_social_media_marketing",
-      "community": 0,
+      "community": 13,
       "norm_label": "\ud83d\udcf1 social media & marketing"
     },
     {
-      "label": "6. WHY US (Die Addiquat-Maxime)",
+      "label": "6. WHY US (Die addequat-Maxime)",
       "file_type": "document",
       "source_file": "New_Website_Copy.md",
       "source_location": "L128",
       "_origin": "ast",
-      "id": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "id": "new_website_copy_6_why_us_die_addequat_maxime",
       "community": 0,
-      "norm_label": "6. why us (die addiquat-maxime)"
+      "norm_label": "6. why us (die addequat-maxime)"
     },
     {
       "label": "4 Unverhandelbare Prinzipien:",
@@ -2654,14 +2644,14 @@
       "norm_label": "todo.md"
     },
     {
-      "label": "Leoquent & Addiquat: Landingpage Restrukturierung (Cross-Agent Todo)",
+      "label": "leoquent & addequat: Landingpage Restrukturierung (Cross-Agent Todo)",
       "file_type": "document",
       "source_file": "TODO.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "todo_leoquent_addiquat_landingpage_restrukturierung_cross_agent_todo",
+      "id": "todo_leoquent_addequat_landingpage_restrukturierung_cross_agent_todo",
       "community": 37,
-      "norm_label": "leoquent & addiquat: landingpage restrukturierung (cross-agent todo)"
+      "norm_label": "leoquent & addequat: landingpage restrukturierung (cross-agent todo)"
     },
     {
       "label": "Website_Content_For_AI.md",
@@ -3051,7 +3041,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L24",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "app_layout",
       "target": "app_layout_metadata",
@@ -3061,30 +3051,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "app_layout",
-      "target": "app_layout_playfair",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L59",
+      "source_location": "L49",
       "weight": 1.0,
       "source": "app_layout",
       "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "app_layout",
-      "target": "app_layout_syne",
       "confidence_score": 1.0
     },
     {
@@ -3101,7 +3071,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/page.tsx",
-      "source_location": "L102",
+      "source_location": "L125",
       "weight": 1.0,
       "source": "app_page",
       "target": "app_page_page",
@@ -3115,6 +3085,16 @@
       "weight": 1.0,
       "source": "app_page",
       "target": "app_page_painpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_prozessdata",
       "confidence_score": 1.0
     },
     {
@@ -4735,7 +4715,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "linkedin_launch_playbook",
-      "target": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "target": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "confidence_score": 1.0
     },
     {
@@ -4744,7 +4724,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L11",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_1_kanal_strategie_profil_vs_unternehmensseite",
       "confidence_score": 1.0
     },
@@ -4754,7 +4734,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L32",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_2_positionierung_kern_narrativ",
       "confidence_score": 1.0
     },
@@ -4764,7 +4744,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L52",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_3_format_playbook_was_2026_funktioniert",
       "confidence_score": 1.0
     },
@@ -4774,7 +4754,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L94",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_4_der_launch_post",
       "confidence_score": 1.0
     },
@@ -4784,7 +4764,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L176",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_5_die_ersten_folge_posts_woche_1_2",
       "confidence_score": 1.0
     },
@@ -4794,7 +4774,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L201",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_6_reichweite_\u00fcber_das_eigene_netzwerk_hinaus",
       "confidence_score": 1.0
     },
@@ -4804,7 +4784,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L214",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_7_lead_mechanik_damit_reichweite_kunden_wird",
       "confidence_score": 1.0
     },
@@ -4814,7 +4794,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L223",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_8_wochen_rhythmus_4_wochen_auf_einen_blick",
       "confidence_score": 1.0
     },
@@ -4824,7 +4804,7 @@
       "source_file": "LinkedIn_Launch_Playbook.md",
       "source_location": "L236",
       "weight": 1.0,
-      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addiquat",
+      "source": "linkedin_launch_playbook_linkedin_launch_playbook_leoquent_addequat",
       "target": "linkedin_launch_playbook_quellen_recherche_basis",
       "confidence_score": 1.0
     },
@@ -4905,7 +4885,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "new_website_copy",
-      "target": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "confidence_score": 1.0
     },
     {
@@ -4914,7 +4894,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_1_hero_section_der_einstieg",
       "confidence_score": 1.0
     },
@@ -4924,7 +4904,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L25",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_2_the_enemy_das_problem_der_status_quo",
       "confidence_score": 1.0
     },
@@ -4934,7 +4914,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L44",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_3_solutions_was_wir_anbieten",
       "confidence_score": 1.0
     },
@@ -4944,7 +4924,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L69",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_4_the_process_unser_weg_zur_l\u00f6sung",
       "confidence_score": 1.0
     },
@@ -4954,7 +4934,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L87",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_5_branchen_use_cases_was_m\u00f6glich_ist",
       "confidence_score": 1.0
     },
@@ -4964,7 +4944,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L147",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_6_1_about_us_die_l_a_symbiose",
       "confidence_score": 1.0
     },
@@ -4974,8 +4954,8 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L128",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
-      "target": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
+      "target": "new_website_copy_6_why_us_die_addequat_maxime",
       "confidence_score": 1.0
     },
     {
@@ -4984,7 +4964,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L164",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_7_final_cta_der_abschluss",
       "confidence_score": 1.0
     },
@@ -4994,7 +4974,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L17",
       "weight": 1.0,
-      "source": "new_website_copy_leoquent_addiquat_website_copy_v2_neuausrichtung",
+      "source": "new_website_copy_leoquent_addequat_website_copy_v2_neuausrichtung",
       "target": "new_website_copy_tech_ticker_das_laufband",
       "confidence_score": 1.0
     },
@@ -5164,7 +5144,7 @@
       "source_file": "New_Website_Copy.md",
       "source_location": "L135",
       "weight": 1.0,
-      "source": "new_website_copy_6_why_us_die_addiquat_maxime",
+      "source": "new_website_copy_6_why_us_die_addequat_maxime",
       "target": "new_website_copy_4_unverhandelbare_prinzipien",
       "confidence_score": 1.0
     },
@@ -5225,7 +5205,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "todo",
-      "target": "todo_leoquent_addiquat_landingpage_restrukturierung_cross_agent_todo",
+      "target": "todo_leoquent_addequat_landingpage_restrukturierung_cross_agent_todo",
       "confidence_score": 1.0
     },
     {
@@ -5450,5 +5430,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a8749106e517f54f4759ba1a5361e534d9f61496"
+  "built_at_commit": "42780f8254e7a380e8a6c23fc26ae948d66e1af4"
 }

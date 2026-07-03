@@ -50,51 +50,123 @@ const solutionsData = [
 
 const industriesData = [
     {
-        id: "real-estate", name: "Immobilien",
-        intro: "Schnellere Abläufe in Verwaltung, Vermarktung und Betreuung. Wir bauen Systeme, die Unterlagen prüfen, Fristen überwachen und Anfragen vorqualifizieren – für ein Team, das agiert statt nur zu verwalten.",
+        id: "healthcare",
+        name: "Gesundheit",
+        subtitle: "Weniger Dokumentationsaufwand. Mehr Zeit für Patienten.",
+        intro: "Unsere lokalen KI-Systeme unterstützen Praxen bei Dokumentation, Informationsaufbereitung und administrativen Abläufen – direkt vor Ort, ohne offene Cloud-Anbindung. Die medizinische und fachliche Entscheidung bleibt jederzeit vollständig beim behandelnden Personal.",
         cases: [
-            { title: "Intelligentes Routing", desc: "Mieteranfragen werden semantisch analysiert, nach Dringlichkeit sortiert und sofort dem richtigen Betreuer zugewiesen." },
-            { title: "Dokumenten-Extraktion", desc: "Verträge, Exposés und Übergabeprotokolle werden automatisch ausgelesen. Kern-Metriken fließen direkt in Ihr System." }
+            {
+                title: "Dokumentationsassistenz",
+                desc: "Aus Gesprächsinhalten, Notizen und Vorinformationen entsteht automatisch ein strukturierter Entwurf für Befunde, Verlaugsdokumentation oder interne Vermerke."
+            },
+            {
+                title: "Informationsaufbereitung",
+                desc: "Formulare, Laborwerte, Vorbefunde und Freitextnotizen werden aus verschiedenen Quellen zusammengeführt und übersichtlich aufbereitet."
+            },
+            {
+                title: "Lokale Verarbeitung",
+                desc: "Die KI läuft on premise in Ihrer Umgebung. Sensible Daten bleiben innerhalb Ihrer Infrastruktur und werden nicht an öffentliche Onlinedienste übertragen."
+            },
+            {
+                title: "Mensch bleibt in Kontrolle",
+                desc: "Die KI unterstützt bei Vorbereitung und Strukturierung. Prüfung, Freigabe und fachliche Entscheidung liegen immer beim Praxisteam."
+            }
         ]
     },
     {
-        id: "healthcare", name: "Gesundheit",
-        intro: "Weniger Verwaltungsaufwand, mehr Zeit für Patienten. Unsere lokalen, vom Internet getrennten KI-Modelle unterstützen die Dokumentation, während die fachliche Entscheidung zu 100% bei Ihnen bleibt.",
+        id: "construction",
+        name: "Handwerk",
+        subtitle: "Weniger Bürokratie. Mehr Zeit für Baustelle und Kunden.",
+        intro: "Unsere KI-Systeme unterstützen Handwerksbetriebe bei Anfragen, Angebotsvorbereitung und Einsatzplanung. So wird Ihr Team im Büro entlastet, Abläufe werden klarer und wichtige Anfragen gehen im Tagesgeschäft nicht mehr unter.",
         cases: [
-            { title: "Automatisierte Dokumentation", desc: "Nach dem Gespräch wird automatisch ein strukturierter Befund- oder Dokumentationsentwurf erstellt." },
-            { title: "Daten-Konsolidierung", desc: "Formulare, Laborwerte und Freitextnotizen werden aus unterschiedlichen Quellen übersichtlich zusammengeführt." }
+            {
+                title: "Anfragen intelligent bündeln",
+                desc: "E-Mails, Anrufe, WhatsApp-Nachrichten und Kontaktformulare werden zentral erfasst, vorsortiert und in klare Aufgaben oder Angebotsentwürfe überführt."
+            },
+            {
+                title: "Angebote schneller vorbereiten",
+                desc: "Wiederkehrende Anfragen werden strukturiert aufbereitet, fehlende Angaben erkannt und Angebotsgrundlagen für Ihr Team vorbereitet."
+            },
+            {
+                title: "Einsatzplanung unterstützen",
+                desc: "Termine, Regionen, Verfügbarkeiten und Dringlichkeiten werden bei der Planung berücksichtigt. Bei Ausfällen oder Änderungen können Vorschläge für eine schnelle Neuplanung erstellt werden."
+            },
+            {
+                title: "Mensch bleibt in Kontrolle",
+                desc: "Die KI unterstützt bei Vorbereitung, Strukturierung und Priorisierung. Freigaben, Preise und operative Entscheidungen bleiben jederzeit bei Ihrem Betrieb."
+            }
         ]
     },
     {
-        id: "construction", name: "Handwerk",
-        intro: "Weniger Bürokratie, mehr Zeit für Baustelle und Kunden. Wir entwickeln Agenten, die das Chaos aus Anfragen ordnen, Angebote vorbereiten und Termine koordinieren.",
+        id: "ecommerce",
+        name: "Handel",
+        subtitle: "Bessere Bestände. Präzisere Planung. Weniger gebundenes Kapital.",
+        intro: "Unsere KI-Systeme unterstützen Handelsunternehmen bei Bedarfsplanung, Bestandssteuerung und Sortimentsauswertung. So werden Warenflüsse transparenter, Engpässe früher erkennbar und Überbestände gezielter reduziert.",
         cases: [
-            { title: "Omnichannel-Postfach", desc: "E-Mails, Anrufe und WhatsApp werden gebündelt. Der Agent erstellt daraus priorisierte Aufgaben oder Angebotsentwürfe." },
-            { title: "Dynamische Disposition", desc: "Einsätze werden algorithmisch nach Region, Material und Dringlichkeit geplant – und bei Ausfällen sofort neu berechnet." }
+            {
+                title: "Bedarfe frühzeitig erkennen",
+                desc: "Verkaufszahlen, Saisonalität und Bestandsverläufe werden zusammengeführt, damit drohende Engpässe und Nachbestellbedarfe frühzeitig sichtbar werden."
+            },
+            {
+                title: "Nachbestellungen vorbereiten",
+                desc: "Die KI erstellt datenbasierte Vorschläge für Nachbestellungen und unterstützt Ihr Team dabei, Mengen und Zeitpunkte besser zu planen."
+            },
+            {
+                title: "Sortimente gezielt auswerten",
+                desc: "Teams erkennen schneller, welche Produkte gut laufen, wo sich Bestände aufbauen und in welchen Bereichen nachgesteuert werden sollte."
+            },
+            {
+                title: "Mensch bleibt in Kontrolle",
+                desc: "Die KI unterstützt bei Analyse, Planung und Vorbereitung. Einkaufsentscheidungen, Sortimentsstrategie und operative Freigaben bleiben jederzeit bei Ihrem Team."
+            }
         ]
     },
     {
-        id: "ecommerce", name: "Handel",
-        intro: "Bessere Bestände, präzisere Planung, reduzierte Kapitalbindung. Wir implementieren Modelle, die Nachfrageschwankungen antizipieren und das Sortiment datengetrieben steuern.",
+        id: "logistics",
+        name: "Logistik",
+        subtitle: "Mehr Überblick im Tagesgeschäft. Schnellere Reaktion bei Störungen.",
+        intro: "Unsere KI-Systeme unterstützen Logistikteams bei Priorisierung, Umplanung und der Aufbereitung operativer Informationen. So gehen wichtige Meldungen nicht unter, Engpässe werden früher sichtbar und Entscheidungen können schneller vorbereitet werden.",
         cases: [
-            { title: "Predictive Purchasing", desc: "Das System erkennt frühzeitig drohende Engpässe und schlägt Nachbestellungen anhand von Saisonalität und Verkaufszahlen vor." },
-            { title: "Performance Analytics", desc: "Teams sehen in Echtzeit, welche Sortimente gut laufen, wo sich Bestände stauen und wo nachgesteuert werden muss." }
+            {
+                title: "Operative Informationen bündeln",
+                desc: "E-Mails, Statusmeldungen, Rückfragen und Störungen aus verschiedenen Quellen werden zusammengeführt, sortiert und als klare Aufgaben oder Hinweise aufbereitet."
+            },
+            {
+                title: "Umplanung unterstützen",
+                desc: "Bei Verzögerungen, Ausfällen oder neuen Prioritäten erstellt die KI strukturierte Vorschläge für die weitere Disposition durch Ihr Team."
+            },
+            {
+                title: "Ausnahmefälle früher erkennen",
+                desc: "Kritische Muster, Engpässe oder wiederkehrende Probleme werden sichtbar gemacht, damit schneller reagiert und gezielter nachgesteuert werden kann."
+            },
+            {
+                title: "Mensch bleibt in Kontrolle",
+                desc: "Die KI unterstützt bei Vorbereitung, Strukturierung und Priorisierung. Disposition und operative Entscheidungen bleiben jederzeit bei Ihrem Team."
+            }
         ]
     },
     {
-        id: "logistics", name: "Logistik",
-        intro: "Mehr Überblick im Tagesgeschäft, weniger Ausfälle. Wir vernetzen Ihre Flotte mit intelligenten Warnsystemen für Routenplanung und vorausschauende Wartung.",
+        id: "marketing",
+        name: "Social",
+        subtitle: "Mehr Output. Weniger manuelle Fleißarbeit.",
+        intro: "Unsere KI-Systeme unterstützen Teams im Social- und Performance-Marketing bei Content-Erstellung, Variantenaufbereitung und Kampagnenauswertung. So entstehen schneller neue Creatives, Ergebnisse werden klarer aufbereitet und Ihr Team kann fundierter nachsteuern.",
         cases: [
-            { title: "Predictive Maintenance", desc: "Fahrzeuge und Maschinen melden Anomalien, bevor ein teurer Stillstand entsteht. Wartungen werden proaktiv eingeplant." },
-            { title: "Echtzeit-Routing", desc: "Touren werden bei Verzögerungen, Staus oder neuen Prioritäten sofort und dynamisch neu berechnet." }
-        ]
-    },
-    {
-        id: "marketing", name: "Social",
-        intro: "Höherer ROAS, weniger manuelle Fleißarbeit. Wir bauen Agenten, die Werbemittel autonom erstellen, testen und Budgets in Echtzeit optimieren.",
-        cases: [
-            { title: "Content-Generierung", desc: "Agenten erstellen und skalieren Werbemittel autonom basierend auf Performance-Metriken." },
-            { title: "Kampagnen-Steuerung", desc: "Intelligente Bots schichten Budgets in Echtzeit auf die profitabelste Zielgruppe um." }
+            {
+                title: "Content schneller vorbereiten",
+                desc: "Aus Briefings, bestehenden Assets und Kampagnenzielen entstehen strukturierte Entwürfe für Anzeigen, Hooks, Captions und Creative-Varianten."
+            },
+            {
+                title: "Varianten systematisch aufbereiten",
+                desc: "Die KI unterstützt dabei, unterschiedliche Botschaften, formulierungen, Formate und Zielgruppenansprachen schneller vorzubereiten und sauber zu strukturieren."
+            },
+            {
+                title: "Performance übersichtlich auswerten",
+                desc: "Wichtige Kennzahlen, Gewinner-Creatives und auffällige Entwicklungen werden zusammengeführt, damit Teams schneller erkennen, wo nachgeschärft werden sollte."
+            },
+            {
+                title: "Mensch bleibt in Kontrolle",
+                desc: "Die KI unterstützt bei Vorbereitung, Strukturierung und Auswertung. Freigaben, Budgetentscheidungen und Kampagnensteuerung bleiben jederzeit bei Ihrem Team."
+            }
         ]
     }
 ];
@@ -1093,7 +1165,7 @@ export default function Page() {
                         </div>
 
                         {/* Detail View (Right Column) */}
-                        <div className="flex-1 flex items-center justify-center min-h-[450px] relative overflow-hidden">
+                        <div className="flex-1 flex items-center justify-center h-[450px] relative overflow-hidden">
                             {!activeIndustry ? (
                                 <div className="opacity-20 flex flex-col items-center">
                                     <div className="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center mb-6">
@@ -1104,25 +1176,32 @@ export default function Page() {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="w-full h-full flex flex-col justify-center p-8 lg:p-16 animate-fadeIn" key={activeIndustry.id}>
-                                    <div className="font-mono text-[10px] uppercase text-lime mb-4 tracking-widest">
-                                        {"//"} {activeIndustry.name} Profile
-                                    </div>
-                                    <h3 className="text-3xl lg:text-4xl uppercase font-black text-white mb-8 tracking-tight">
-                                        {activeIndustry.name}
-                                    </h3>
-                                    
-                                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-                                        <div className="flex-1 lg:max-w-[320px]">
-                                            <p className="text-white/80 text-sm leading-relaxed font-light border-l border-lime/50 pl-4">
+                                <div className="w-full h-full flex flex-col justify-center p-8 lg:p-12 animate-fadeIn" key={activeIndustry.id}>
+                                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start w-full">
+                                        {/* Linke Spalte: Überschriften & Intro */}
+                                        <div className="flex-1 flex flex-col justify-start">
+                                            <div className="font-mono text-[10px] uppercase text-lime mb-3 tracking-widest">
+                                                {"//"} {activeIndustry.name} Profile
+                                            </div>
+                                            <h3 className="text-3xl lg:text-4xl uppercase font-black text-white mb-2 tracking-tight">
+                                                {activeIndustry.name}
+                                            </h3>
+                                            {activeIndustry.subtitle && (
+                                                <p className="text-sm lg:text-base font-bold text-lime mb-6 uppercase tracking-tight leading-snug">
+                                                    {activeIndustry.subtitle}
+                                                </p>
+                                            )}
+                                            <p className="text-white/80 text-xs lg:text-sm leading-relaxed font-light border-l border-lime/50 pl-4 mt-2">
                                                 {activeIndustry.intro}
                                             </p>
                                         </div>
-                                        <div className="flex-1 flex flex-col gap-6">
+
+                                        {/* Rechte Spalte: Die 4 Cases untereinander */}
+                                        <div className="flex-[1.2] flex flex-col pt-6 lg:pt-0 lg:pl-8 border-t lg:border-t-0 lg:border-l border-gridline/15 w-full justify-between">
                                             {activeIndustry.cases.map((c, i) => (
-                                                <div key={i} className="relative">
-                                                    <h4 className="text-[11px] lg:text-xs uppercase font-bold text-lime mb-1 tracking-wider">{c.title}</h4>
-                                                    <p className="text-white/60 text-[11px] lg:text-xs leading-relaxed">{c.desc}</p>
+                                                <div key={i} className="relative border-b border-gridline/10 py-2.5 first:pt-0 last:pb-0 last:border-b-0">
+                                                    <h4 className="text-[11px] lg:text-xs uppercase font-bold text-lime mb-0.5 tracking-wider">{c.title}</h4>
+                                                    <p className="text-white/60 text-[11px] lg:text-xs leading-relaxed font-light">{c.desc}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -1150,14 +1229,17 @@ export default function Page() {
                                 <div className={`grid transition-all duration-500 ${openIndustry === ind.id ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
                                     <div className="overflow-hidden">
                                         <div className="flex flex-col gap-4 pt-4">
+                                            {ind.subtitle && (
+                                                <p className="text-vanta font-bold uppercase tracking-tight text-xs leading-snug">{ind.subtitle}</p>
+                                            )}
                                             {ind.intro && (
-                                                <p className="text-vanta/80 text-sm leading-relaxed border-b border-vanta/10 pb-4">{ind.intro}</p>
+                                                <p className="text-vanta/80 text-xs leading-relaxed border-b border-vanta/10 pb-4">{ind.intro}</p>
                                             )}
                                             <div className="space-y-4">
                                                 {ind.cases.map((c, i) => (
                                                     <div key={i}>
-                                                        <h4 className="text-sm uppercase font-bold text-vanta/90 mb-1">{c.title}</h4>
-                                                        <p className="text-vanta/60 text-sm">{c.desc}</p>
+                                                        <h4 className="text-xs uppercase font-bold text-vanta/90 mb-1">{c.title}</h4>
+                                                        <p className="text-vanta/60 text-xs">{c.desc}</p>
                                                     </div>
                                                 ))}
                                             </div>
@@ -1173,8 +1255,8 @@ export default function Page() {
                 <section id="warum-wir" className="border-b border-gridline bg-white text-vanta flex justify-center">
                     <div className="w-full max-w-[1440px]">
                         {/* Cards: Grid clipped at the bottom to prevent layout bleed */}
-                        <div className="grid grid-cols-2 lg:grid-cols-4 border-b border-x border-gridline overflow-hidden relative z-10 bg-white">
-                        <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b border-gridline col-span-2 lg:col-span-4 bg-white flex flex-col md:flex-row justify-between items-start md:items-end gap-8 reveal relative z-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-x border-gridline overflow-hidden relative z-10 bg-white">
+                        <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b border-gridline col-span-1 md:col-span-2 lg:col-span-4 bg-white flex flex-col md:flex-row justify-between items-start md:items-end gap-8 reveal relative z-10">
                             <div>
                                 <p className="font-mono text-xs uppercase mb-6 tracking-widest">
                                     <span className="brutalist-marker text-vanta">Warum wir</span>
@@ -1192,18 +1274,24 @@ export default function Page() {
                         ].map((item, idx) => (
                             <div
                                 key={idx}
-                                className={`group relative p-4 sm:p-6 md:p-8 lg:p-10 overflow-hidden transition-colors duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-[#0a0a0a] hover:border-[#0a0a0a] reveal z-10 ${
-                                    idx === 0 ? 'border-b border-r border-gridline lg:border-b-0' : idx === 1 ? 'border-b border-gridline lg:border-b-0 lg:border-r' : idx === 2 ? 'border-r border-gridline' : ''
+                                className={`group relative p-6 sm:p-8 lg:p-10 overflow-hidden transition-colors duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-[#0a0a0a] hover:border-[#0a0a0a] reveal z-10 ${
+                                    idx === 0
+                                        ? 'border-b md:border-r lg:border-b-0 border-gridline'
+                                        : idx === 1
+                                        ? 'border-b md:border-r-0 lg:border-r lg:border-b-0 border-gridline'
+                                        : idx === 2
+                                        ? 'border-b md:border-b-0 md:border-r border-gridline'
+                                        : ''
                                 }`}
                                 style={{ transitionDelay: `${idx * 80}ms` }}
                             >
 
                                 {/* Title — stays fixed, color transitions */}
-                                <h3 className="font-mono text-[10px] sm:text-xs md:text-sm lg:text-base text-vanta uppercase font-bold mb-2 md:mb-4 group-hover:text-white transition-colors duration-500">{item.title}</h3>
+                                <h3 className="font-mono text-sm md:text-base text-vanta uppercase font-bold mb-2 md:mb-4 group-hover:text-white transition-colors duration-500">{item.title}</h3>
 
                                 {/* Text — read-first on mobile, slides up on hover for desktop */}
                                 <div className="translate-y-0 opacity-100 lg:translate-y-[120%] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
-                                    <p className="text-[10px] sm:text-xs lg:text-sm text-vanta/70 group-hover:text-white/70 leading-relaxed font-light mt-2 md:mt-4 border-t border-vanta/20 group-hover:border-white/20 pt-2 md:pt-4 transition-colors duration-500">{item.text}</p>
+                                    <p className="text-xs sm:text-sm text-vanta/70 group-hover:text-white/70 leading-relaxed font-light mt-2 md:mt-4 border-t border-vanta/20 group-hover:border-white/20 pt-2 md:pt-4 transition-colors duration-500">{item.text}</p>
                                 </div>
                             </div>
                         ))}

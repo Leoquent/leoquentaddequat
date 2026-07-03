@@ -247,7 +247,7 @@
       "label": "prozessData",
       "file_type": "code",
       "source_file": "app/page.tsx",
-      "source_location": "L102",
+      "source_location": "L174",
       "_origin": "ast",
       "id": "app_page_prozessdata",
       "community": 11,
@@ -257,7 +257,7 @@
       "label": "Page()",
       "file_type": "code",
       "source_file": "app/page.tsx",
-      "source_location": "L125",
+      "source_location": "L197",
       "_origin": "ast",
       "id": "app_page_page",
       "community": 11,
@@ -3071,7 +3071,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/page.tsx",
-      "source_location": "L125",
+      "source_location": "L197",
       "weight": 1.0,
       "source": "app_page",
       "target": "app_page_page",
@@ -3091,7 +3091,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/page.tsx",
-      "source_location": "L102",
+      "source_location": "L174",
       "weight": 1.0,
       "source": "app_page",
       "target": "app_page_prozessdata",
@@ -5430,5 +5430,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "42780f8254e7a380e8a6c23fc26ae948d66e1af4"
+  "built_at_commit": "a66d8f333e0a8d7dbca9d62d7a6b520e676cc280"
 }
