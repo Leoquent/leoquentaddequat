@@ -25,13 +25,13 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1782985495.9936812,
-    "ast_hash": "1261f86e2f5d9508d318afeed4ffc715",
+    "mtime": 1782900544.5727386,
+    "ast_hash": "632914d7e8415976ac116a236f70cc01",
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1783079025.4010541,
-    "ast_hash": "a6371e0c360d047b945add4c5a823578",
+    "mtime": 1782900823.6747987,
+    "ast_hash": "55e890ee0722f2407dc52eb428223284",
     "semantic_hash": ""
   },
   "app/robots.ts": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "components/QuizModal.tsx": {
-    "mtime": 1783035861.8959606,
-    "ast_hash": "4dd2f5c070b1ecba5656e3fe67bd833e",
+    "mtime": 1782900944.6487439,
+    "ast_hash": "73667c2fc9f1efcd6d7511e3eb8a1122",
     "semantic_hash": ""
   },
   "components/remotion/DemoVideo.tsx": {
@@ -155,33 +155,33 @@
     "semantic_hash": ""
   },
   "AI_Style_And_Vibe_Prompt.md": {
-    "mtime": 1782979871.8293307,
-    "ast_hash": "2b0f3c85413c8009b14dc3da14aeb455",
+    "mtime": 1772754957.7315729,
+    "ast_hash": "d81c2630a290bf4eaba98df6e709ba01",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1782985584.01546,
-    "ast_hash": "87848df36d24fb63a5f3c1ef01b9d777",
+    "mtime": 1779216364.832451,
+    "ast_hash": "30266f04e9496de450b382ce5683066e",
     "semantic_hash": ""
   },
   "HANDOVER_CODING_AI.md": {
-    "mtime": 1782918028.192835,
-    "ast_hash": "83d759320513ae41eb09aaab901c40d2",
+    "mtime": 1782902699.934883,
+    "ast_hash": "c69236fc85fdf75ee47b85f4722be076",
     "semantic_hash": ""
   },
   "LAUNCH_CHECKLIST.md": {
-    "mtime": 1782918024.313179,
-    "ast_hash": "501b37b3680ed0f92d20f184c0409b4e",
+    "mtime": 1782902269.6373649,
+    "ast_hash": "12170634e157ac45a6fe771f62d8a4b9",
     "semantic_hash": ""
   },
   "LinkedIn_Launch_Playbook.md": {
-    "mtime": 1782918020.0704665,
-    "ast_hash": "d90eb155b794088cc4397e269b81d304",
+    "mtime": 1782898683.1508663,
+    "ast_hash": "9cb8d6780c0f3d2c36ff48c47a683e5c",
     "semantic_hash": ""
   },
   "New_Website_Copy.md": {
-    "mtime": 1782918015.092121,
-    "ast_hash": "14f0c826f73d0ec8d45574c5586c1b8d",
+    "mtime": 1774348356.8931513,
+    "ast_hash": "294c08269e4e2141a4821468a0336616",
     "semantic_hash": ""
   },
   "README.md": {
@@ -190,13 +190,13 @@
     "semantic_hash": ""
   },
   "TODO.md": {
-    "mtime": 1782979873.8661964,
-    "ast_hash": "dd34e67e3a63cd97fa1aba58e55cea43",
+    "mtime": 1772484480.0321224,
+    "ast_hash": "e888eb31c8aac062c9a5ca0c3f6ab293",
     "semantic_hash": ""
   },
   "Website_Content_For_AI.md": {
-    "mtime": 1782918006.1164598,
-    "ast_hash": "8da6373d7898d297728da5f2070203cd",
+    "mtime": 1774348350.017248,
+    "ast_hash": "b58a861f645f007ef491968b799deb3d",
     "semantic_hash": ""
   },
   "docs/handover/HANDOVER.md": {
@@ -207,6 +207,11 @@
   "app/apple-icon.png": {
     "mtime": 1782901133.37008,
     "ast_hash": "85aa8e2ef67b7a865c5eb23f5d2ab88c",
+    "semantic_hash": ""
+  },
+  "app/icon.svg": {
+    "mtime": 1782901085.77236,
+    "ast_hash": "1af7ef7ccd4297ed0ff61d1480dccadc",
     "semantic_hash": ""
   },
   "public/FOTOS/admir_v2.webp": {
@@ -232,41 +237,6 @@
   "EMAIL_HANDOVER.md": {
     "mtime": 1782904802.371852,
     "ast_hash": "b9e55c131c9aaa65e78f4d2cd9ab9c00",
-    "semantic_hash": ""
-  },
-  ".claude/launch.json": {
-    "mtime": 1783001345.7491727,
-    "ast_hash": "dae71a7c3ab0f5e051bd50f0448a5bdf",
-    "semantic_hash": ""
-  },
-  "app/icon.png": {
-    "mtime": 1782986158.319183,
-    "ast_hash": "bdbd788e287ba6a8e529a11b2135fbc0",
-    "semantic_hash": ""
-  },
-  "public/FOTOS/admir_cropped.png": {
-    "mtime": 1783077906.917055,
-    "ast_hash": "3aeef661e11439c00941f2bb4b5604a3",
-    "semantic_hash": ""
-  },
-  "public/FOTOS/admir_cropped.webp": {
-    "mtime": 1783078192.074,
-    "ast_hash": "aed783c3062fff6d6a03c92caeac77f8",
-    "semantic_hash": ""
-  },
-  "public/FOTOS/leonid_cropped.webp": {
-    "mtime": 1783078191.726,
-    "ast_hash": "12358d0ca6e746e012443bb4a71a97df",
-    "semantic_hash": ""
-  },
-  "public/FOTOS/leonid_cropped_2.png": {
-    "mtime": 1783078338.088053,
-    "ast_hash": "9f2b4d1126269fd5c7b33e28b9cdfd3c",
-    "semantic_hash": ""
-  },
-  "public/FOTOS/leonid_cropped_2.webp": {
-    "mtime": 1783078475.526,
-    "ast_hash": "71671beb3a85e3b90ab7787549db39d5",
     "semantic_hash": ""
   }
 }

@@ -1,16 +1,16 @@
-# Graph Report - leoquent-addiquat  (2026-07-03)
+# Graph Report - leoquent-addiquat  (2026-07-01)
 
 ## Corpus Check
-- 42 files · ~54,145 words
+- 41 files · ~33,075 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 289 nodes · 253 edges · 39 communities (28 shown, 11 thin omitted)
+- 290 nodes · 254 edges · 38 communities (28 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `42780f82`
+- Built from commit: `a8749106`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,7 +28,6 @@
 - [[_COMMUNITY_Project-Specific Design System (Leoquent & Addiquat)|Project-Specific Design System (Leoquent & Addiquat)]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
 - [[_COMMUNITY_package.json|package.json]]
-- [[_COMMUNITY_5. BRANCHEN & USE CASES (Was möglich ist)|5. BRANCHEN & USE CASES (Was möglich ist)]]
 - [[_COMMUNITY_CLAUDE|CLAUDE.md]]
 - [[_COMMUNITY_SKILL|SKILL.md]]
 - [[_COMMUNITY_THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES|THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES]]
@@ -50,8 +49,8 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
-2. `LinkedIn Launch-Playbook — leoquent & addequat` - 10 edges
-3. `leoquent & addequat – Website Copy V2 (Neuausrichtung)` - 10 edges
+2. `LinkedIn Launch-Playbook — Leoquent & Addiquat` - 10 edges
+3. `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` - 10 edges
 4. `Website-Inhalte & Struktur für KI-Generierung` - 10 edges
 5. `5. BRANCHEN & USE CASES (Was möglich ist)` - 9 edges
 6. `Analysis Steps` - 8 edges
@@ -66,11 +65,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (39 total, 11 thin omitted)
+## Communities (38 total, 10 thin omitted)
 
 ### Community 0 - "Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)"
-Cohesion: 0.10
-Nodes (20): (01) KI-STRATEGIE, (02) AUTONOME AGENTEN, (03) CUSTOM DEVELOPMENT, (04) SYSTEM-INTEGRATION, 1. Analyse, 1. HERO SECTION (Der Einstieg), 2. Architektur, 2. THE ENEMY (Das Problem / Der Status Quo) (+12 more)
+Cohesion: 0.07
+Nodes (29): (01) KI-STRATEGIE, (02) AUTONOME AGENTEN, (03) CUSTOM DEVELOPMENT, (04) SYSTEM-INTEGRATION, 1. Analyse, 1. HERO SECTION (Der Einstieg), 2. Architektur, 2. THE ENEMY (Das Problem / Der Status Quo) (+21 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.10
@@ -113,16 +112,12 @@ Cohesion: 0.20
 Nodes (9): Brand Identity, Component Patterns, Design Thinking, Established Color Palette, Frontend Aesthetics Guidelines, Motion & Animation, Project-Specific Design System (Leoquent & Addiquat), Tech Stack (+1 more)
 
 ### Community 11 - "page.tsx"
-Cohesion: 0.18
-Nodes (7): industriesData, painPoints, prozessData, solutionsData, QuizAnswers, QuizModalProps, STEPS
+Cohesion: 0.20
+Nodes (6): industriesData, painPoints, solutionsData, QuizAnswers, QuizModalProps, STEPS
 
 ### Community 12 - "package.json"
 Cohesion: 0.20
 Nodes (9): 1. PHP-Datei erstellen, 2. Formular in `components/QuizModal.tsx` anpassen, E-Mail-Anbindung Handover & Dokumentation, Option A: Web3Forms (Empfohlen, einfachste Lösung), Option B: Eigener PHP-Mailer (Keine Drittanbieter, eigene Domain), Option C: Eigener Node.js-Server (z. B. VPS, Vercel), To-dos für den Kollegen / die KI:, To-dos für den Kollegen / die KI: (+1 more)
-
-### Community 13 - "5. BRANCHEN & USE CASES (Was möglich ist)"
-Cohesion: 0.22
-Nodes (9): 5. BRANCHEN & USE CASES (Was möglich ist), 🎓 Bildung (Education), ⚕️ Gesundheitswesen (Healthcare), 📦 Handel & E-Commerce, 🔨 Handwerk & Konstruktion, 🏢 Immobilien (Real Estate), 🌾 Landwirtschaft (Agriculture), 🚚 Logistik & Supply Chain (+1 more)
 
 ### Community 14 - "CLAUDE.md"
 Cohesion: 0.25
@@ -140,6 +135,10 @@ Nodes (5): 1. DER VIBE & STYLE (Visual Identity), 2. DAS NARRATIV & UNSERE BOTSC
 Cohesion: 0.33
 Nodes (4): BRANCH_LABELS, DRINGLICHKEIT_LABELS, GROESSE_LABELS, INTERESSE_LABELS
 
+### Community 18 - "layout.tsx"
+Cohesion: 0.33
+Nodes (4): inter, metadata, playfair, syne
+
 ### Community 19 - "Launch-Checkliste — leoquent & addequat"
 Cohesion: 0.40
 Nodes (4): ✅ Erledigt (im Code umgesetzt), ℹ️ Hinweise, Launch-Checkliste — leoquent & addequat, ⚠️ Von dir noch manuell zu erledigen (vor dem Launch)
@@ -153,24 +152,24 @@ Cohesion: 0.50
 Nodes (3): Deployment & E-Mail-Anbindung, Run and deploy your AI Studio app, Run Locally
 
 ## Knowledge Gaps
-- **202 isolated node(s):** `extends`, `BRANCH_LABELS`, `GROESSE_LABELS`, `INTERESSE_LABELS`, `DRINGLICHKEIT_LABELS` (+197 more)
+- **203 isolated node(s):** `extends`, `BRANCH_LABELS`, `GROESSE_LABELS`, `INTERESSE_LABELS`, `DRINGLICHKEIT_LABELS` (+198 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `devDependencies`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `leoquent & addequat – Website Copy V2 (Neuausrichtung)` connect `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` to `5. BRANCHEN & USE CASES (Was möglich ist)`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `extends`, `BRANCH_LABELS`, `GROESSE_LABELS` to the rest of the system?**
-  _202 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _203 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `SUPERDESIGN.md` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `LinkedIn Launch-Playbook — Leoquent & Addiquat` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

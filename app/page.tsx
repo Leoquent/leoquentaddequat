@@ -606,13 +606,22 @@ export default function Page() {
                         <a href="#warum-wir" className="hover:text-lime transition-colors">Warum Wir</a>
                     </div>
 
-                    <div className="flex items-center gap-4 lg:gap-6 shrink-0">
-                        <div className="hidden lg:block">
-                            <button onClick={openQuiz} className={`font-mono text-[10px] sm:text-sm border px-3 py-1.5 sm:px-4 sm:py-2 uppercase transition-colors duration-500 ease-in-out cursor-pointer ${scrolledPastHero ? 'bg-lime text-vanta border-lime btn-glitch' : 'border-gridline hover:border-lime hover:text-lime bg-vanta text-white'}`}>
-                                <span className="sm:hidden">ANALYSIEREN</span>
-                                <span className="hidden sm:inline">Potenzial analysieren</span>
-                            </button>
-                        </div>
+                    <div className="flex items-center gap-3 sm:gap-4 lg:gap-6 shrink-0">
+                        <button 
+                            onClick={openQuiz} 
+                            className={`font-mono text-[9px] sm:text-sm border px-2 py-1.5 sm:px-4 sm:py-2 uppercase transition-all duration-500 ease-in-out cursor-pointer ${
+                                scrolledPastHero 
+                                    ? 'bg-lime text-vanta border-lime btn-glitch' 
+                                    : 'border-gridline hover:border-lime hover:text-lime bg-vanta text-white'
+                            } ${
+                                isMobileMenuOpen 
+                                    ? 'opacity-0 pointer-events-none translate-x-2' 
+                                    : 'opacity-100 translate-x-0'
+                            }`}
+                        >
+                            <span className="sm:hidden">ANALYSE</span>
+                            <span className="hidden sm:inline">Potenzial analysieren</span>
+                        </button>
 
                         {/* Hamburger Button */}
                         <button 
@@ -862,11 +871,11 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible">
-                    <div className="w-full max-w-[1440px]">
+                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible h-[calc(100dvh-64px)] md:h-auto">
+                    <div className="w-full max-w-[1440px] h-full md:h-auto">
                         
                         {/* Mobile view container */}
-                        <div className="md:hidden px-6 py-6 border-x border-gridline bg-white flex flex-col justify-between h-[calc(100svh-64px)] w-full gap-4">
+                        <div className="md:hidden px-6 py-6 border-x border-gridline bg-white flex flex-col justify-between h-full w-full gap-4">
                             <div className="flex flex-col gap-2">
                                 <p className="font-mono text-xs uppercase tracking-widest">
                                     <span className="brutalist-marker text-vanta">Prozess</span>
