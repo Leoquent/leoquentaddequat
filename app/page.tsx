@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState } from "react";
 import QuizModal from "@/components/QuizModal";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -1229,12 +1229,12 @@ export default function Page() {
                         >
                             {/* Background Image */}
                             <div 
-                                className={`absolute inset-0 bg-no-repeat bg-cover bg-center bg-[image:var(--img-m)] lg:bg-[image:var(--img-d)] lg:bg-[length:115%] lg:bg-[center_10%] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
+                                className={`absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
                                     openMember === 'leonid'
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105'
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
-                                style={{ '--img-m': `url('${basePath}/FOTOS/leonid_v4.jpg')`, '--img-d': `url('${basePath}/FOTOS/leonid_v4.webp')` } as CSSProperties}
+                                style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_v4.webp')` }}
                             />
                             
                             {/* Overlay Gradient */}
@@ -1290,12 +1290,12 @@ export default function Page() {
                         >
                             {/* Background Image */}
                             <div 
-                                className={`absolute inset-0 bg-no-repeat bg-cover bg-center bg-[image:var(--img-m)] lg:bg-[image:var(--img-d)] lg:bg-cover lg:bg-top transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
+                                className={`absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0 ${
                                     openMember === 'admir'
                                     ? 'opacity-30 grayscale contrast-125 saturate-0 scale-105'
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
-                                style={{ '--img-m': `url('${basePath}/FOTOS/admir_v2.jpg')`, '--img-d': `url('${basePath}/FOTOS/admir_v2.webp')` } as CSSProperties}
+                                style={{ backgroundImage: `url('${basePath}/FOTOS/admir_v2.webp')` }}
                             />
                             
                             {/* Overlay Gradient */}
