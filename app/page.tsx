@@ -1367,7 +1367,7 @@ export default function Page() {
                                     <p className="text-white/80 text-xs lg:text-sm leading-relaxed font-light mb-4">
                                         Viele kommen heute mit KI-Lösungen. Die wenigsten verstehen den Menschen dahinter.<br /><br />
                                         Leonid kommt aus einer Welt, in der jedes Wort zählt und jede Idee beweisbar sein muss. Als Senior Copywriter und Konzeptioner in internationalen Agenturnetzwerken hat er gelernt: Strategie ohne Kreativität ist eine Tabelle. Kreativität ohne Strategie ist Dekoration. Er vereint beides &mdash; und gießt diese Symbiose in präzise KI-Architekturen.<br /><br />
-                                        In KI-Workshops hat er Creative Teams auf das vorbereitet, was kommt. Heute baut er es selbst. Als Creative AI Engineer gestaltet er die Schnittstelle zwischen dem, was Ihr Unternehmen meint &mdash; und dem, was die KI versteht.
+                                        In KI-Workshops hat er Creative Teams auf das vorbereitet, was kommt. Heute baut er es selbst. Als Strategic AI Engineer gestaltet er die Schnittstelle zwischen dem, was Ihr Unternehmen meint &mdash; und dem, was die KI versteht.
                                     </p>
                                     
                                     <span className="text-lime/90 font-mono text-[10px] tracking-wider uppercase opacity-90 block">ENTWICKELT DIE STRATEGISCHE VISION &mdash; UND SORGT DAFÜR, DASS DIE KI JEDE GESCHÄFTSLOGIK PRÄZISE VERSTEHT.</span>
