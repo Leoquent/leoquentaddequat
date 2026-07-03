@@ -1176,7 +1176,7 @@ export default function Page() {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="w-full h-full flex flex-col justify-center p-8 lg:p-12 animate-fadeIn" key={activeIndustry.id}>
+                                <div className="w-full h-full flex flex-col justify-start p-8 lg:p-12 animate-fadeIn" key={activeIndustry.id}>
                                     <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start w-full">
                                         {/* Linke Spalte: Überschriften & Intro */}
                                         <div className="flex-1 flex flex-col justify-start">
