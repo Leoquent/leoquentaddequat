@@ -99,6 +99,29 @@ const industriesData = [
     }
 ];
 
+const prozessData = [
+    {
+        n: "01",
+        title: "Analyse",
+        text: "Wir identifizieren Ihre Flaschenhälse und ungenutzte Potenziale in einer tiefen, kostenlosen Potenzialanalyse."
+    },
+    {
+        n: "02",
+        title: "Architektur",
+        text: "Wir entwerfen die maßgeschneiderte Blaupause für Ihr System – ausgelegt für minimale Latenz und höchste Sicherheit."
+    },
+    {
+        n: "03",
+        title: "Entwicklung",
+        text: "Wir programmieren, testen und iterieren Ihre autonome Lösung in enger Abstimmung mit Ihnen."
+    },
+    {
+        n: "04",
+        title: "Betrieb",
+        text: "Integration, dediziertes Hosting, ständige Wartung & updates. Sie erhalten ein schlüsselfertiges System. Dauerhaft."
+    }
+];
+
 export default function Page() {
 
     const [navScrolled, setNavScrolled] = useState(false);
@@ -114,6 +137,32 @@ export default function Page() {
     const typewriterRef = useRef<HTMLSpanElement>(null);
     const sqGeoCoreRef = useRef<HTMLDivElement>(null);
     const sqRingRef = useRef<HTMLDivElement>(null);
+    const [activeStep, setActiveStep] = useState(-1);
+
+    const prozessStepsRef = useRef<(HTMLDivElement | null)[]>([]);
+    const desktopProgressFillsRef = useRef<(HTMLDivElement | null)[]>([]);
+    const activeStepRef = useRef(-1);
+    const leftTextBlockRef = useRef<HTMLDivElement>(null);
+
+    // Keep ref in sync
+    useEffect(() => {
+        activeStepRef.current = activeStep;
+    }, [activeStep]);
+
+    const scrollToStep = (i: number) => {
+        if (window.innerWidth >= 768) {
+            const prozessEl = document.getElementById('prozess');
+            if (prozessEl) {
+                const rect = prozessEl.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                // Total scroll distance is 800px, 5 segments -> 0, 160, 320, 480
+                const top = rect.top + scrollTop - 64; 
+                window.scrollTo({ top: top + (i * 160), behavior: 'smooth' });
+            }
+        } else {
+            prozessStepsRef.current[i]?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    };
 
     // --- SCROLL NAV ---
     useEffect(() => {
@@ -259,59 +308,113 @@ export default function Page() {
             });
             if (solHeader) solTl.fromTo(solHeader, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
             if (solCards.length > 0) solTl.fromTo(solCards, { opacity: 0, scale: 0.95, y: 50 }, { opacity: 1, scale: 1, y: 0, duration: 2, stagger: 0.2 }, "-=0.5");
+        });
 
-            // 4. PROZESS (Pinned Grid Reveal) — reuse outer matchMedia so it is reverted on cleanup
+        // 4. PROZESS (Pinned Card Slider on Desktop vs Pinned Stack on Mobile)
+        mm.add("(min-width: 768px)", () => {
+            const fills = desktopProgressFillsRef.current;
+            const card2 = document.querySelector('.desktop-card-1') as HTMLElement; // step 02 is index 1
+            const card3 = document.querySelector('.desktop-card-2') as HTMLElement; // step 03 is index 2
+            const card4 = document.querySelector('.desktop-card-3') as HTMLElement; // step 04 is index 3
             
-            mm.add("(min-width: 768px)", () => {
-                const prozessSteps = gsap.utils.toArray('.prozess-step') as HTMLElement[];
-                const prozessWrapper = document.querySelector('#prozess');
-                
-                if (prozessSteps.length > 0 && prozessWrapper) {
-                    const tlDesktop = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: prozessWrapper,
-                            start: "top 60%", // Start animating when it's 60% down the screen
+            if (fills.length > 0) {
+                const tl = gsap.timeline({
+                    onUpdate: function() {
+                        const visualProgress = this.progress();
+                        const step = Math.min(3, Math.floor(visualProgress * 5));
+                        if (step !== activeStepRef.current) {
+                            activeStepRef.current = step;
+                            setActiveStep(step);
                         }
-                    });
-                    
-                    prozessSteps.forEach((step, i) => {
-                        tlDesktop.fromTo(step, 
-                            { opacity: 0, y: 50 }, 
-                            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-                            i === 0 ? 0 : "-=0.4"
+                    },
+                    scrollTrigger: {
+                        id: "prozess-pin",
+                        trigger: "#prozess",
+                        start: "top 64px",
+                        end: "+=1000",
+                        // NO pin — native CSS `sticky` (see the two columns below) holds each
+                        // column in place. GSAP only scrubs the card reveal, so there is no
+                        // pin/unpin boundary and therefore no jump. scrub 0.6 = smooth catch-up.
+                        scrub: 0.6,
+                    }
+                });
+
+                // Initial off-screen positions for cards 2, 3, 4
+                gsap.set([card2, card3, card4], { y: '100vh' });
+
+                // Card 2 slides up to its natural position (takes 20%)
+                tl.to(card2, { y: 0, ease: "none", duration: 0.20 }, 0);
+                // Card 3 slides up to its natural position (takes 20%)
+                tl.to(card3, { y: 0, ease: "none", duration: 0.20 }, 0.20);
+                // Card 4 slides up to its natural position (takes 20%, ends at 0.60)
+                tl.to(card4, { y: 0, ease: "none", duration: 0.20 }, 0.40);
+
+                // Animate horizontal progress bars sequentially
+                fills.forEach((fill, i) => {
+                    if (fill) {
+                        tl.fromTo(fill, 
+                            { scaleX: 0 }, 
+                            { scaleX: 1, ease: "none", duration: 0.20 },
+                            i * 0.20
                         );
-                    });
-                }
-            });
+                    }
+                });
 
-            mm.add("(max-width: 767px)", () => {
-                const prozessSteps = gsap.utils.toArray('.prozess-step') as HTMLElement[];
-                const prozessWrapper = document.querySelector('#prozess');
-                
-                if (prozessSteps.length > 0 && prozessWrapper) {
-                    const tlMobile = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: prozessWrapper,
-                            start: "top 20%",
-                            end: "+=1200",
-                            scrub: 1,
-                            pin: true,
-                            anticipatePin: 1
+                // Pad the timeline to exactly 1.00 to keep progress mapping correct
+                tl.set({}, {}, 1.00);
+
+                // Left Text Block translation removed to allow standard scroll alignment (matches ruempelross sticky behavior)
+            }
+        });
+
+        mm.add("(max-width: 767px)", () => {
+            const cards = gsap.utils.toArray('.mobile-prozess-card') as HTMLElement[];
+            const prozessWrapper = document.querySelector('#prozess');
+            
+            if (cards.length > 0 && prozessWrapper) {
+                const tlMobile = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: prozessWrapper,
+                        start: "top 64px",
+                        end: "+=1000",
+                        scrub: 0.6,
+                        pin: true,
+                        anticipatePin: 1,
+                        onUpdate: (self) => {
+                            let step = -1;
+                            if (self.progress >= 0.9) step = 3;
+                            else if (self.progress >= 0.67) step = 2;
+                            else if (self.progress >= 0.45) step = 1;
+                            else if (self.progress >= 0.22) step = 0;
+
+                            if (step !== activeStepRef.current) {
+                                activeStepRef.current = step;
+                                setActiveStep(step);
+                            }
                         }
-                    });
-                    
-                    // Ensure cards 02-04 are initially hidden and pushed down
-                    prozessSteps.forEach((step, i) => {
-                        if (i > 0) gsap.set(step, { y: window.innerHeight, opacity: 0 });
-                    });
-                    
-                    prozessSteps.forEach((step, i) => {
-                        if (i === 0) return;
-                        tlMobile.to(step, { y: 0, opacity: 1, duration: 1, ease: "power2.out" });
-                    });
-                }
-            });
+                    }
+                });
+                
+                // All cards start hidden and pushed down
+                gsap.set(cards, { opacity: 0, y: 50 });
+                
+                // Animate all cards in sequentially
+                cards.forEach((card, idx) => {
+                    tlMobile.to(card, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.25,
+                        ease: "power2.out"
+                    }, idx * 0.25);
+                });
+                
+                // Add dead space (approx 100px / 1 scroll tick) so the 4th card finishes arriving just before unpinning
+                tlMobile.set({}, {}, 1.10);
+            }
+        });
 
+        // Remaining desktop animations
+        mm.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
             // 5. BRANCHEN
             const branchenHeader = document.querySelector('#branchen > div > div:first-child') as HTMLElement;
             const branchenStrips = gsap.utils.toArray('#branchen .branchen-accordion-item') as HTMLElement[];
@@ -362,7 +465,7 @@ export default function Page() {
 
         // Cleanup
         return () => mm.revert();
-    }, { scope: undefined });
+    }, { dependencies: [], scope: undefined });
 
     // --- 3D INTERACTION ---
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -759,40 +862,176 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden">
+                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible">
                     <div className="w-full max-w-[1440px]">
-                        <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-b border-x border-gridline flex flex-col md:flex-row justify-between items-start md:items-end gap-8 relative z-20 bg-white">
-                            <div>
-                                <p className="font-mono text-xs uppercase mb-6 tracking-widest">
+                        
+                        {/* Mobile view container */}
+                        <div className="md:hidden px-6 py-6 border-x border-gridline bg-white flex flex-col justify-between h-[calc(100svh-64px)] w-full gap-4">
+                            <div className="flex flex-col gap-2">
+                                <p className="font-mono text-xs uppercase tracking-widest">
                                     <span className="brutalist-marker text-vanta">Prozess</span>
                                 </p>
-                                <h2 className="section-headline">Unser Weg zu<br />Ihrer Lösung.</h2>
+                                <h2 className="text-2xl uppercase font-bold leading-tight text-vanta">Unser Weg zu<br />Ihrer Lösung.</h2>
+                                <p className="text-mute text-xs leading-relaxed font-light">Transparente Meilensteine von der Analyse bis zum Betrieb. Keine Blackbox.</p>
+                                
+                                {/* Mobile Horizontal Progress bar */}
+                                <div aria-hidden="true" className="flex flex-col w-full relative z-20 mt-3 mb-2">
+                                    <div className="flex gap-1.5 w-full mb-2">
+                                        {prozessData.map((s, i) => (
+                                            <span key={s.n} className={`h-[2px] flex-1 transition-colors duration-500 ${i <= activeStep ? 'bg-lime' : 'bg-vanta/15'}`} />
+                                        ))}
+                                    </div>
+                                    <div className="flex justify-between w-full">
+                                        {prozessData.map((s, i) => (
+                                            <div key={s.n} className="flex-1 text-left pr-1">
+                                                <span className={`block font-mono text-[9px] tracking-widest transition-colors duration-300 ${activeStep >= i ? 'text-lime' : 'text-vanta/40'}`}>
+                                                    {s.n}
+                                                </span>
+                                                <span className={`block text-[9px] sm:text-[10px] uppercase font-bold tracking-tight transition-colors duration-300 mt-0.5 ${activeStep === i ? 'text-vanta' : 'text-vanta/30'} truncate sm:whitespace-normal`}>
+                                                    {s.title}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
-                            <p className="max-w-md text-mute text-sm leading-relaxed font-light">Transparente Meilensteine von der Analyse bis zum Betrieb. Keine Blackbox.</p>
+
+                            {/* Mobile sequential cards under each other */}
+                            <div className="flex flex-col flex-1 w-[calc(100%+3rem)] -mx-6 mb-2">
+                                {prozessData.map((s, i) => (
+                                    <div
+                                        key={s.n}
+                                        className="mobile-prozess-card border-t border-gridline last:border-b px-6 py-3 sm:py-4 bg-white flex flex-col justify-center flex-1 will-change-transform"
+                                    >
+                                        <div className="flex items-center gap-3 mb-1">
+                                            <span className="font-mono text-lime text-base font-bold">{s.n}</span>
+                                            <h3 className="text-sm uppercase font-bold text-vanta">{s.title}</h3>
+                                        </div>
+                                        <p className="text-mute text-[11px] sm:text-xs leading-normal font-light">{s.text}</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Mobile CTA Button */}
+                            <div className="mt-auto">
+                                <button 
+                                    onClick={openQuiz}
+                                    className="w-full btn-glitch bg-lime text-vanta font-mono font-bold uppercase py-3 px-5 border border-lime text-xs text-center cursor-pointer"
+                                >
+                                    Potenzial kostenlos analysieren
+                                </button>
+                            </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-4 border-x border-gridline overflow-hidden md:auto-rows-auto relative">
-                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-10">
-                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">01</div>
-                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Analyse</h3>
-                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir identifizieren Ihre Flaschenhälse und ungenutzte Potenziale in einer tiefen, kostenlosen Potenzialanalyse.</p>
+                        {/* Desktop: Pinned 2-column Slider */}
+                        <div className="hidden md:grid md:grid-cols-[2fr_3fr] border-x border-gridline relative md:h-[calc(100vh_-_64px_+_1000px)]">
+                            
+                            {/* LEFT: Static Text Column (Headline, Copy, and Horizontal Progress Bars) */}
+                            <div className="flex flex-col justify-start px-8 lg:px-10 py-12 border-r border-gridline bg-white select-none h-full relative">
+                                <div ref={leftTextBlockRef} className="w-full sticky top-[112px] z-20">
+                                    <p className="font-mono text-xs uppercase mb-6 tracking-widest">
+                                        <span className="brutalist-marker text-vanta">Prozess</span>
+                                    </p>
+                                    <h2 className="section-headline text-vanta mb-6">Unser Weg zu<br />Ihrer Lösung.</h2>
+                                    <p className="max-w-md text-mute text-sm leading-relaxed font-light mb-8">
+                                        Transparente Meilensteine von der Analyse bis zum Betrieb. Keine Blackbox.
+                                    </p>
+
+                                    {/* Horizontal progress rail under copy */}
+                                    <div className="flex flex-col w-full relative z-20">
+                                        <div className="flex gap-2 w-full mb-3">
+                                            {prozessData.map((s, i) => (
+                                                <div 
+                                                    key={s.n} 
+                                                    className="flex-1 h-[2px] bg-gridline/30 relative overflow-hidden"
+                                                >
+                                                    <div 
+                                                        ref={(el) => { desktopProgressFillsRef.current[i] = el; }} 
+                                                        className="absolute inset-0 bg-lime origin-left scale-x-0"
+                                                    ></div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <div className="flex justify-between w-full">
+                                            {prozessData.map((s, i) => (
+                                                <div
+                                                    key={s.n}
+                                                    className="flex-1 text-left"
+                                                >
+                                                    <span className={`block font-mono text-[10px] tracking-widest transition-colors duration-300 ${activeStep >= i ? 'text-lime' : 'text-vanta/40'}`}>
+                                                        {s.n}
+                                                    </span>
+                                                    <span className={`block text-[11px] uppercase font-bold tracking-tight transition-colors duration-300 mt-1 ${activeStep === i ? 'text-vanta' : 'text-vanta/30'}`}>
+                                                        {s.title}
+                                                    </span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Desktop CTA Button */}
+                                    <div className="mt-10 lg:mt-12">
+                                        <button 
+                                            onClick={openQuiz}
+                                            className="btn-glitch inline-block bg-lime text-vanta font-mono font-bold uppercase py-3.5 px-6 border border-lime text-xs cursor-pointer"
+                                        >
+                                            Potenzial kostenlos analysieren
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-20">
-                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">02</div>
-                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Architektur</h3>
-                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir entwerfen die maßgeschneiderte Blaupause für Ihr System – ausgelegt für minimale Latenz und höchste Sicherheit.</p>
+
+                            {/* RIGHT: Card Slider — tall cell has NO overflow, so the sticky frame resolves against page scroll */}
+                            <div className="relative bg-white h-full w-full">
+                                {/* Sticky viewport-height frame: stays put for ~1000px while GSAP slides the cards in, then scrolls away natively */}
+                                <div className="sticky top-[64px] h-[calc(100vh_-_64px)] overflow-hidden">
+                                {prozessData.map((s, i) => {
+                                    const isRevealed = activeStep >= i;
+                                    const isActive = activeStep === i;
+                                    
+                                    const cardBgClass = "bg-white border-gridline";
+                                    
+                                    const numberColorClass = isActive 
+                                            ? "text-lime" 
+                                            : isRevealed 
+                                                ? "text-lime/60" 
+                                                : "text-vanta/10";
+                                                
+                                    const titleColorClass = isActive 
+                                            ? "text-vanta" 
+                                            : isRevealed 
+                                                ? "text-vanta/60" 
+                                                : "text-vanta/20";
+
+                                    const textColorClass = isActive 
+                                            ? "text-mute" 
+                                            : isRevealed 
+                                                ? "text-mute/60" 
+                                                : "text-vanta/20";
+                                    
+                                    const zIndexClass = i === 0 ? "z-40" : i === 1 ? "z-30" : i === 2 ? "z-20" : "z-10";
+                                    const topOffset = `${i * 25}%`;
+
+                                    return (
+                                        <div
+                                            key={s.n}
+                                            style={{ 
+                                                top: topOffset, 
+                                                height: '25%' 
+                                            }}
+                                            className={`desktop-card-${i} absolute left-0 w-full p-8 lg:p-10 flex flex-col justify-center border-b border-gridline ${zIndexClass} ${cardBgClass}`}
+                                        >
+                                            <div className={`prozess-number font-mono mb-4 text-2xl transition-colors duration-500 ${numberColorClass}`}>{s.n}</div>
+                                            <h3 className={`prozess-title text-xl uppercase font-bold mb-3 transition-colors duration-500 ${titleColorClass}`}>{s.title}</h3>
+                                            <p className={`prozess-text text-sm leading-relaxed font-light max-w-md transition-colors duration-500 ${textColorClass}`}>{s.text}</p>
+                                        </div>
+                                    );
+                                })}
+                                </div>
                             </div>
-                            <div className="prozess-step p-6 md:p-10 group hover:bg-[#0a0a0a] transition-colors border-b md:border-b-0 md:border-r border-gridline bg-white [grid-area:1/1] md:[grid-area:auto] z-30">
-                                <div className="font-mono text-lime mb-6 text-2xl group-hover:animate-pulse">03</div>
-                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-white transition-colors">Entwicklung</h3>
-                                <p className="text-mute text-sm group-hover:text-white/80 transition-colors">Wir programmieren, testen und iterieren Ihre autonome Lösung in enger Abstimmung mit Ihnen.</p>
-                            </div>
-                            <div className="prozess-step p-6 md:p-10 group hover:bg-lime group-hover:text-vanta transition-colors bg-white md:bg-white [grid-area:1/1] md:[grid-area:auto] z-40">
-                                <div className="font-mono text-lime mb-6 text-2xl group-hover:text-vanta">04</div>
-                                <h3 className="text-xl uppercase font-bold mb-4 group-hover:text-vanta transition-colors">Betrieb</h3>
-                                <p className="text-mute text-sm group-hover:text-vanta/80 transition-colors">Integration, dediziertes Hosting, ständige Wartung & updates. Sie erhalten ein schlüsselfertiges System. Dauerhaft.</p>
-                            </div>
+
                         </div>
+
                     </div>
                 </section>
 

@@ -76,7 +76,7 @@ const STEPS = [
         id: "contact",
         label: "Schritt 5 von 5",
         headline: "Fast geschafft – wie erreichen wir Sie?",
-        subline: "Ihre Daten werden vertraulich behandelt und ausschließlich für die Terminvereinbarung genutzt.",
+        subline: "100% kostenlos & unverbindlich. Ihre Daten werden vertraulich behandelt und dienen uns zur Vorbereitung auf unser Gespräch.",
         type: "contact" as const,
     },
 ];
@@ -276,7 +276,7 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
                         <div className="font-mono text-[10px] uppercase tracking-widest text-lime/70 mb-4">Anfrage erhalten</div>
                         <h2 className="text-2xl sm:text-3xl uppercase font-bold text-white mb-3 tracking-tight">Danke, wir melden uns.</h2>
                         <p className="text-sm text-mute font-light mb-8 leading-relaxed">
-                            Ihre Angaben sind bei uns eingegangen. Der schnellste nächste Schritt: Buchen Sie direkt einen unverbindlichen 30-Minuten-Slot für Ihre Potenzialanalyse.
+                            Ihre Angaben sind bei uns eingegangen. Buchen Sie jetzt direkt Ihren unverbindlichen & kostenlosen 30-Minuten-Slot für unser Gespräch.
                         </p>
                         <a href="https://calendly.com/ofxffm/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-lime text-vanta font-mono font-bold uppercase px-8 py-4 border border-lime btn-glitch text-sm">
                             Jetzt Termin buchen →
@@ -569,6 +569,11 @@ export default function QuizModal({ isOpen, onClose }: QuizModalProps) {
                             {submitState === "error" && (
                                 <span className="font-mono text-[10px] uppercase tracking-wider text-red-400">
                                     Senden fehlgeschlagen. Bitte erneut versuchen.
+                                </span>
+                            )}
+                            {submitState !== "sending" && (
+                                <span className="font-mono text-[9px] uppercase tracking-widest text-lime/80 select-none mb-1">
+                                    [ 100% kostenlos & unverbindlich ]
                                 </span>
                             )}
                             <button
