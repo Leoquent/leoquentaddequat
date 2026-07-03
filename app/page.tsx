@@ -1028,7 +1028,7 @@ export default function Page() {
                                                 top: topOffset, 
                                                 height: '25%' 
                                             }}
-                                            className={`desktop-card-${i} absolute left-0 w-full p-8 lg:p-10 flex flex-col justify-center border-b border-gridline ${zIndexClass} ${cardBgClass}`}
+                                            className={`desktop-card-${i} absolute left-0 w-full p-8 lg:p-10 flex flex-col justify-center ${i === prozessData.length - 1 ? '' : 'border-b'} border-gridline ${zIndexClass} ${cardBgClass}`}
                                         >
                                             <div className={`prozess-number font-mono mb-4 text-2xl transition-colors duration-500 ${numberColorClass}`}>{s.n}</div>
                                             <h3 className={`prozess-title text-xl uppercase font-bold mb-3 transition-colors duration-500 ${titleColorClass}`}>{s.title}</h3>
