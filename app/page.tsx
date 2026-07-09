@@ -32,7 +32,7 @@ const solutionsData = [
         id: "02",
         title: "Autonome Agenten",
         badges: ["Workflow-Automation", "Dokumenten-Verarbeitung", "Kunden-Kommunikation", "Datenpflege"],
-        text: "Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – 24/7, fehlerfrei."
+        text: "Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – rund um die Uhr."
     },
     {
         id: "03",

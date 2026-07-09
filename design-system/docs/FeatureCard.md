@@ -9,7 +9,7 @@ The signature hover-invert card: vanta at rest, floods solid lime on hover while
   title="Autonome Agenten"
   badges={["Workflow-Automation", "Dokumenten-Verarbeitung", "Kunden-Kommunikation"]}
 >
-  Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen – 24/7, fehlerfrei.
+  Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen – rund um die Uhr.
 </FeatureCard>
 ```
 

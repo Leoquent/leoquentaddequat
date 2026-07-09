@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1783614844.4971802,
-    "ast_hash": "e89e6d2e5a424adfdf100fd1e1ce749c",
+    "mtime": 1783089857.6882584,
+    "ast_hash": "a1e44a949b0f56f92e325fea7081e188",
     "semantic_hash": ""
   },
   "app/robots.ts": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "components/QuizModal.tsx": {
-    "mtime": 1783605395.4045498,
-    "ast_hash": "845a9494e612b6b999911dd92df4aec7",
+    "mtime": 1783035861.8959606,
+    "ast_hash": "4dd2f5c070b1ecba5656e3fe67bd833e",
     "semantic_hash": ""
   },
   "components/remotion/DemoVideo.tsx": {
@@ -175,13 +175,13 @@
     "semantic_hash": ""
   },
   "LinkedIn_Launch_Playbook.md": {
-    "mtime": 1783614861.3033412,
-    "ast_hash": "12bb6ee7d262cb8a24613a8b1f645ecc",
+    "mtime": 1782918020.0704665,
+    "ast_hash": "d90eb155b794088cc4397e269b81d304",
     "semantic_hash": ""
   },
   "New_Website_Copy.md": {
-    "mtime": 1783614853.1880598,
-    "ast_hash": "d1486ad05f55615ebcbfa71700c0f57b",
+    "mtime": 1782918015.092121,
+    "ast_hash": "14f0c826f73d0ec8d45574c5586c1b8d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "Website_Content_For_AI.md": {
-    "mtime": 1783614848.967257,
-    "ast_hash": "8d9f3487f0bbbd271b8c25122ab0dc7a",
+    "mtime": 1782918006.1164598,
+    "ast_hash": "8da6373d7898d297728da5f2070203cd",
     "semantic_hash": ""
   },
   "docs/handover/HANDOVER.md": {
@@ -267,221 +267,6 @@
   "public/FOTOS/leonid_cropped_2.webp": {
     "mtime": 1783078475.526,
     "ast_hash": "71671beb3a85e3b90ab7787549db39d5",
-    "semantic_hash": ""
-  },
-  ".claude/settings.local.json": {
-    "mtime": 1783614010.1724222,
-    "ast_hash": "41421be1bf90034bbe18386ea8963a81",
-    "semantic_hash": ""
-  },
-  ".design-sync/config.json": {
-    "mtime": 1783614143.501024,
-    "ast_hash": "354baf0a8b7eb5390cb3361729f3372a",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Accordion.tsx": {
-    "mtime": 1783613163.7396493,
-    "ast_hash": "0e5d965a512dc24227a4985f266563b1",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Badge.tsx": {
-    "mtime": 1783613029.6389544,
-    "ast_hash": "d653bb11ff79c60eab734482de391f23",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Button.tsx": {
-    "mtime": 1783613149.794907,
-    "ast_hash": "bb472172e315d612fb2cf9b65fd606d2",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/FeatureCard.tsx": {
-    "mtime": 1783613039.6273649,
-    "ast_hash": "c360f7c319603ab072ebffe2c27177cc",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Footer.tsx": {
-    "mtime": 1783613185.2272353,
-    "ast_hash": "33f216b7dc8d8416f0043f0b2b10bf41",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Marker.tsx": {
-    "mtime": 1783613154.9764593,
-    "ast_hash": "64d1cccb46fa2b4b6389a1ab19f2ca48",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/NavBar.tsx": {
-    "mtime": 1783613183.4948025,
-    "ast_hash": "4b191cc6c736395fc5bca6634cdbb6ab",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/ProcessCard.tsx": {
-    "mtime": 1783613176.6796157,
-    "ast_hash": "3a2183be7bc573da038005bfd8da287d",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/ProfileCard.tsx": {
-    "mtime": 1783613193.5279627,
-    "ast_hash": "ad4a34f7a2fa0ed20113a96e0ae5177c",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/SectionHeader.tsx": {
-    "mtime": 1783613034.3484077,
-    "ast_hash": "223c8e065eebb4d202c42e3d7351acf7",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/StepRail.tsx": {
-    "mtime": 1783613180.4490652,
-    "ast_hash": "896a6b2de374fe10ea2f690cd9b3e44d",
-    "semantic_hash": ""
-  },
-  ".design-sync/previews/Ticker.tsx": {
-    "mtime": 1783613157.329724,
-    "ast_hash": "eb1e540216c23f0ca0c9d1b558c56b26",
-    "semantic_hash": ""
-  },
-  "design-system/package.json": {
-    "mtime": 1783611965.6036134,
-    "ast_hash": "0e1aae00bb912aa28f900c32ab0ef50f",
-    "semantic_hash": ""
-  },
-  "design-system/src/Accordion.tsx": {
-    "mtime": 1783612080.628169,
-    "ast_hash": "33ace4fc2e0323e12ab6dd689cf1e78a",
-    "semantic_hash": ""
-  },
-  "design-system/src/Badge.tsx": {
-    "mtime": 1783612058.5096867,
-    "ast_hash": "4ccaa25c88fec29a16b236e1c8c0bbf0",
-    "semantic_hash": ""
-  },
-  "design-system/src/Button.tsx": {
-    "mtime": 1783612049.0328476,
-    "ast_hash": "f450a3c9b6ce016b5f5200b54ae9a2d1",
-    "semantic_hash": ""
-  },
-  "design-system/src/FeatureCard.tsx": {
-    "mtime": 1783612086.2689106,
-    "ast_hash": "cceb233b429d831aa77331a961ba64bc",
-    "semantic_hash": ""
-  },
-  "design-system/src/Footer.tsx": {
-    "mtime": 1783612114.6951408,
-    "ast_hash": "ef09662ffe9b5333ec8ce43e6161b97e",
-    "semantic_hash": ""
-  },
-  "design-system/src/Marker.tsx": {
-    "mtime": 1783612053.7987943,
-    "ast_hash": "dc9c23578ab9b3619225ba7f4a7f0ae8",
-    "semantic_hash": ""
-  },
-  "design-system/src/NavBar.tsx": {
-    "mtime": 1783612110.4612591,
-    "ast_hash": "762b9bbac7f7a6dd676d3a72a3dcb934",
-    "semantic_hash": ""
-  },
-  "design-system/src/ProcessCard.tsx": {
-    "mtime": 1783612091.6429205,
-    "ast_hash": "40b4c8d9c77ffa753a52dc248fce7e42",
-    "semantic_hash": ""
-  },
-  "design-system/src/ProfileCard.tsx": {
-    "mtime": 1783612122.233688,
-    "ast_hash": "d7b6f62e5643759984f52bfbfe6454b9",
-    "semantic_hash": ""
-  },
-  "design-system/src/SectionHeader.tsx": {
-    "mtime": 1783612064.21498,
-    "ast_hash": "b34d53400d6011bee37ed45f52af2055",
-    "semantic_hash": ""
-  },
-  "design-system/src/StepRail.tsx": {
-    "mtime": 1783612103.284642,
-    "ast_hash": "28e496848fa3848aee27a77aa127fbd8",
-    "semantic_hash": ""
-  },
-  "design-system/src/Ticker.tsx": {
-    "mtime": 1783612073.5676665,
-    "ast_hash": "e9aa8c6edb7ae79785efd2e46cebe793",
-    "semantic_hash": ""
-  },
-  "design-system/src/index.ts": {
-    "mtime": 1783612124.9431634,
-    "ast_hash": "dd1eb0a43193ff35a0438029c81165f3",
-    "semantic_hash": ""
-  },
-  "design-system/tsconfig.json": {
-    "mtime": 1783611967.5507503,
-    "ast_hash": "d023022247f65838e96b010727e548a4",
-    "semantic_hash": ""
-  },
-  ".design-sync/NOTES.md": {
-    "mtime": 1783614467.083272,
-    "ast_hash": "29e01e988b1a11cc75e277b06fe28a16",
-    "semantic_hash": ""
-  },
-  ".design-sync/conventions.md": {
-    "mtime": 1783613414.2574785,
-    "ast_hash": "314e2dfd572a30910646f27038decf75",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Accordion.md": {
-    "mtime": 1783612476.0491707,
-    "ast_hash": "451c0f2c2901aabd73d5a1be9761d486",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Badge.md": {
-    "mtime": 1783612465.732237,
-    "ast_hash": "7bbb71c6166d29c88548c6eab629f493",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Button.md": {
-    "mtime": 1783612459.1430542,
-    "ast_hash": "1b830175c2b12d62bef2f76926aa8fc2",
-    "semantic_hash": ""
-  },
-  "design-system/docs/FeatureCard.md": {
-    "mtime": 1783614857.4802723,
-    "ast_hash": "bffb7c818eb4e19c117049312e2eb51e",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Footer.md": {
-    "mtime": 1783612498.3891692,
-    "ast_hash": "d484641bb56ac4470feb6f1ae9079c99",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Marker.md": {
-    "mtime": 1783612462.908751,
-    "ast_hash": "7765636824fc96eeefef01572468318b",
-    "semantic_hash": ""
-  },
-  "design-system/docs/NavBar.md": {
-    "mtime": 1783612494.1775894,
-    "ast_hash": "9f3a250dd2bc63bd163b56a25fb6bc01",
-    "semantic_hash": ""
-  },
-  "design-system/docs/ProcessCard.md": {
-    "mtime": 1783612488.398881,
-    "ast_hash": "b317ace396413a8f0a377047295255f2",
-    "semantic_hash": ""
-  },
-  "design-system/docs/ProfileCard.md": {
-    "mtime": 1783612499.1925883,
-    "ast_hash": "81f60f1a0922f75cc64d61f005ad358c",
-    "semantic_hash": ""
-  },
-  "design-system/docs/SectionHeader.md": {
-    "mtime": 1783612469.4984255,
-    "ast_hash": "291ecf5e53719b8a43b5c984aec729dc",
-    "semantic_hash": ""
-  },
-  "design-system/docs/StepRail.md": {
-    "mtime": 1783612491.227516,
-    "ast_hash": "581768ea8a44ae38dca3f155058b52e3",
-    "semantic_hash": ""
-  },
-  "design-system/docs/Ticker.md": {
-    "mtime": 1783612472.3218389,
-    "ast_hash": "124f25995b53a0c5ecb3f4e6d3222aed",
     "semantic_hash": ""
   }
 }

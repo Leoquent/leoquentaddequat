@@ -141,7 +141,7 @@ Soft CTA (eine Frage ODER „kommentiere X")
 >
 > **leoquent & addequat — keine Agentur, eine AGENTur.**
 >
-> Wir konzipieren und programmieren autonome KI-Systeme, die sich *deiner* Geschäftslogik unterwerfen. Die Routine übernehmen. Fehlerfrei, rund um die Uhr, DSGVO-konform.
+> Wir konzipieren und programmieren autonome KI-Systeme, die sich *deiner* Geschäftslogik unterwerfen. Die Routine übernehmen. Zuverlässig, rund um die Uhr, DSGVO-konform.
 >
 > 3 Prinzipien, die Agenturen hassen:
 > → Performance Pricing: Wir gewinnen, wenn du gewinnst.

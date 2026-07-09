@@ -54,7 +54,7 @@ Dieses Dokument dient als zentrale "Single Source of Truth" für die neue inhalt
 
 ### (02) AUTONOME AGENTEN
 - **Badges:** `Workflow-Automation` · `Dokumenten-Verarbeitung` · `Kunden-Kommunikation` · `Datenpflege`
-- **Aufklapptext:** Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – 24/7, fehlerfrei.
+- **Aufklapptext:** Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – rund um die Uhr.
 
 ### (03) CUSTOM DEVELOPMENT
 - **Badges:** `CRM-Systeme` · `Dashboards` · `Planungstools` · `Websites` · `Social Media Automation` · `E-Commerce`

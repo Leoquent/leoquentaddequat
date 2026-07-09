@@ -66,7 +66,7 @@ Ein endlos durchlaufender Textstrang (Marquee) mit den Begriffen:
 
 **Lösung 2: Autonome Agenten**
 - *Badges/Tags:* Workflow-Automation, Dokumenten-Verarbeitung, Kunden-Kommunikation, Datenpflege
-- *Beschreibung:* Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – 24/7, fehlerfrei.
+- *Beschreibung:* Intelligente KI-Mitarbeiter, die Routineaufgaben eigenständig erledigen. Vom Call-Center-Agenten über die automatische Rechnungsverarbeitung bis zur autonomen Terminplanung – rund um die Uhr.
 
 **Lösung 3: Custom Development**
 - *Badges/Tags:* CRM-Systeme, Dashboards, Planungstools, Websites, Automation

@@ -1,16 +1,16 @@
-# Graph Report - leoquent-addiquat  (2026-07-09)
+# Graph Report - leoquent-addiquat  (2026-07-03)
 
 ## Corpus Check
-- 85 files · ~310,535 words
+- 42 files · ~304,887 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 421 nodes · 389 edges · 67 communities (54 shown, 13 thin omitted)
+- 289 nodes · 253 edges · 39 communities (28 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `44390818`
+- Built from commit: `a66d8f33`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,24 +47,18 @@
 - [[_COMMUNITY_next.config.ts|next.config.ts]]
 - [[_COMMUNITY_postcss.config.mjs|postcss.config.mjs]]
 - [[_COMMUNITY_TODO|TODO.md]]
-- [[_COMMUNITY_compilerOptions|compilerOptions]]
-- [[_COMMUNITY_package.json|package.json]]
-- [[_COMMUNITY_leoquent & addequat — build conventions|leoquent & addequat — build conventions]]
-- [[_COMMUNITY_StepRail.tsx|StepRail.tsx]]
-- [[_COMMUNITY_design-sync notes — leoquent-addequat-brand|design-sync notes — leoquent-addequat-brand]]
-- [[_COMMUNITY_NavBar.tsx|NavBar.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
-2. `compilerOptions` - 12 edges
-3. `LinkedIn Launch-Playbook — leoquent & addequat` - 10 edges
-4. `leoquent & addequat – Website Copy V2 (Neuausrichtung)` - 10 edges
-5. `Website-Inhalte & Struktur für KI-Generierung` - 10 edges
-6. `5. BRANCHEN & USE CASES (Was möglich ist)` - 9 edges
-7. `Analysis Steps` - 8 edges
-8. `PETITE-VUE TEMPLATE SPEC (for component extraction)` - 8 edges
-9. `Handover für die Coding-KI — leoquent & addequat` - 8 edges
-10. `Project-Specific Design System (Leoquent & Addiquat)` - 7 edges
+2. `LinkedIn Launch-Playbook — leoquent & addequat` - 10 edges
+3. `leoquent & addequat – Website Copy V2 (Neuausrichtung)` - 10 edges
+4. `Website-Inhalte & Struktur für KI-Generierung` - 10 edges
+5. `5. BRANCHEN & USE CASES (Was möglich ist)` - 9 edges
+6. `Analysis Steps` - 8 edges
+7. `PETITE-VUE TEMPLATE SPEC (for component extraction)` - 8 edges
+8. `Handover für die Coding-KI — leoquent & addequat` - 8 edges
+9. `Project-Specific Design System (Leoquent & Addiquat)` - 7 edges
+10. `scripts` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -72,11 +66,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (67 total, 13 thin omitted)
+## Communities (39 total, 11 thin omitted)
 
 ### Community 0 - "Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)"
-Cohesion: 0.07
-Nodes (29): (01) KI-STRATEGIE, (02) AUTONOME AGENTEN, (03) CUSTOM DEVELOPMENT, (04) SYSTEM-INTEGRATION, 1. Analyse, 1. HERO SECTION (Der Einstieg), 2. Architektur, 2. THE ENEMY (Das Problem / Der Status Quo) (+21 more)
+Cohesion: 0.10
+Nodes (20): (01) KI-STRATEGIE, (02) AUTONOME AGENTEN, (03) CUSTOM DEVELOPMENT, (04) SYSTEM-INTEGRATION, 1. Analyse, 1. HERO SECTION (Der Einstieg), 2. Architektur, 2. THE ENEMY (Das Problem / Der Status Quo) (+12 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.10
@@ -120,15 +114,15 @@ Nodes (9): Brand Identity, Component Patterns, Design Thinking, Established Colo
 
 ### Community 11 - "page.tsx"
 Cohesion: 0.18
-Nodes (9): industriesData, navLinks, painPoints, prozessData, solutionsData, QuizAnswers, QuizModal(), QuizModalProps (+1 more)
+Nodes (7): industriesData, painPoints, prozessData, solutionsData, QuizAnswers, QuizModalProps, STEPS
 
 ### Community 12 - "package.json"
 Cohesion: 0.20
 Nodes (9): 1. PHP-Datei erstellen, 2. Formular in `components/QuizModal.tsx` anpassen, E-Mail-Anbindung Handover & Dokumentation, Option A: Web3Forms (Empfohlen, einfachste Lösung), Option B: Eigener PHP-Mailer (Keine Drittanbieter, eigene Domain), Option C: Eigener Node.js-Server (z. B. VPS, Vercel), To-dos für den Kollegen / die KI:, To-dos für den Kollegen / die KI: (+1 more)
 
 ### Community 13 - "5. BRANCHEN & USE CASES (Was möglich ist)"
-Cohesion: 0.09
-Nodes (28): Accordion(), AccordionItemData, AccordionProps, Badge(), BadgeProps, Button(), ButtonProps, FeatureCard() (+20 more)
+Cohesion: 0.22
+Nodes (9): 5. BRANCHEN & USE CASES (Was möglich ist), 🎓 Bildung (Education), ⚕️ Gesundheitswesen (Healthcare), 📦 Handel & E-Commerce, 🔨 Handwerk & Konstruktion, 🏢 Immobilien (Real Estate), 🌾 Landwirtschaft (Agriculture), 🚚 Logistik & Supply Chain (+1 more)
 
 ### Community 14 - "CLAUDE.md"
 Cohesion: 0.25
@@ -158,41 +152,25 @@ Nodes (3): Core scenarios (what this skill handles), How it works, Superdesign C
 Cohesion: 0.50
 Nodes (3): Deployment & E-Mail-Anbindung, Run and deploy your AI Studio app, Run Locally
 
-### Community 39 - "compilerOptions"
-Cohesion: 0.14
-Nodes (13): compilerOptions, declaration, esModuleInterop, forceConsistentCasingInFileNames, jsx, module, moduleResolution, outDir (+5 more)
-
-### Community 40 - "package.json"
-Cohesion: 0.15
-Nodes (12): main, module, name, peerDependencies, react, react-dom, private, scripts (+4 more)
-
-### Community 41 - "leoquent & addequat — build conventions"
-Cohesion: 0.33
-Nodes (5): Idiomatic section, leoquent & addequat — build conventions, Setup, Styling idiom, Where the truth lives
-
-### Community 44 - "design-sync notes — leoquent-addequat-brand"
-Cohesion: 0.50
-Nodes (3): design-sync notes — leoquent-addequat-brand, Known gaps (user-reported, 2026-07-09), Re-sync risks
-
 ## Knowledge Gaps
-- **233 isolated node(s):** `links`, `steps`, `extends`, `BRANCH_LABELS`, `GROESSE_LABELS` (+228 more)
+- **202 isolated node(s):** `extends`, `BRANCH_LABELS`, `GROESSE_LABELS`, `INTERESSE_LABELS`, `DRINGLICHKEIT_LABELS` (+197 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `devDependencies`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **What connects `links`, `steps`, `extends` to the rest of the system?**
-  _233 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `leoquent & addequat – Website Copy V2 (Neuausrichtung)` connect `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` to `5. BRANCHEN & USE CASES (Was möglich ist)`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **What connects `extends`, `BRANCH_LABELS`, `GROESSE_LABELS` to the rest of the system?**
+  _202 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` be split into smaller, more focused modules?**
-  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `SUPERDESIGN.md` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `LinkedIn Launch-Playbook — Leoquent & Addiquat` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
-- **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
