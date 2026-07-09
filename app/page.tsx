@@ -732,12 +732,12 @@ export default function Page() {
 
             {/* Hero – fixed in the background behind content */}
             <section className="fixed top-0 left-0 right-0 h-[100svh] flex flex-col bg-white z-0 overflow-hidden" id="hero-sticky-section">
-                <div className="w-full flex-1 px-6 pt-24 pb-6 md:px-8 md:py-12 lg:px-10 lg:py-20 flex flex-col justify-start md:justify-center relative mx-auto max-w-[1440px]" style={{ perspective: '1200px', perspectiveOrigin: '50% 40%' }}>
-                    <div className="font-mono mb-6 md:mb-8 uppercase text-sm font-medium tracking-wider md:tracking-widest hero-element">
+                <div className="w-full flex-1 px-6 pt-24 pb-16 md:px-8 md:py-12 lg:px-10 lg:py-20 flex flex-col justify-start md:justify-center relative mx-auto max-w-[1440px]" style={{ perspective: '1200px', perspectiveOrigin: '50% 40%' }}>
+                    <div className="font-mono mb-8 md:mb-8 uppercase text-sm font-medium tracking-wider md:tracking-widest hero-element">
                         <span className="brutalist-marker text-vanta">Strategic Agentic Excellence</span>
                     </div>
 
-                    <h1 className="hero-headline text-vanta uppercase mb-6 md:mb-8" style={{ transformStyle: 'preserve-3d' }}>
+                    <h1 className="hero-headline text-vanta uppercase mb-8 md:mb-8" style={{ transformStyle: 'preserve-3d' }}>
                         <span className="hero-word inline-block">KI-Systeme,</span>
                         <br />
                         <span className="hero-word inline-block">die</span>{" "}
@@ -747,7 +747,7 @@ export default function Page() {
                         <span className="hero-word inline-block brutalist-marker">machen.</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl text-mute leading-relaxed mb-8 md:mb-10 hero-element">
+                    <p className="text-lg md:text-xl text-mute leading-relaxed mb-10 md:mb-10 hero-element">
                         Ob bestehende Insellösungen vernetzen oder komplette Tools von Grund auf neu programmieren:<br />
                         Wir schaffen autonome Architekturen, die Arbeitsabläufe optimieren und Erfolg maximieren.
                     </p>
@@ -757,6 +757,12 @@ export default function Page() {
                             Potenzial Analysieren
                         </button>
                         <span className="font-mono text-xs text-mute uppercase hidden sm:block">Status: <br /><span className="text-lime animate-pulse">unverbindlich</span></span>
+                    </div>
+
+                    {/* Scroll cue – mobile only, anchored to the bottom of the hero above the ticker */}
+                    <div className="mt-auto pt-10 flex md:hidden flex-col items-start gap-1.5 font-mono text-[10px] uppercase tracking-widest text-mute" aria-hidden="true">
+                        <span>Scrollen</span>
+                        <span className="text-lime text-base leading-none animate-bounce">↓</span>
                     </div>
                 </div>
             </section>
