@@ -752,11 +752,11 @@ export default function Page() {
                         Wir schaffen autonome Architekturen, die Arbeitsabläufe optimieren und Erfolg maximieren.
                     </p>
 
-                    <div className="flex items-center gap-6 hero-element">
+                    <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6 hero-element">
                         <button onClick={openQuiz} className="btn-glitch inline-block bg-lime text-vanta font-mono font-bold uppercase py-4 px-8 border border-lime transition-all duration-75 cursor-pointer">
                             Potenzial Analysieren
                         </button>
-                        <span className="font-mono text-xs text-mute uppercase hidden sm:block">Status: <br /><span className="text-lime animate-pulse">unverbindlich</span></span>
+                        <span className="font-mono text-xs text-mute uppercase block">Status: <br /><span className="text-lime animate-pulse">unverbindlich</span></span>
                     </div>
 
                     {/* Scroll cue – mobile only, anchored to the bottom of the hero above the ticker */}
