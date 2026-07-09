@@ -1,0 +1,15 @@
+{
+  "shape": "package",
+  "pkg": "leoquent-addequat-brand",
+  "globalName": "LABrand",
+  "buildCmd": "./node_modules/.bin/tsc -p design-system/tsconfig.json",
+  "cssEntry": "src/styles.css",
+  "docsDir": "docs",
+  "guidelinesGlob": [],
+  "readmeHeader": ".design-sync/conventions.md",
+  "overrides": {
+    "NavBar": { "cardMode": "column" },
+    "Marker": { "cardMode": "column" },
+    "SectionHeader": { "cardMode": "column" }
+  }
+}
