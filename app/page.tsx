@@ -171,6 +171,14 @@ const industriesData = [
     }
 ];
 
+const navLinks = [
+    { name: "Status Quo", href: "#status-quo-section" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Prozess", href: "#prozess" },
+    { name: "Branchen", href: "#branchen" },
+    { name: "Warum Wir", href: "#warum-wir" }
+];
+
 const prozessData = [
     {
         n: "01",
@@ -211,30 +219,13 @@ export default function Page() {
     const sqRingRef = useRef<HTMLDivElement>(null);
     const [activeStep, setActiveStep] = useState(-1);
 
-    const prozessStepsRef = useRef<(HTMLDivElement | null)[]>([]);
     const desktopProgressFillsRef = useRef<(HTMLDivElement | null)[]>([]);
     const activeStepRef = useRef(-1);
-    const leftTextBlockRef = useRef<HTMLDivElement>(null);
 
     // Keep ref in sync
     useEffect(() => {
         activeStepRef.current = activeStep;
     }, [activeStep]);
-
-    const scrollToStep = (i: number) => {
-        if (window.innerWidth >= 768) {
-            const prozessEl = document.getElementById('prozess');
-            if (prozessEl) {
-                const rect = prozessEl.getBoundingClientRect();
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                // Total scroll distance is 800px, 5 segments -> 0, 160, 320, 480
-                const top = rect.top + scrollTop - 64; 
-                window.scrollTo({ top: top + (i * 160), behavior: 'smooth' });
-            }
-        } else {
-            prozessStepsRef.current[i]?.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-    };
 
     // --- SCROLL NAV ---
     useEffect(() => {
@@ -382,8 +373,14 @@ export default function Page() {
             if (solCards.length > 0) solTl.fromTo(solCards, { opacity: 0, scale: 0.95, y: 50 }, { opacity: 1, scale: 1, y: 0, duration: 2, stagger: 0.2 }, "-=0.5");
         });
 
-        // 4. PROZESS (Pinned Card Slider on Desktop vs Pinned Stack on Mobile)
-        mm.add("(min-width: 768px)", () => {
+        // 4. PROZESS (Card Slider via native CSS sticky on both breakpoints — never pin:true here)
+        // Reduced motion: skip the scrub timelines entirely and show all steps fully revealed.
+        mm.add("(prefers-reduced-motion: reduce)", () => {
+            activeStepRef.current = 3;
+            setActiveStep(3);
+        });
+
+        mm.add("(min-width: 768px) and (prefers-reduced-motion: no-preference)", () => {
             const fills = desktopProgressFillsRef.current;
             const card2 = document.querySelector('.desktop-card-1') as HTMLElement; // step 02 is index 1
             const card3 = document.querySelector('.desktop-card-2') as HTMLElement; // step 03 is index 2
@@ -439,19 +436,20 @@ export default function Page() {
             }
         });
 
-        mm.add("(max-width: 767px)", () => {
+        mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => {
             const cards = gsap.utils.toArray('.mobile-prozess-card') as HTMLElement[];
             const prozessWrapper = document.querySelector('#prozess');
-            
+
             if (cards.length > 0 && prozessWrapper) {
                 const tlMobile = gsap.timeline({
                     scrollTrigger: {
                         trigger: prozessWrapper,
                         start: "top 64px",
                         end: "+=1000",
+                        // NO pin — the section is CSS-sticky and stays anchored while the
+                        // 1000px spacer after it scrolls by (spacer height must match `end`).
+                        // The next section then slides over the anchored one.
                         scrub: 0.6,
-                        pin: true,
-                        anticipatePin: 1,
                         onUpdate: (self) => {
                             let step = -1;
                             if (self.progress >= 0.9) step = 3;
@@ -670,12 +668,10 @@ export default function Page() {
                     </a>
 
                     {/* Desktop Menu */}
-                    <div className="hidden lg:flex items-center gap-8 font-mono text-[10px] uppercase tracking-widest text-mute">
-                        <a href="#status-quo-section" className="hover:text-lime transition-colors">Status Quo</a>
-                        <a href="#solutions" className="hover:text-lime transition-colors">Solutions</a>
-                        <a href="#prozess" className="hover:text-lime transition-colors">Prozess</a>
-                        <a href="#branchen" className="hover:text-lime transition-colors">Branchen</a>
-                        <a href="#warum-wir" className="hover:text-lime transition-colors">Warum Wir</a>
+                    <div className={`hidden lg:flex items-center gap-8 font-mono text-[10px] uppercase tracking-widest ${scrolledPastHero ? 'text-bone/70' : 'text-mute'}`}>
+                        {navLinks.map((link) => (
+                            <a key={link.name} href={link.href} className={`transition-colors ${scrolledPastHero ? 'hover:text-lime' : 'hover:text-vanta'}`}>{link.name}</a>
+                        ))}
                     </div>
 
                     <div className="flex items-center gap-3 sm:gap-4 lg:gap-6 shrink-0">
@@ -696,10 +692,11 @@ export default function Page() {
                         </button>
 
                         {/* Hamburger Button */}
-                        <button 
+                        <button
                             onClick={toggleMobileMenu}
-                            className={`lg:hidden flex flex-col justify-center items-center w-8 h-8 z-50 relative ${isMobileMenuOpen ? 'menu-open' : ''}`}
-                            aria-label="Toggle Menu"
+                            className={`lg:hidden flex flex-col justify-center items-center w-11 h-11 -m-1.5 z-50 relative ${isMobileMenuOpen ? 'menu-open' : ''}`}
+                            aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
+                            aria-expanded={isMobileMenuOpen}
                         >
                             <span className={`hamburger-line line-top w-6 h-0.5 mb-1.5 ${(scrolledPastHero || isMobileMenuOpen) ? 'bg-white' : 'bg-vanta'}`}></span>
                             <span className={`hamburger-line line-middle w-6 h-0.5 mb-1.5 ${(scrolledPastHero || isMobileMenuOpen) ? 'bg-white' : 'bg-vanta'}`}></span>
@@ -711,13 +708,7 @@ export default function Page() {
                 {/* Mobile Menu Overlay */}
                 <div className={`fixed inset-0 bg-vanta z-40 mobile-menu-overlay flex flex-col justify-center items-center lg:hidden ${isMobileMenuOpen ? 'opacity-100 visible mobile-menu-open' : 'opacity-0 invisible pointer-events-none'}`}>
                     <div className="flex flex-col gap-8 text-center px-10">
-                        {[
-                            { name: "Status Quo", href: "#status-quo-section" },
-                            { name: "Solutions", href: "#solutions" },
-                            { name: "Prozess", href: "#prozess" },
-                            { name: "Branchen", href: "#branchen" },
-                            { name: "Warum Wir", href: "#warum-wir" }
-                        ].map((link, i) => (
+                        {navLinks.map((link, i) => (
                             <a 
                                 key={link.name}
                                 href={link.href}
@@ -771,9 +762,9 @@ export default function Page() {
             </section>
 
             {/* Content area – starts at viewport bottom (ticker flush), scrolls up over hero */}
-            <div className="relative z-10" id="content-wrapper" style={{ marginTop: 'calc(100svh - 48px)' }}>
-                {/* Ticker – flush at viewport bottom on load, scrolls up with content */}
-                <div className="h-[48px] shrink-0 border-t border-b border-gridline text-lime overflow-hidden flex items-center whitespace-nowrap bg-[#080808] w-full relative">
+            <main className="relative z-10" id="content-wrapper" style={{ marginTop: 'calc(100svh - 48px)' }}>
+                {/* Ticker – flush at viewport bottom on load, scrolls up with content (decorative) */}
+                <div aria-hidden="true" className="h-[48px] shrink-0 border-t border-b border-gridline text-lime overflow-hidden flex items-center whitespace-nowrap bg-[#080808] w-full relative">
                     <div className="animate-marquee font-mono text-xs uppercase tracking-widest flex gap-12 items-center pr-12 shrink-0">
                         <span>GENERATIVE UI</span> <span className="opacity-30">/</span>
                         <span>COMPUTER VISION</span> <span className="opacity-30">/</span>
@@ -826,7 +817,9 @@ export default function Page() {
                             </p>
                             <h2 className="section-headline w-full" style={{ transitionDelay: '100ms' }}>
                                 <span className="text-white">WIR BEENDEN</span><br />
-                                <span id="typewriter" ref={typewriterRef} className="text-lime block min-h-[2.4em] md:min-h-0"></span>
+                                {/* Screenreader: static phrase instead of the permanently mutating typewriter */}
+                                <span className="sr-only">die Zeitfresser in Ihrem Unternehmen.</span>
+                                <span id="typewriter" ref={typewriterRef} aria-hidden="true" className="text-lime block min-h-[2.4em] md:min-h-0"></span>
                             </h2>
                         </div>
 
@@ -842,10 +835,10 @@ export default function Page() {
                         </div>
 
                         <div className="flex flex-col gap-3 pt-8 md:pt-12 border-t border-gridline/20 reveal" style={{ transitionDelay: '300ms' }}>
-                            <p className="text-[10px] md:text-xs text-mute/60 leading-relaxed font-mono tracking-wide">
+                            <p className="text-[10px] md:text-xs text-bone/60 leading-relaxed font-mono tracking-wide">
                                 <span className="text-lime/70 uppercase">Mission</span> · Wir verwandeln Unternehmenswissen in autonome Systeme. Mit strategischer Kreativität und kompromissloser IT-Sicherheit machen wir KI für den Mittelstand skalierbar – und so einfach und sicher wie Licht einschalten.
                             </p>
-                            <p className="text-[10px] md:text-xs text-mute/60 leading-relaxed font-mono tracking-wide">
+                            <p className="text-[10px] md:text-xs text-bone/60 leading-relaxed font-mono tracking-wide">
                                 <span className="text-lime/70 uppercase">Vision</span> · Das autonome Betriebssystem für den europäischen Mittelstand – die Infrastruktur, auf der Unternehmen der Zukunft laufen.
                             </p>
                         </div>
@@ -864,7 +857,7 @@ export default function Page() {
                                 Ihre Logik.<br />Unser Code.
                             </h2>
                         </div>
-                        <p className="max-w-md text-mute text-sm leading-relaxed font-light">
+                        <p className="max-w-md text-bone/70 text-sm leading-relaxed font-light">
                             Egal ob bestehende Systeme intelligent vernetzen oder komplett neue Software entwickeln – wir bauen
                             exakt die Lösung, die Ihr Problem löst.
                         </p>
@@ -943,7 +936,11 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section id="prozess" className="border-b border-gridline relative bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible h-[calc(100dvh-64px)] md:h-auto shadow-[0_20px_0_0_#050505] md:shadow-none">
+                {/* Anchor + ScrollTrigger marker: static zero-height element at the section's natural
+                    position. Nav links and GSAP measure against this — the section itself is sticky
+                    on mobile and therefore useless as a scroll target once it is anchored. */}
+                <div id="prozess" className="scroll-mt-[65px]" />
+                <section className="border-b border-gridline sticky top-[64px] -z-10 md:relative md:top-auto md:z-auto bg-white text-vanta flex justify-center overflow-hidden md:overflow-visible h-[calc(100dvh-64px)] md:h-auto shadow-[0_20px_0_0_#050505] md:shadow-none">
                     <div className="w-full max-w-[1440px] h-full md:h-auto">
                         
                         {/* Mobile view container */}
@@ -965,10 +962,10 @@ export default function Page() {
                                     <div className="flex justify-between w-full">
                                         {prozessData.map((s, i) => (
                                             <div key={s.n} className="flex-1 text-left pr-1">
-                                                <span className={`block font-mono text-[9px] tracking-widest transition-colors duration-300 ${activeStep >= i ? 'text-lime' : 'text-vanta/40'}`}>
+                                                <span className={`block w-fit font-mono text-[9px] tracking-widest px-1 -ml-1 transition-colors duration-300 ${activeStep >= i ? 'bg-lime text-vanta' : 'text-vanta/60'}`}>
                                                     {s.n}
                                                 </span>
-                                                <span className={`block text-[9px] sm:text-[10px] uppercase font-bold tracking-tight transition-colors duration-300 mt-0.5 ${activeStep === i ? 'text-vanta' : 'text-vanta/30'} truncate sm:whitespace-normal`}>
+                                                <span className={`block text-[9px] sm:text-[10px] uppercase font-bold tracking-tight transition-colors duration-300 mt-0.5 ${activeStep === i ? 'text-vanta' : 'text-vanta/60'} truncate sm:whitespace-normal`}>
                                                     {s.title}
                                                 </span>
                                             </div>
@@ -982,10 +979,10 @@ export default function Page() {
                                 {prozessData.map((s, i) => (
                                     <div
                                         key={s.n}
-                                        className="mobile-prozess-card border-t border-gridline last:border-b px-6 py-3 sm:py-4 bg-white flex flex-col justify-center flex-1 will-change-transform"
+                                        className="mobile-prozess-card border-t border-gridline px-6 py-3 sm:py-4 bg-white flex flex-col justify-center flex-1 will-change-transform"
                                     >
                                         <div className="flex items-center gap-3 mb-1">
-                                            <span className="font-mono text-lime text-base font-bold">{s.n}</span>
+                                            <span className="font-mono bg-lime text-vanta px-1 text-base font-bold">{s.n}</span>
                                             <h3 className="text-sm uppercase font-bold text-vanta">{s.title}</h3>
                                         </div>
                                         <p className="text-mute text-[11px] sm:text-xs leading-normal font-light">{s.text}</p>
@@ -1005,11 +1002,11 @@ export default function Page() {
                         </div>
 
                         {/* Desktop: Pinned 2-column Slider */}
-                        <div className="hidden md:grid md:grid-cols-[2fr_3fr] border-x border-gridline relative md:h-[calc(100vh_-_64px_+_1000px)]">
+                        <div className="prozess-grid hidden md:grid md:grid-cols-[2fr_3fr] border-x border-gridline relative md:h-[calc(100vh_-_64px_+_1000px)]">
                             
                             {/* LEFT: Static Text Column (Headline, Copy, and Horizontal Progress Bars) */}
                             <div className="flex flex-col justify-start px-8 lg:px-10 py-12 border-r border-gridline bg-white select-none h-full relative">
-                                <div ref={leftTextBlockRef} className="w-full sticky top-[112px] z-20">
+                                <div className="w-full sticky top-[112px] z-20">
                                     <p className="font-mono text-xs uppercase mb-6 tracking-widest">
                                         <span className="brutalist-marker text-vanta">Prozess</span>
                                     </p>
@@ -1039,10 +1036,10 @@ export default function Page() {
                                                     key={s.n}
                                                     className="flex-1 text-left"
                                                 >
-                                                    <span className={`block font-mono text-[10px] tracking-widest transition-colors duration-300 ${activeStep >= i ? 'text-lime' : 'text-vanta/40'}`}>
+                                                    <span className={`block w-fit font-mono text-[10px] tracking-widest px-1 -ml-1 transition-colors duration-300 ${activeStep >= i ? 'bg-lime text-vanta' : 'text-vanta/60'}`}>
                                                         {s.n}
                                                     </span>
-                                                    <span className={`block text-[11px] uppercase font-bold tracking-tight transition-colors duration-300 mt-1 ${activeStep === i ? 'text-vanta' : 'text-vanta/30'}`}>
+                                                    <span className={`block text-[11px] uppercase font-bold tracking-tight transition-colors duration-300 mt-1 pr-1 truncate lg:whitespace-normal ${activeStep === i ? 'text-vanta' : 'text-vanta/60'}`}>
                                                         {s.title}
                                                     </span>
                                                 </div>
@@ -1072,22 +1069,22 @@ export default function Page() {
                                     
                                     const cardBgClass = "bg-white border-gridline";
                                     
-                                    const numberColorClass = isActive 
-                                            ? "text-lime" 
-                                            : isRevealed 
-                                                ? "text-lime/60" 
+                                    const numberColorClass = isActive
+                                            ? "bg-lime text-vanta"
+                                            : isRevealed
+                                                ? "text-vanta/50"
                                                 : "text-vanta/10";
-                                                
-                                    const titleColorClass = isActive 
-                                            ? "text-vanta" 
-                                            : isRevealed 
-                                                ? "text-vanta/60" 
+
+                                    const titleColorClass = isActive
+                                            ? "text-vanta"
+                                            : isRevealed
+                                                ? "text-vanta/60"
                                                 : "text-vanta/20";
 
-                                    const textColorClass = isActive 
-                                            ? "text-mute" 
-                                            : isRevealed 
-                                                ? "text-mute/60" 
+                                    const textColorClass = isActive
+                                            ? "text-mute"
+                                            : isRevealed
+                                                ? "text-mute"
                                                 : "text-vanta/20";
                                     
                                     const zIndexClass = i === 0 ? "z-40" : i === 1 ? "z-30" : i === 2 ? "z-20" : "z-10";
@@ -1102,7 +1099,7 @@ export default function Page() {
                                             }}
                                             className={`desktop-card-${i} absolute left-0 w-full p-8 lg:p-10 flex flex-col justify-center ${i === prozessData.length - 1 ? '' : 'border-b'} border-gridline ${zIndexClass} ${cardBgClass}`}
                                         >
-                                            <div className={`prozess-number font-mono mb-4 text-2xl transition-colors duration-500 ${numberColorClass}`}>{s.n}</div>
+                                            <div className={`prozess-number font-mono mb-4 text-2xl w-fit px-1.5 -ml-1.5 transition-colors duration-500 ${numberColorClass}`}>{s.n}</div>
                                             <h3 className={`prozess-title text-xl uppercase font-bold mb-3 transition-colors duration-500 ${titleColorClass}`}>{s.title}</h3>
                                             <p className={`prozess-text text-sm leading-relaxed font-light max-w-md transition-colors duration-500 ${textColorClass}`}>{s.text}</p>
                                         </div>
@@ -1116,6 +1113,11 @@ export default function Page() {
                     </div>
                 </section>
 
+                {/* Mobile scrub distance: the section stays anchored (sticky) while this transparent
+                    spacer scrolls by; then #branchen slides over it. Height must stay in sync with
+                    the mobile ScrollTrigger end "+=1000". */}
+                <div className="h-[1000px] md:hidden pointer-events-none motion-reduce:hidden" aria-hidden="true" />
+
                 <section id="branchen" className="border-b border-gridline bg-vanta text-white flex justify-center">
                     <div className="w-full max-w-[1440px]">
                         <div className="px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 border-x border-gridline flex flex-col md:flex-row justify-between items-start md:items-end gap-8 reveal">
@@ -1125,7 +1127,7 @@ export default function Page() {
                             </p>
                             <h2 className="section-headline">Der Mittelstand<br />wird autonom.</h2>
                         </div>
-                        <p className="max-w-md md:text-right text-mute text-sm leading-relaxed font-light">
+                        <p className="max-w-md md:text-right text-bone/70 text-sm leading-relaxed font-light">
                             Egal aus welcher Branche Sie kommen: Wir bauen spezifische KI-Systeme, die reale Probleme lösen.
                         </p>
                     </div>
@@ -1311,7 +1313,7 @@ export default function Page() {
                                     Tech-Fundament.
                                 </h2>
                             </div>
-                            <p className="text-mute text-sm max-w-sm">Zwei Spezialisten vereint. Eine Lücke geschlossen: die zwischen dem, was KI verspricht &mdash; und dem, was Ihr Unternehmen wirklich braucht.</p>
+                            <p className="text-bone/70 text-sm max-w-sm">Zwei Spezialisten vereint. Eine Lücke geschlossen: die zwischen dem, was KI verspricht &mdash; und dem, was Ihr Unternehmen wirklich braucht.</p>
                         </div>
 
                         {/* Card: Leonid */}
@@ -1332,6 +1334,8 @@ export default function Page() {
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
                                 style={{ backgroundImage: `url('${basePath}/FOTOS/leonid_cropped_2.webp')` }}
+                                role="img"
+                                aria-label="Porträtfoto von Leonid"
                             />
                             
                             {/* Overlay Gradient */}
@@ -1393,6 +1397,8 @@ export default function Page() {
                                     : 'opacity-100 grayscale-0 saturate-100 scale-100 lg:group-hover:opacity-30 lg:group-hover:grayscale lg:group-hover:contrast-125 lg:group-hover:saturate-0 lg:group-hover:scale-105'
                                 }`}
                                 style={{ backgroundImage: `url('${basePath}/FOTOS/admir_cropped.webp')` }}
+                                role="img"
+                                aria-label="Porträtfoto von Admir"
                             />
                             
                             {/* Overlay Gradient */}
@@ -1446,7 +1452,7 @@ export default function Page() {
 
                     <div className="relative z-10 w-full max-w-2xl mx-auto reveal">
                         <h2 className="text-5xl md:text-7xl uppercase font-bold mb-6">Bereit für echte<br /><span className="brutalist-marker">Freiräume?</span></h2>
-                        <p className="text-mute mb-12">Der erste Schritt ist menschlich: Eine unverbindliche Potenzialanalyse. Wir zeigen Ihnen, wo Sie Zeit bluten. Der zweite Schritt: Automatisierung.</p>
+                        <p className="text-bone/70 mb-12">Der erste Schritt ist menschlich: Eine unverbindliche Potenzialanalyse. Wir zeigen Ihnen, wo Sie Zeit bluten. Der zweite Schritt: Automatisierung.</p>
 
                         <button onClick={openQuiz} className="bg-lime text-vanta font-mono font-bold uppercase px-10 py-5 hover:bg-white hover:text-vanta transition-colors duration-300 btn-glitch border border-lime cursor-pointer text-lg">
                             Jetzt befreien
@@ -1454,7 +1460,7 @@ export default function Page() {
                     </div>
                 </section>
 
-                <footer className="border-t border-gridline flex justify-center font-mono text-xs text-mute bg-vanta text-white w-full">
+                <footer className="border-t border-gridline flex justify-center font-mono text-xs text-bone/70 bg-vanta w-full">
                     <div className="w-full max-w-[1440px] px-6 py-6 md:px-8 lg:px-10 flex flex-col md:flex-row justify-between items-center">
                         <p>&copy; {new Date().getFullYear()} leoquent &amp; addequat. All systems nominal.</p>
                         <div className="flex gap-6 mt-4 md:mt-0">
@@ -1463,7 +1469,7 @@ export default function Page() {
                         </div>
                     </div>
                 </footer>
-            </div>
+            </main>
 
             {/* Quiz Modal */}
             <QuizModal isOpen={isQuizOpen} onClose={() => setIsQuizOpen(false)} />

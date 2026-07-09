@@ -68,6 +68,12 @@ section, #cta {
   color: #050505;
 }
 
+/* Visible keyboard focus — currentColor stays legible on both light and dark sections */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* Glitch Button Hover */
 .btn-glitch:hover {
   box-shadow: -4px 4px 0px #CCFF00;
@@ -252,5 +258,10 @@ section, #cta {
   }
   .noise-bg {
     display: none;
+  }
+  /* Prozess: without the GSAP scrub there is nothing to reveal — collapse the
+     artificial +1000px scroll runway so users don't scroll through dead space */
+  .prozess-grid {
+    height: auto !important;
   }
 }
