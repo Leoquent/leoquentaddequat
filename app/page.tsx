@@ -759,11 +759,6 @@ export default function Page() {
                         <span className="font-mono text-xs text-mute uppercase block">Status: <br /><span className="text-lime animate-pulse">unverbindlich</span></span>
                     </div>
 
-                    {/* Scroll cue – mobile only, anchored to the bottom of the hero above the ticker */}
-                    <div className="mt-auto pt-10 flex md:hidden flex-col items-start gap-1.5 font-mono text-[10px] uppercase tracking-widest text-mute" aria-hidden="true">
-                        <span>Scrollen</span>
-                        <span className="text-lime text-base leading-none animate-bounce">↓</span>
-                    </div>
                 </div>
             </section>
 
