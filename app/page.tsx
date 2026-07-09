@@ -677,7 +677,7 @@ export default function Page() {
                     <div className="flex items-center gap-3 sm:gap-4 lg:gap-6 shrink-0">
                         <button 
                             onClick={openQuiz} 
-                            className={`font-mono text-[9px] sm:text-sm border px-2 py-1.5 sm:px-4 sm:py-2 uppercase transition-all duration-500 ease-in-out cursor-pointer ${
+                            className={`font-mono text-[11px] sm:text-sm border px-3.5 py-2.5 sm:px-4 sm:py-2 uppercase transition-all duration-500 ease-in-out cursor-pointer ${
                                 scrolledPastHero 
                                     ? 'bg-lime text-vanta border-lime btn-glitch' 
                                     : 'border-gridline hover:border-lime hover:text-lime bg-vanta text-white'
@@ -732,8 +732,8 @@ export default function Page() {
 
             {/* Hero – fixed in the background behind content */}
             <section className="fixed top-0 left-0 right-0 h-[100svh] flex flex-col bg-white z-0 overflow-hidden" id="hero-sticky-section">
-                <div className="w-full flex-1 px-6 py-6 md:px-8 md:py-12 lg:px-10 lg:py-20 flex flex-col justify-center relative mx-auto max-w-[1440px]" style={{ perspective: '1200px', perspectiveOrigin: '50% 40%' }}>
-                    <div className="font-mono mb-6 md:mb-8 uppercase text-sm tracking-widest hero-element">
+                <div className="w-full flex-1 px-6 pt-24 pb-6 md:px-8 md:py-12 lg:px-10 lg:py-20 flex flex-col justify-start md:justify-center relative mx-auto max-w-[1440px]" style={{ perspective: '1200px', perspectiveOrigin: '50% 40%' }}>
+                    <div className="font-mono mb-6 md:mb-8 uppercase text-sm font-medium tracking-wider md:tracking-widest hero-element">
                         <span className="brutalist-marker text-vanta">Strategic Agentic Excellence</span>
                     </div>
 
