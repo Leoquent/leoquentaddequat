@@ -1307,8 +1307,8 @@ export default function Page() {
                                     <span className="brutalist-marker text-vanta">Über uns</span>
                                 </p>
                                 <h2 className="text-3xl lg:text-4xl uppercase font-bold mb-0 lg:mb-6 leading-tight">
-                                    Strategische Kreativität <br className="lg:hidden" />
-                                    trifft <br className="hidden lg:inline" />
+                                    Strategische <br className="lg:hidden" />
+                                    Kreativität trifft <br className="hidden lg:inline" /><br className="lg:hidden" />
                                     <span className="text-lime/90">unzerstörbares</span> <br className="lg:hidden" />
                                     Tech-Fundament.
                                 </h2>
