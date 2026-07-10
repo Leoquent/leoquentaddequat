@@ -597,7 +597,7 @@
       "label": "metadata",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "app_layout_metadata",
       "community": 18,
@@ -607,7 +607,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L56",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
       "community": 18,
@@ -4651,7 +4651,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "app_layout",
       "target": "app_layout_metadata",
@@ -4661,7 +4661,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L56",
+      "source_location": "L49",
       "weight": 1.0,
       "source": "app_layout",
       "target": "app_layout_rootlayout",
@@ -8155,5 +8155,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bd9a433457fac0a901ee88dca3d6db6c519dba49"
+  "built_at_commit": "4439081894af5f56fc0f51f8db14d38c65033167"
 }

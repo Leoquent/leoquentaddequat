@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1783686409.869373,
-    "ast_hash": "4a34cffa24cdc973b7530ff60c9f2fba",
+    "mtime": 1782985495.9936812,
+    "ast_hash": "1261f86e2f5d9508d318afeed4ffc715",
     "semantic_hash": ""
   },
   "app/page.tsx": {
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1783630925.7900486,
-    "ast_hash": "06af490b3464f8c419e339508f2d4c47",
+    "mtime": 1783614010.1724222,
+    "ast_hash": "41421be1bf90034bbe18386ea8963a81",
     "semantic_hash": ""
   },
   ".design-sync/config.json": {
@@ -482,16 +482,6 @@
   "design-system/docs/Ticker.md": {
     "mtime": 1783612472.3218389,
     "ast_hash": "124f25995b53a0c5ecb3f4e6d3222aed",
-    "semantic_hash": ""
-  },
-  "public/og-image-1200x1200.png": {
-    "mtime": 1783686417.4827971,
-    "ast_hash": "1b61082afd6e9e61d12b20f970826320",
-    "semantic_hash": ""
-  },
-  "public/og-image-1200x630.png": {
-    "mtime": 1783686320.2111108,
-    "ast_hash": "ea71ee21deebcba9003633b0d151e067",
     "semantic_hash": ""
   }
 }
