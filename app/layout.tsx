@@ -7,7 +7,7 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lunda-ki.de';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://leoquent.github.io';
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const ogImageLandscape = `${siteUrl}${basePath}/og-image-1200x630.png`;
 const ogImageSquare = `${siteUrl}${basePath}/og-image-1200x1200.png`;
