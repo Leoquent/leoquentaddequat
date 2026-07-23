@@ -23,7 +23,7 @@ This is a **Next.js 15 App Router** project. The entire marketing site lives in 
 
 **Critical `next.config.ts` constraints:**
 - `output: 'export'` — static export only. **This conflicts with `/api/analyse`**, which is a server-side Route Handler and cannot be statically exported. Before going live, either remove `output: 'export'` and deploy to a Node.js host (e.g. Vercel), or replace the email logic with a client-side service (Formspree, EmailJS). Do not deploy to GitHub Pages with the API route in place.
-- `basePath` is `/leoquentaddiquat` in production and empty in dev. All internal asset URLs (`/logo.png`, photos) must use the `basePath` prefix in production, hence the `const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""` pattern used throughout.
+- `basePath` is `/leoquentaddequat` in production and empty in dev. All internal asset URLs (`/logo.png`, photos) must use the `basePath` prefix in production, hence the `const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""` pattern used throughout.
 
 ## Design System
 
@@ -84,7 +84,7 @@ The Calendly URL is hardcoded at the top of `components/QuizModal.tsx` as `CALEN
 The repo belongs to the GitHub account `Leoquent` — push access requires being added as a Collaborator in GitHub repo Settings. The remote is configured via SSH:
 
 ```bash
-git remote set-url origin git@github.com:Leoquent/leoquentaddiquat.git
+git remote set-url origin git@github.com:Leoquent/leoquentaddequat.git
 ```
 
 The `feature/lead-qualification-funnel` branch is pushed and has an open Pull Request. Once merged into `main`, the next feature work should branch off `main`.

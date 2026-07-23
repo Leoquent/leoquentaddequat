@@ -1,16 +1,16 @@
-# Graph Report - leoquent-addiquat  (2026-07-23)
+# Graph Report - leoquent-addiquat  (2026-07-10)
 
 ## Corpus Check
-- 84 files · ~318,095 words
+- 85 files · ~318,080 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 415 nodes · 384 edges · 66 communities (53 shown, 13 thin omitted)
+- 421 nodes · 389 edges · 67 communities (54 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2a3b3936`
+- Built from commit: `bd9a4334`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,6 +32,7 @@
 - [[_COMMUNITY_CLAUDE|CLAUDE.md]]
 - [[_COMMUNITY_SKILL|SKILL.md]]
 - [[_COMMUNITY_THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES|THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES]]
+- [[_COMMUNITY_route.ts|route.ts]]
 - [[_COMMUNITY_layout.tsx|layout.tsx]]
 - [[_COMMUNITY_Launch-Checkliste — leoquent & addequat|Launch-Checkliste — leoquent & addequat]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
@@ -71,7 +72,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (66 total, 13 thin omitted)
+## Communities (67 total, 13 thin omitted)
 
 ### Community 0 - "Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)"
 Cohesion: 0.07
@@ -141,6 +142,10 @@ Nodes (5): Core scenarios (what this skill handles), How it works, Init: Repo An
 Cohesion: 0.33
 Nodes (5): 1. DER VIBE & STYLE (Visual Identity), 2. DAS NARRATIV & UNSERE BOTSCHAFTEN (Verbal Identity), 3. DIE AUFTEILUNG (Das Fundament), 4. MENÜFÜHRUNG & SEITENSTRUKTUR (Grobe Idee), THE L&A (LEOQUENT & ADDIQUAT) BRAND, VIBE & MESSAGES
 
+### Community 17 - "route.ts"
+Cohesion: 0.33
+Nodes (4): BRANCH_LABELS, DRINGLICHKEIT_LABELS, GROESSE_LABELS, INTERESSE_LABELS
+
 ### Community 19 - "Launch-Checkliste — leoquent & addequat"
 Cohesion: 0.40
 Nodes (4): ✅ Erledigt (im Code umgesetzt), ℹ️ Hinweise, Launch-Checkliste — leoquent & addequat, ⚠️ Von dir noch manuell zu erledigen (vor dem Launch)
@@ -170,7 +175,7 @@ Cohesion: 0.50
 Nodes (3): design-sync notes — leoquent-addequat-brand, Known gaps (user-reported, 2026-07-09), Re-sync risks
 
 ## Knowledge Gaps
-- **229 isolated node(s):** `links`, `steps`, `extends`, `metadata`, `metadata` (+224 more)
+- **233 isolated node(s):** `links`, `steps`, `extends`, `BRANCH_LABELS`, `GROESSE_LABELS` (+228 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -180,7 +185,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `dependencies` connect `dependencies` to `devDependencies`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `links`, `steps`, `extends` to the rest of the system?**
-  _229 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _233 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Leoquent & Addiquat – Website Copy V2 (Neuausrichtung)` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**

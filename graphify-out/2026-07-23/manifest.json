@@ -4,6 +4,11 @@
     "ast_hash": "777aa998ab47e617b40c2f8a0ab0f8af",
     "semantic_hash": ""
   },
+  "app/api/analyse/route.ts": {
+    "mtime": 1782900560.9890666,
+    "ast_hash": "360bc1d24acda04508a55566b9b4a580",
+    "semantic_hash": ""
+  },
   "app/datenschutz/page.tsx": {
     "mtime": 1782902186.8391893,
     "ast_hash": "c2e343eecb91c0763197c5700cbf9e51",
@@ -90,8 +95,8 @@
     "semantic_hash": ""
   },
   "next.config.ts": {
-    "mtime": 1784805485.6207578,
-    "ast_hash": "fb8289937122d5708a57e0b816ec47e3",
+    "mtime": 1782904792.6935418,
+    "ast_hash": "336fa1111d18c47c925697d78eb6a007",
     "semantic_hash": ""
   },
   "package.json": {
@@ -140,8 +145,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/deploy.yml": {
-    "mtime": 1784805717.4278803,
-    "ast_hash": "4bf5cba26142b0b6558e12ecae8b166e",
+    "mtime": 1772488744.6137576,
+    "ast_hash": "6334f4603d885b8461976a906668d3fb",
     "semantic_hash": ""
   },
   "AI_HANDOVER_PROTOCOL.md": {
@@ -155,8 +160,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1784805724.1200867,
-    "ast_hash": "24e96c5259892425fdb00f12d37a736f",
+    "mtime": 1782985584.01546,
+    "ast_hash": "87848df36d24fb63a5f3c1ef01b9d777",
     "semantic_hash": ""
   },
   "HANDOVER_CODING_AI.md": {
@@ -487,16 +492,6 @@
   "public/og-image-1200x630.png": {
     "mtime": 1783686320.2111108,
     "ast_hash": "ea71ee21deebcba9003633b0d151e067",
-    "semantic_hash": ""
-  },
-  "public/linkedin-profile-black-bg.png": {
-    "mtime": 1783687037.7566378,
-    "ast_hash": "5685321230aae438a2710753af1a9720",
-    "semantic_hash": ""
-  },
-  "public/linkedin-profile-white-bg.png": {
-    "mtime": 1783687047.1849525,
-    "ast_hash": "6aba5cf240dfdd7bb40d2afcf2e4ce63",
     "semantic_hash": ""
   }
 }

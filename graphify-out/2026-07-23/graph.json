@@ -434,6 +434,66 @@
       "norm_label": "extends"
     },
     {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_analyse_route",
+      "community": 17,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "BRANCH_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_branch_labels",
+      "community": 17,
+      "norm_label": "branch_labels"
+    },
+    {
+      "label": "GROESSE_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_groesse_labels",
+      "community": 17,
+      "norm_label": "groesse_labels"
+    },
+    {
+      "label": "INTERESSE_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_interesse_labels",
+      "community": 17,
+      "norm_label": "interesse_labels"
+    },
+    {
+      "label": "DRINGLICHKEIT_LABELS",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_dringlichkeit_labels",
+      "community": 17,
+      "norm_label": "dringlichkeit_labels"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "app_api_analyse_route_post",
+      "community": 17,
+      "norm_label": "post()"
+    },
+    {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "app/datenschutz/page.tsx",
@@ -4458,6 +4518,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_branch_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_dringlichkeit_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_groesse_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_interesse_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/analyse/route.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "app_api_analyse_route",
+      "target": "app_api_analyse_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/datenschutz/page.tsx",
       "source_location": "L15",
       "weight": 1.0,
@@ -8045,5 +8155,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2a3b39360d45ce94e44658f0f4465abf0a7d6a28"
+  "built_at_commit": "bd9a433457fac0a901ee88dca3d6db6c519dba49"
 }
